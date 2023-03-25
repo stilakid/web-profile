@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function Dance() {
+export default function Hobbies() {
     return(
         <h1>
-            Dance
+            Hobbies
         </h1>
     )
 }

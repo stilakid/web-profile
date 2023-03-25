@@ -63,7 +63,8 @@ export default function NavBar() {
                     
                                 <CustomLink onClick={() => setShowMenu(false)} to='/' className='py-2 border-solid border-t border-b' > Home </CustomLink>
                                 <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='py-2 border-t border-b' > Projects </CustomLink>
-                                <CustomLink onClick={() => setShowMenu(false)} to='/dance' className='py-2 border-t border-b'> Dance </CustomLink>
+                                <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='py-2 border-t border-b' > Skills </CustomLink>
+                                <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='py-2 border-t border-b'> Hobbies </CustomLink>
                                 <CustomLink onClick={() => setShowMenu(false)} to='/about' className='py-2 border-t border-b'> About </CustomLink>
                             </ul>
                         </animated.div>
@@ -74,7 +75,8 @@ export default function NavBar() {
             <div className='hidden sm:flex flex-row'>
                 <ul className='flex flex-row justify-center items-center'>
                     <CustomLink to='/projects' className='p-2' > Projects </CustomLink>
-                    <CustomLink to='/dance' className='p-2'> Dance </CustomLink>
+                    <CustomLink to='/skills' className='p-2' > Skills </CustomLink>
+                    <CustomLink to='/hobbies' className='p-2'> Hobbies </CustomLink>
                     <CustomLink to='/about' className='p-2'> About </CustomLink>
                 </ul>
             </div>
