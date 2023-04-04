@@ -28,59 +28,62 @@ export default function NavBar() {
 
 
     return (
-        <nav className='flex flex-row bg-indigo-500 items-center'>
-            <Link to='/' className='flex-grow p-2 text-xl'>Home</Link>
+        <div className="sticky top-0 left-0 right-0 z-50 bg-blue-400 bg-opacity-90 backdrop-blur flex flex-row items-center justify-center">
+            <nav className='flex flex-row h-14 items-center w-full max-w-screen-2xl px-8'>
+                <Link to='/' className='flex-grow p-2 text-xl'>Home</Link>
 
-            <div className='flex sm:hidden flex-col bg-red-900 p-2'>
-                <FontAwesomeIcon
-                    icon={faBars}
-                    onClick={() => setShowMenu(!showMenu)}
-                />
+                <div className='flex sm:hidden flex-col bg-red-900 p-2'>
+                    <FontAwesomeIcon
+                        icon={faBars}
+                        onClick={() => setShowMenu(!showMenu)}
+                    />
 
-                {
-                    maskTransitions((style, item) => (
-                        item &&
-                        <animated.div
-                            style={style}
-                            className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
-                            onClick={() => {
-                                setShowMenu(false);
-                                console.log("Show Menu Toggled: " + showMenu);
-                            }}
-                        >
-                        </animated.div>
-                    ))
-                }
+                    {
+                        maskTransitions((style, item) => (
+                            item &&
+                            <animated.div
+                                style={style}
+                                className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+                                onClick={() => {
+                                    setShowMenu(false);
+                                    console.log("Show Menu Toggled: " + showMenu);
+                                }}
+                            >
+                            </animated.div>
+                        ))
+                    }
 
-                {
-                    menuTransitions((style, item) => (
-                        item &&
-                        <animated.div
-                            style={style}
-                            className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow"
-                        >
-                            <ul className='flex flex-col justify-center items-center'>
-                    
-                                <CustomLink onClick={() => setShowMenu(false)} to='/' className='py-2 border-solid border-t border-b' > Home </CustomLink>
-                                <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='py-2 border-t border-b' > Projects </CustomLink>
-                                <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='py-2 border-t border-b' > Skills </CustomLink>
-                                <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='py-2 border-t border-b'> Hobbies </CustomLink>
-                                <CustomLink onClick={() => setShowMenu(false)} to='/about' className='py-2 border-t border-b'> About </CustomLink>
-                            </ul>
-                        </animated.div>
-                    ))
-                }
-            </div>
+                    {
+                        menuTransitions((style, item) => (
+                            item &&
+                            <animated.div
+                                style={style}
+                                className="fixed bg-white top-0 left-0 w-4/5 h-full z-100 shadow"
+                            >
+                                <ul className='flex flex-col justify-center items-center'>
+                        
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/' className='py-2 border-solid border-t border-b' > Home </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='py-2 border-t border-b' > Projects </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='py-2 border-t border-b' > Skills </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='py-2 border-t border-b'> Hobbies </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/about' className='py-2 border-t border-b'> About </CustomLink>
+                                </ul>
+                            </animated.div>
+                        ))
+                    }
+                </div>
 
-            <div className='hidden sm:flex flex-row'>
-                <ul className='flex flex-row justify-center items-center'>
-                    <CustomLink to='/projects' className='p-2' > Projects </CustomLink>
-                    <CustomLink to='/skills' className='p-2' > Skills </CustomLink>
-                    <CustomLink to='/hobbies' className='p-2'> Hobbies </CustomLink>
-                    <CustomLink to='/about' className='p-2'> About </CustomLink>
-                </ul>
-            </div>
-        </nav>
+                <div className='hidden sm:flex flex-row'>
+                    <ul className='flex flex-row justify-center items-center'>
+                        <CustomLink to='/projects' className='p-2' > Projects </CustomLink>
+                        <CustomLink to='/skills' className='p-2' > Skills </CustomLink>
+                        <CustomLink to='/hobbies' className='p-2'> Hobbies </CustomLink>
+                        <CustomLink to='/about' className='p-2'> About </CustomLink>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
     );
 }
 

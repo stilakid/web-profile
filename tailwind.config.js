@@ -7,6 +7,11 @@ module.exports = {
         'black-t-50': 'rgba(0,0,0,0.5)',
       }
     },
+    fontFamily: {
+      // 'sans': ['Helvetica Neue'],
+    }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }

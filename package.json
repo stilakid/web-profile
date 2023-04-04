@@ -11,10 +11,14 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@wordpress/data": "^9.0.0",
+    "@wordpress/is-shallow-equal": "^4.30.0",
+    "@wp-g2/styles": "^0.0.164",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "react-use-measure": "^2.1.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -48,6 +52,7 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-nested": "^6.0.1",
+    "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.2.7"
   }
 }
