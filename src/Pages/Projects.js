@@ -1,9 +1,16 @@
 import React from "react"
 
+// Assets
 import images from "../Assets/Images/images"
 
+// Components
 import ProjectCard from "../Components/ProjectCard"
 import SideNav from "../Components/SideNav"
+import Section from "../Components/Section"
+
+// Ionicon
+import { IonIcon} from '@ionic/react';
+import { logoGithub, logoLinkedin, mail } from 'ionicons/icons';
 
 export default function Projects() {
 
@@ -32,6 +39,7 @@ export default function Projects() {
                         date="Dec 09 2022"
                         image={images.project.wallus.preview}
                         imageAlt="This is an image"
+                        backgroundColor="bg-white"
                         summary={
                             <>
                                 <p className="mb-3">Chances are, at one point in your life, you found investing intimidating and filled with jargon.</p>
@@ -41,8 +49,205 @@ export default function Projects() {
                                 <p>Wallus reinvents investing to be fun and social for the first time.</p>
                             </>
                         }
+                        titleCardDetails={
+                            <>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
+                                <p>Note: This project has its own website too that contains way more details! <a className="text-blue-400 underline underline-offset-2" href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html">Click here</a> to check it out. </p>
+                            </>
+                        }
                     >
-                        Hi!
+                        
+
+                        <div>
+
+                            <Section
+                                title="What is Wallus?"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+                                <p className="mb-3">
+                                    This app was developed as part the final group project for both Stanford's <em>CS147: Introduction to Human-Computer Interaction Design</em> and <em>CS47: Cross-Platform Mobile Development</em>.
+                                </p>
+
+                                <p className="mb-3">
+                                    In the current world, each person has their own investment account and portfolio. This area is often excluded to people with prior knowledge or comfort, and conversation about investing is rarely brought up for those afraid of the current system.
+                                    Wallus changes this by making investing community-driven for the first time. Folks join the app through a friend’s invite where they can invest in the same stock. This can be expanded with in-app groups where everyone in the group owns the same stock, can chat about status, and see the progress of their investment together.
+                                </p>
+
+                                <p className="mb-3">
+                                    The second aspect of the app is education. As new investors are onboarded, the Walrus mascot is there to help explain concepts and simplify information. The app itself redesigns investing without trend graphs and numbers focused on less day-trading or gut decisions. For decisions along the way, Wallus is also embedded in the final solution with warnings and suggestions to new users that are just learning.
+                                </p>
+
+                                <p className="mb-3"> Rationale </p>
+
+                                <p className="mb-3"> 
+                                    To help guide our final decision, we took a great deal of inspiration from our interviews and experience prototypes.
+                                </p>
+
+                                <p className="mb-3">
+                                    Our main rationale for this solution is that getting started investing isn’t just a literacy problem, but also a branding problem. There are plenty of resources, but there are constraints of time, support, and confidence that prevent people from starting to invest. As a result, Wallus users can hop onto decisions of others with no time of their own. They also have the support of more experienced investors through the chat and also passively learning through their feed. As they engage, they can grow confidence in investing by seeing others/a community engaging along with conscious design choices that eliminate the traditional intimidating parts of investing. Having friends on the app, inviting, and sharing builds trust for a previously opaque process, and we hope that Wallus is that stepping stone for people to get comfortable with investing.
+                                </p>
+                            </Section>
+
+                            <Section
+                                title="Concept Video"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+                                <p>After doing some market research of products that solved similar problems to ours, we identified major tasks that could be perfomed with our product and highlighted them in the video.</p>
+                                <div className="flex justify-center mb-3">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/e_ryWF8GEgM"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    >
+
+                                    </iframe>
+                                </div>
+                            </Section>
+
+
+                            <Section
+                                title="Demo"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+                                <p>Below is a video demonstrating how our app completes 3 core tasks for the identified problem it is supposed to solve.</p>
+
+                                <div className="flex justify-center mb-3">
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/MvRn1jGF4g4"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
+                                    >
+                                            
+                                    </iframe>
+                                </div>
+
+                                <p className="mb-3">Tasks explored in the demo</p>
+
+                                <p className="mb-3">
+                                    <strong>Simple:</strong> Accept an invitation from a friend to join an existing investment group.
+                                </p>
+
+                                <p className="mb-3">
+                                    <strong>Moderate:</strong> Create a new investment group and invite your friends to join.
+                                </p>
+
+                                <p className="mb-3">
+                                    <strong>Final:</strong> Use in-app resources to learn about the market and invest in an index fund recommended by Wallus.
+                                </p>
+                            </Section>
+                                
+                            <Section
+                                title="Project Details"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+                                <p>We had the privilege of having a strong designer in the team that made a lot of our work easier.</p>
+                            </Section>
+
+                            <Section
+                                title="Try the App!"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+
+                            </Section>
+
+                            <Section
+                                title="Our Team"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
+                                    <div className="w-1/3">
+                                        <p>Avika Patel</p>
+                                        <p><em>Stanford Class of 2024</em></p>
+                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                        <IonIcon icon={mail} className="text-2xl" />
+                                    </div>
+                                    <div className="w-2/3 b">
+                                        <p>Core Responsibilities</p>
+                                        <ul className="list-disc ml-4">
+                                            <li><p><em>App Designer</em></p></li>
+                                            <li><p><em>App Developer</em></p></li>
+                                            <li><p><em>Secured the best project pitch award for our team</em></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
+                                    <div className="w-1/3">
+                                        <p>Juben Rana</p>
+                                        <p><em>Stanford Class of 2024</em></p>
+                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                        <IonIcon icon={mail} className="text-2xl" />
+                                    </div>
+                                    <div className="w-2/3 b">
+                                        <p>Core Responsibilities</p>
+                                        <ul className="list-disc ml-4">
+                                            <li><p><em>Website Developer</em></p></li>
+                                            <li><p><em>Video Editor</em></p></li>
+                                            <li><p><em>App Developer</em></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
+                                    <div className="w-1/3">
+                                        <p>Madison Fan</p>
+                                        <p><em>Stanford Class of 2025</em></p>
+                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                        <IonIcon icon={mail} className="text-2xl" />
+                                    </div>
+                                    <div className="w-2/3 b">
+                                        <p>Core Responsibilities</p>
+                                        <ul className="list-disc ml-4">
+                                            <li><p><em>App Designer</em></p></li>
+                                            <li><p><em>App Developer</em></p></li>
+                                            <li><p><em>Secured the best poster design award for our team</em></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
+                                    <div className="w-1/3">
+                                        <p>Xinyi Wang</p>
+                                        <p><em>Stanford Class of 2024</em></p>
+                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                        <IonIcon icon={mail} className="text-2xl" />
+                                    </div>
+                                    <div className="w-2/3 b">
+                                        <p>Core Responsibilities</p>
+                                        <ul className="list-disc ml-4">
+                                            <li><p><em>App Developer</em></p></li>
+                                            <li><p><em>Concept Video Director</em></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </Section>
+
+                            <Section
+                                title="Reflection"
+                                bgColor="bg-blue-500"
+                                borderColor="border-blue-500"
+                            >
+
+                            </Section>
+                        </div>
+                        
+                        
+
+
                     </ProjectCard>
 
                     <ProjectCard
@@ -57,7 +262,7 @@ export default function Projects() {
                             </>
                         }
                     >
-                        Hi!
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/SURA-Content-Management-System"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </ProjectCard>
 
                     <ProjectCard
@@ -74,7 +279,7 @@ export default function Projects() {
                             </>
                         }
                     >
-                        Hi!
+                        <p>Note: The project is made private on GitHub to respect course policies. If you are not a Stanford student and want to look through the code, please contact me directly.</p>
                     </ProjectCard>
 
                     <ProjectCard
@@ -89,7 +294,7 @@ export default function Projects() {
                             </>
                         }
                     >
-                        Hi!
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/web-profile"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </ProjectCard>
 
                     <ProjectCard
@@ -105,7 +310,7 @@ export default function Projects() {
                             </>
                         }
                     >
-                        Hi!
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </ProjectCard>
 
                     <ProjectCard
@@ -122,7 +327,7 @@ export default function Projects() {
                             </>
                         }
                     >
-                        Hi!
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </ProjectCard>
                 </div>
 
