@@ -63,7 +63,7 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
             <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className="m-5">
 
                 <animated.div onClick={() => setIsOpen(true)} id={id} style={{ overflow: "hidden", ...stylesSummary }}>
-                    <div className={`flex flex-row rounded-2xl border shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
+                    <div className={`flex flex-row hover:cursor-pointer rounded-2xl border shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
                         <div className="flex flex-col w-1/2 pr-5">
                             <h1>{ title }</h1>
                             <h4 className='text-gray-200 mb-5'>{ date }</h4>
