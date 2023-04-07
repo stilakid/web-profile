@@ -2,6 +2,7 @@ const images = {
     project: {
         wallus: {
             preview: require('./Projects/Wallus/preview.png'),
+            qrCode: require('./Projects/Wallus/expo_go_qr_code.svg').default,
         },
         bunnyWorld: {
             preview: require('./Projects/BunnyWorld/preview.png'),
