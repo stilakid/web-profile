@@ -7,12 +7,17 @@ import images from "../Assets/Images/images"
 import ProjectCard from "../Components/ProjectCard"
 import SideNav from "../Components/SideNav"
 import Section from "../Components/Section"
+import TeamMemberCard from "../Components/TeamMemberCard"
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
 import { logoGithub, logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore } from 'ionicons/icons';
 
 export default function Projects() {
+
+    const wallusColor = "bg-gradient-to-r from-wallus-primary-light to-wallus-primary";
+    const wallusBorder = "border-wallus-primary-light";
+    const wallusTextColor = "text-white";
 
 
     
@@ -39,7 +44,8 @@ export default function Projects() {
                         date="Dec 09 2022"
                         image={images.project.wallus.preview}
                         imageAlt="This is an image"
-                        backgroundColor="bg-white"
+                        backgroundColor={wallusColor}
+                        textColor={wallusTextColor}
                         summary={
                             <>
                                 <p className="mb-3">
@@ -58,7 +64,26 @@ export default function Projects() {
                         }
                         titleCardDetails={
                             <>
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
+                                <div className="flex flex-row">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
+                                </div>
+
+                                <div className="mb-3">
+                                    <p>Tools Used: </p>
+                                    <div className="flex flex-col justify-center items-center">
+                                        <p>
+                                            <em> React Native </em> || 
+                                            <em> Supabase </em> || 
+                                            <em> Expo </em> || 
+                                            <em> Figma </em> || 
+                                            <em> Adobe Premiere Pro </em> || 
+                                            <em> Adobe After Effects </em>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                
+
                                 <p className="mb-3">
                                     This app was developed as part the final group project for both Stanford's 
                                     <em>CS147: Introduction to Human-Computer Interaction Design</em> and 
@@ -66,14 +91,14 @@ export default function Projects() {
                                 </p>
 
                                 <p>
-                                    Note: This project has its own website too that contains way more details! 
-                                    <a
+                                    Note: This project has its own website too that contains way more details! <a
+                                        target="_blank" rel="noopener noreferrer"
                                         className="text-blue-400 underline underline-offset-2" 
                                         href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
                                     >
                                             Click here
-                                    </a>
-                                    to check it out. </p>
+                                    </a> to check it out.
+                                </p>
                             </>
                         }
                     >
@@ -83,8 +108,9 @@ export default function Projects() {
 
                             <Section
                                 title="What is Wallus?"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
                                 <h2 className="mb-3">
                                     Overview
@@ -106,6 +132,7 @@ export default function Projects() {
 
                                 <p className="mb-6">
                                     For indepth details of the effort that went into the creation of this app, please visit the <a
+                                        target="_blank" rel="noopener noreferrer"
                                         className="text-blue-400 underline underline-offset-2"
                                         href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
                                     >
@@ -159,12 +186,13 @@ export default function Projects() {
 
                             <Section
                                 title="Concept Video"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
                                 <p className="mb-3">
                                     After doing some market research of products that solved similar problems to ours, we identified major tasks that could be perfomed 
-                                    with our product and highlighted them in the video.
+                                    with our product and highlighted them in the video below.
                                 </p>
                                 
                                 <div className="flex justify-center mb-3">
@@ -180,13 +208,20 @@ export default function Projects() {
 
                                     </iframe>
                                 </div>
+
+                                <p className="mb-3">
+                                    I collaborated with my teammate Xinyi to finalize the shotlist and took charge of shooting the scenes. Additionally, I played the 
+                                    role of Wallus the walrus, our team's mascot, during which my teammate handled the camera. I took responsibility for editing and 
+                                    compositing the video afterwards using Adobe Premiere Pro and Adobe After Effects.
+                                </p>
                             </Section>
 
 
                             <Section
                                 title="Demo"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
                                 <p className="mb-3">
                                     Below is a video demonstrating how our app completes 3 core tasks for the identified problem it is supposed to solve.
@@ -234,8 +269,9 @@ export default function Projects() {
 
                             <Section
                                 title="Try the App!"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
 
                                 <p className="mb-3">
@@ -247,7 +283,7 @@ export default function Projects() {
                                         <p>Download “Expo Go" from the App Store.</p>
 
                                         <div className="flex flex-row">
-                                            <a href="https://itunes.apple.com/app/apple-store/id982107779">
+                                            <a target="_blank" rel="noopener noreferrer" href="https://itunes.apple.com/app/apple-store/id982107779">
                                                 <div className="flex flex-row p-2 m-2 border">
                                                     <IonIcon icon={logoAppleAppstore} className="text-2xl" />
                                                     <p className="pl-2"> Download from App Store </p>
@@ -256,7 +292,7 @@ export default function Projects() {
                                         </div>
 
                                         <div className="flex flex-row">
-                                            <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www">
+                                            <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www">
                                                 <div className="flex flex-row p-2 m-2 border">
                                                     <IonIcon icon={logoGooglePlaystore} className="text-2xl" />
                                                     <p className="pl-2"> Download from Google Play Store </p>
@@ -283,6 +319,7 @@ export default function Projects() {
                                             <li>
                                                 <p>
                                                     Open this link in your mobile: <a
+                                                        target="_blank" rel="noopener noreferrer"
                                                         className="text-blue-400 underline underline-offset-2"
                                                         href="exp://exp.host/@stilakid/Wallus?release-channel=default"
                                                     >
@@ -301,82 +338,248 @@ export default function Projects() {
 
                             <Section
                                 title="Our Team"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
-                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
-                                    <div className="w-1/3">
-                                        <p>Avika Patel</p>
-                                        <p><em>Stanford Class of 2024</em></p>
-                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
-                                        <IonIcon icon={mail} className="text-2xl" />
-                                    </div>
-                                    <div className="w-2/3 b">
-                                        <p>Core Responsibilities</p>
-                                        <ul className="list-disc ml-4">
-                                            <li><p><em>App Designer</em></p></li>
-                                            <li><p><em>App Developer</em></p></li>
-                                            <li><p><em>Secured the best project pitch award for our team</em></p></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <TeamMemberCard
+                                    name="Avika Patel"
+                                    designation="Stanford Class of 2024"
+                                    contactDetails={
+                                        <>
+                                            <div>
+                                                <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                                        Personal Website
+                                                </a>
+                                            </div>
+                                            <div className="flex flex-row">
+                                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/avikapatel" >
+                                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                                </a>
+                                                <a href = "mailto: avika@stanford.edu">
+                                                    <IonIcon icon={mail} className="text-2xl" />
+                                                </a>
+                                            </div>
+                                        </>
+                                    }
+                                >
+                                    <p>Core Responsibilities</p>
+                                    <ul className="list-disc ml-4">
+                                        <li><p><em>Presentation Lead</em></p></li>
+                                        <li><p><em>Front-End App Developer</em></p></li>
+                                        <li><p><em>Secured the best project pitch award for our team</em></p></li>
+                                    </ul>
+                                </TeamMemberCard>
 
-                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
-                                    <div className="w-1/3">
-                                        <p>Juben Rana</p>
-                                        <p><em>Stanford Class of 2024</em></p>
-                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
-                                        <IonIcon icon={mail} className="text-2xl" />
-                                    </div>
-                                    <div className="w-2/3 b">
-                                        <p>Core Responsibilities</p>
-                                        <ul className="list-disc ml-4">
-                                            <li><p><em>Website Developer</em></p></li>
-                                            <li><p><em>Video Editor</em></p></li>
-                                            <li><p><em>App Developer</em></p></li>
-                                        </ul>
-                                    </div>
-                                </div>
 
-                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
-                                    <div className="w-1/3">
-                                        <p>Madison Fan</p>
-                                        <p><em>Stanford Class of 2025</em></p>
-                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
-                                        <IonIcon icon={mail} className="text-2xl" />
-                                    </div>
-                                    <div className="w-2/3 b">
-                                        <p>Core Responsibilities</p>
-                                        <ul className="list-disc ml-4">
-                                            <li><p><em>App Designer</em></p></li>
-                                            <li><p><em>App Developer</em></p></li>
-                                            <li><p><em>Secured the best poster design award for our team</em></p></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <TeamMemberCard
+                                    name="Juben Rana"
+                                    designation="Stanford Class of 2024"
+                                    contactDetails={
+                                        <>
+                                            <div>
+                                                <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                                        Personal Website
+                                                </a>
+                                            </div>
+                                            <div className="flex flex-row">
+                                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/jubenrana" >
+                                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                                </a>
+                                                <a href = "mailto: zubenrana@stanford.edu">
+                                                    <IonIcon icon={mail} className="text-2xl" />
+                                                </a>
+                                            </div>
+                                        </>
+                                    }
+                                >
+                                    <p>Core Responsibilities</p>
+                                    <ul className="list-disc ml-4">
+                                        <li><p><em>Lead Full Stack App Developer</em></p></li>
+                                        <li><p><em>Website Developer</em></p></li>
+                                        <li><p><em>Videographer</em></p></li>
+                                        <li><p><em>Video Editor</em></p></li>
+                                    </ul>
+                                </TeamMemberCard>
 
-                                <div className="p-5 rounded-2xl border shadow-md m-5 flex flex-row">
-                                    <div className="w-1/3">
-                                        <p>Xinyi Wang</p>
-                                        <p><em>Stanford Class of 2024</em></p>
-                                        <IonIcon icon={logoLinkedin} className="text-2xl" />
-                                        <IonIcon icon={mail} className="text-2xl" />
-                                    </div>
-                                    <div className="w-2/3 b">
-                                        <p>Core Responsibilities</p>
-                                        <ul className="list-disc ml-4">
-                                            <li><p><em>App Developer</em></p></li>
-                                            <li><p><em>Concept Video Director</em></p></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
+
+                                <TeamMemberCard
+                                    name="Madison Fan"
+                                    designation="Stanford Class of 2025"
+                                    contactDetails={
+                                        <>
+                                            <div>
+                                                <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="https://www.madisonfan.com/">
+                                                        Personal Website
+                                                </a>
+                                            </div>
+                                            <div className="flex flex-row">
+                                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/madison-fan-6696a2173" >
+                                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                                </a>
+                                                <a href = "mailto: madifan@stanford.edu">
+                                                    <IonIcon icon={mail} className="text-2xl" />
+                                                </a>
+                                            </div>
+                                        </>
+                                    }
+                                >
+                                    <p>Core Responsibilities</p>
+                                    <ul className="list-disc ml-4">
+                                        <li><p><em>Lead App Designer</em></p></li>
+                                        <li><p><em>Front-End App Developer</em></p></li>
+                                        <li><p><em>Secured the best poster design award for our team</em></p></li>
+                                    </ul>
+                                </TeamMemberCard>
+
+
+
+                                <TeamMemberCard
+                                    name="Xinyi Wang"
+                                    designation="Stanford Class of 2024"
+                                    contactDetails={
+                                        <>
+                                            <div>
+                                                <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                                        Personal Website
+                                                </a>
+                                            </div>
+                                            <div className="flex flex-row">
+                                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/xinyi-wangxy" >
+                                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                                </a>
+                                                <a href = "mailto: karenwxy@stanford.edu">
+                                                    <IonIcon icon={mail} className="text-2xl" />
+                                                </a>
+                                            </div>
+                                        </>
+                                    }
+                                >
+                                    <p>Core Responsibilities</p>
+                                    <ul className="list-disc ml-4">
+                                        <li><p><em>Front-End App Developer</em></p></li>
+                                        <li><p><em>Concept Video Director</em></p></li>
+                                        <li><p><em>Interviewee Liaison</em></p></li>
+                                    </ul>
+                                </TeamMemberCard>
                             </Section>
 
                             <Section
-                                title="Reflection"
-                                bgColor="bg-blue-500"
-                                borderColor="border-blue-500"
+                                title="Outcome & Reflection"
+                                bgColor={wallusColor}
+                                borderColor={wallusBorder}
+                                textColor={wallusTextColor}
                             >
+
+                                <h2 className="mb-3"> Project Expo </h2>
+
+                                <p className="mb-3">
+                                    The developed prototype of Wallus was presented at Stanford's Introduction to Human Computer Interaction Project Expo in December 2022. 
+                                    The expo was judged by dozens of industry experts, and our team received "Best Pitch" and "Best Project Poster" awards. Our concept video 
+                                    was also nominated for several award categories.
+                                </p>
+
+                                <h2 className="mb-3"> Key Takeaways </h2>
+
+                                <p className="mb-3">
+                                    In general, being exposed to such a rigorous design process was honestly refreshing and, although arduous at times, very rewarding. 
+                                    All of us came into this project from different backgrounds with different skills and specialties, and it was mesmerizing to see this 
+                                    project come to life when we put all our different skills together. In essence, this class truly highlighted the value of teamwork.
+                                </p>
+
+                                <p className="mb-6">
+                                    There was so much to learn throughout this quarter for the design thinking process, the studio theme of time, and the project. 
+                                    Some main ones are listed below:
+                                </p>
+
+                                <ul className="ml-4">
+                                    <li>
+                                        <h3 className="mb-3"> Iterative Designing </h3>
+
+                                        <p className="mb-6">
+                                            After going through this class, we learned a lot about the importance of feedback and numerous iterations of a design 
+                                            before it can be built. Not until our last round did we realize that our Home page was not built for new users, something 
+                                            that one iteration that we were used to could not suffice.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h3 className="mb-3"> Needfinding </h3>
+
+                                        <p className="mb-6">
+                                            This portion of the needfinding process was new to us but one that paid the greatest dividends going forward. 
+                                            We learned about the importance of being intentional with who we choose to interview, keeping open-ended questions, 
+                                            and taking thorough observations to build insights and leaps that can guide the future of the whole project.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h3 className="mb-3"> Bringing users to test early </h3>
+
+                                        <p className="mb-6">
+                                            Initially, we were hesitant to test out the feasibility of our mobile app through a paper form. 
+                                            However, after seeing the learnings we had through these interviews, we realized the importance of testing early and 
+                                            testing easy with real users. Though our future work might not have paper prototypes, showing drawings to stakeholders 
+                                            is something we can always add to our workflows.
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <h3 className="mb-3"> Communicating work effectively </h3>
+
+                                        <p className="mb-6">
+                                            At every step of the journey, we had a presentation. The final step even went above and beyond with communication 
+                                            through print, app, in-person speech, video, and writing being represented by the poster, expo app, pitch, demo video, 
+                                            and this report. Having all of these down was crucial to successfully communicating the project and journeying to an 
+                                            unknowing audience. This is something that we all can add to the technical projects we take on in the future.
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                
+
+                                <h2 className="mb-3"> Future Investments </h2>
+
+                                <p className="mb-3">
+                                    There are many possible future investments that we learned through our Heuristic Evaluations or due to time constraints 
+                                    in implementation. On the technical side, we would like to eliminate all the hard-coded elements of the application 
+                                    (including users, groups, tips, and history) so that a new user can join with a fresh plate and interact with their 
+                                    friends as a real app. Additional new additions include
+                                </p>
+
+                                <ul className="list-disc ml-6 mb-3">
+                                    <li>
+                                        Connecting to APIs that pull real market data for stock prices and details
+                                    </li>
+                                    <li>
+                                        Long-term implementation can look into integrating with banks or Stripe for purchasing real stocks
+                                    </li>
+                                    <li>
+                                        Expand chat to more than  2 users
+                                    </li>
+                                    <li>
+                                        Making the dictionary have a full set of terms
+                                    </li>
+                                    <li>
+                                        Community page to allow reactions for each of the updates
+                                    </li>
+                                    <li>
+                                        AI in Wallus’s tips that adjust based on user preferences by the groups they join and the investments they make
+                                    </li>
+                                    <li>
+                                        Bookmarking or flagging interesting stocks or sharing with friends
+                                    </li>
+                                    <li>
+                                        Reporting harmful content flows
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    On the design front, we hope to continue iterating on the amount of information that is strictly necessary to show a new investor. 
+                                    We hope to continue editing the details in the Home, Invite, Group Details, and Markets page. We also would love to continue designing 
+                                    Wallus icons, perhaps ones that are region, stock, or time of year specific!
+                                </p>
 
                             </Section>
                         </div>
