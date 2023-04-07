@@ -39,6 +39,20 @@ export default function CartaCard({ children, ...props }) {
                     <div className="flex flex-row">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </div>
+                    <div className="mb-3">
+                        <p>Tools Used: </p>
+                        <div className="flex flex-col justify-center items-center">
+                            <p>
+                                <em> JavaScript </em> || 
+                                <em> Python </em> || 
+                                <em> Tampermonkey </em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        This endeavour was part of my research paper for Stanford's <em>PWR 2CKA: The Rhetoric of Distraction</em>.
+                    </p>
                 </>
             }
         >

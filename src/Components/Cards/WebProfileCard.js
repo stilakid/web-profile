@@ -38,6 +38,16 @@ export default function WebProfileCard({ children, ...props }) {
                     <div className="flex flex-row">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/web-profile"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </div>
+                    <div>
+                        <p>Tools Used: </p>
+                        <div className="flex flex-col justify-center items-center">
+                            <p>
+                                <em> React </em> || 
+                                <em> Tailwind CSS </em> || 
+                                <em> React Spring </em>
+                            </p>
+                        </div>
+                    </div>
                 </>
             }
         >

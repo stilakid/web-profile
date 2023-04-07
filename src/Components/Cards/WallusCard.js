@@ -62,14 +62,12 @@ export default function WallusCard({ children, ...props }) {
                                 <em> Adobe After Effects </em>
                             </p>
                         </div>
-                        
                     </div>
                     
 
                     <p className="mb-3">
-                        This app was developed as part the final group project for both Stanford's 
-                        <em>CS147: Introduction to Human-Computer Interaction Design</em> and 
-                        <em>CS47: Cross-Platform Mobile Development</em>.
+                        This app was developed as part the final group project for both Stanford's <em>CS147: Introduction to Human-Computer 
+                        Interaction Design</em> and <em>CS47: Cross-Platform Mobile Development</em>.
                     </p>
 
                     <p>

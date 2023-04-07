@@ -650,6 +650,10 @@ video {
 .border-solid {
   border-style: solid;
 }
+.border-purple-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(168 85 247 / var(--tw-border-opacity));
+}
 .border-wallus-primary-light {
   --tw-border-opacity: 1;
   border-color: rgb(63 109 228 / var(--tw-border-opacity));

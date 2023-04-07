@@ -5,9 +5,6 @@ import images from "../Assets/Images/images"
 
 // Components
 import SideNav from "../Components/SideNav"
-import ProjectCard from "../Components/ProjectCard"
-import Section from "../Components/Section"
-import TeamMemberCard from "../Components/TeamMemberCard"
 
 // Components: Card
 import WallusCard from "../Components/Cards/WallusCard"
@@ -17,19 +14,8 @@ import WebProfileCard from "../Components/Cards/WebProfileCard"
 import CartaCard from "../Components/Cards/CartaCard"
 import BlenderCard from "../Components/Cards/BlenderCard"
 
-// Ionicon
-import { IonIcon} from '@ionic/react';
-import { logoGithub, logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore } from 'ionicons/icons';
 
-export default function Projects() {
-
-    const blenderColor = "bg-gradient-to-r from-wallus-primary-light to-wallus-primary";
-    const blenderBorder = "border-wallus-primary-light";
-    const blenderTextColor = "text-white";
-
-
-
-    
+export default function Projects() {    
 
     return(
         <div className="flex flex-row items-center justify-center">

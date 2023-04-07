@@ -38,6 +38,20 @@ export default function CMSCard({ children, ...props }) {
                     <div className="flex flex-row">
                         <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/SURA-Content-Management-System"><IonIcon icon={logoGithub} className="text-2xl" /></a>
                     </div>
+                    <div className="mb-3">
+                        <p>Tools Used: </p>
+                        <div className="flex flex-col justify-center items-center">
+                            <p>
+                                <em> Vanilla JS </em> || 
+                                <em> MongoDB </em> || 
+                                <em> Node.js </em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        This project was initially developed as the final project for Stanford's <em>CS193X: Web Programming Fundamentals</em>.
+                    </p>
                 </>
             }
         >
