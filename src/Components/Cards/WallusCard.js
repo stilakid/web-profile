@@ -240,11 +240,6 @@ export default function WallusCard({ children, ...props }) {
                             </p>
                         </li>
                     </ul>
-                    
-
-
-
-
                 </Section>
 
                 <Section
