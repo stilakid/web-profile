@@ -37,10 +37,6 @@ export default function BlenderCard({ children, ...props }) {
             }
             titleCardDetails={
                 <>
-                    <div className="flex flex-row">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/CS147-Wallus"><IonIcon icon={logoGithub} className="text-2xl" /></a>
-                    </div>
-
                     <div className="mb-3">
                         <p>Tools Used: </p>
                         <div className="flex flex-col justify-center items-center">

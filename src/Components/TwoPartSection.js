@@ -2,10 +2,6 @@ import React, { useEffect, useRef } from 'react';
 
 
 
-
-
-// Base Custom Button Class
-
 export default function TwoPartSection({ children, part1, part2, ...props }) {
     const videoEl = useRef(null);
 

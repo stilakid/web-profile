@@ -1,4 +1,4 @@
-import React, { useEffect, useRef }  from 'react';
+import React from 'react';
 
 // Assets
 import images from "../../Assets/Images/images";
@@ -10,6 +10,7 @@ import TeamMemberCard from '../TeamMemberCard';
 import ProjectCard from '../ProjectCard';
 import BlueLink from '../BlueLink';
 import TwoPartSection from '../TwoPartSection';
+import VideoAutoPlay from '../VideoAutoPlay';
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
@@ -21,21 +22,6 @@ export default function BunnyWorldCard({ children, ...props }) {
     const bunnyWorldColor = "bg-gradient-to-r from-purple-200 to-purple-400";
     const bunnyWorldBorder = "border-purple-200";
     const bunnyWorldTextColor = "text-black";
-
-
-    const videoEl = useRef(null);
-
-    const attemptPlay = () => {
-        videoEl &&
-            videoEl.current &&
-            videoEl.current.play().catch(error => {
-                console.error("Error attempting to play", error);
-            });
-    };
-
-    useEffect(() => {
-        attemptPlay();
-    }, []);
 
 
 
@@ -253,9 +239,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_1} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />
@@ -263,9 +249,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                     <TwoPartSection
                         part1={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_2} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                         part2={
@@ -300,9 +286,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_3} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />
@@ -310,9 +296,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                     <TwoPartSection
                         part1={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_4} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                         part2={
@@ -343,9 +329,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_5} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />
@@ -353,9 +339,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                     <TwoPartSection
                         part1={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_6} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                         part2={
@@ -379,9 +365,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_7} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />
@@ -397,9 +383,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                     <TwoPartSection
                         part1={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_8} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                         part2={
@@ -434,9 +420,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_9} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />
@@ -444,9 +430,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                     <TwoPartSection
                         part1={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_10} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                         part2={
@@ -470,9 +456,9 @@ export default function BunnyWorldCard({ children, ...props }) {
                         }
                         part2={
                             <>
-                                <video className='rounded-2xl' playsinline autoplay muted loop ref={videoEl}>
+                                <VideoAutoPlay className='rounded-2xl'>
                                     <source src={videos.project.bunnyWorld.scriptManager_11} type="video/mp4"/>
-                                </video>
+                                </VideoAutoPlay>
                             </>
                         }
                     />

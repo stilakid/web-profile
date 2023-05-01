@@ -29,7 +29,10 @@ const images = {
         carta: {
             preview: require('./Projects/Carta/preview.png'),
             class2021: require('./Projects/Carta/2021.png'),
-            class2022: require('./Projects/Carta/2022.png')
+            class2022: require('./Projects/Carta/2022.png'),
+            graph1: require('./Projects/Carta/graph_1.png'),
+            graph2: require('./Projects/Carta/graph_2.png'),
+            graph3: require('./Projects/Carta/graph_3.png'),
         },
         blender: {
             preview: require('./Projects/Blender/preview.png'),
