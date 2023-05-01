@@ -9,7 +9,7 @@ import { useSpring, animated, config } from "@react-spring/web";
 import useMeasure from "react-use-measure";
 
 // the children is the extra stuff you want to show when someone clicks on the card.
-export default function ProjectCard({ children, id, title, date, image, imageAlt, summary, backgroundColor, textColor, titleCardDetails}) {
+export default function ProjectCard({ children, id, title, date, image, imageAlt, summary, backgroundColor, textColor, borderColor, titleCardDetails}) {
 
     // For Card    
     const [mouseIsHovering, setMouseIsHovering] = useState(false);
@@ -60,13 +60,13 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
 
 
     return (
-            <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className="m-5">
+            <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className="m-5 w-[inherit]">
 
                 <animated.div onClick={() => setIsOpen(true)} id={id} style={{ overflow: "hidden", ...stylesSummary }}>
-                    <div className={`flex flex-row hover:cursor-pointer rounded-2xl border shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
+                    <div className={`flex flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
                         <div className="flex flex-col w-1/2 pr-5">
                             <h1>{ title }</h1>
-                            <h4 className='text-gray-200 mb-5'>{ date }</h4>
+                            <h4 className='text-gray-700 mb-5'>{ date }</h4>
                             { summary }
                         </div>
 
@@ -79,7 +79,7 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
 
 
                 <animated.div style={{ overflow: "hidden", ...styles }}>
-                    <div ref={measureRef} className={`rounded-2xl border shadow-md`}>
+                    <div ref={measureRef} className={`rounded-2xl border ${borderColor} shadow-md`}>
                         <div className={`relative p-5 rounded-t-2xl ${backgroundColor} ${textColor}`}>
                             <animated.div
                                 onClick={() => setIsOpen(false)}
@@ -97,11 +97,11 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
                             </animated.div>
                             
                             <h1>{ title} </h1>
-                            <h4 className='text-gray-200'>{ date }</h4>
+                            <h4 className='text-gray-700'>{ date }</h4>
                             {titleCardDetails}
                         </div>
                         
-                        <div className='rounded-b-2xl bg-whit p-5 text-black'>
+                        <div className='rounded-b-2xl bg-whit p-5 bg-white text-black'>
                             {children}
                         </div>                        
                     </div>

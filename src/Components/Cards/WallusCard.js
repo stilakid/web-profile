@@ -7,6 +7,7 @@ import images from '../../Assets/Images/images';
 import Section from '../Section';
 import TeamMemberCard from '../TeamMemberCard';
 import ProjectCard from '../ProjectCard';
+import BlueLink from '../BlueLink';
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
@@ -15,13 +16,15 @@ import { logoGithub, logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore 
 
 export default function WallusCard({ children, ...props }) {
 
-    const wallusColor = "bg-gradient-to-r from-wallus-primary-light to-wallus-primary";
-    const wallusBorder = "border-wallus-primary-light";
-    const wallusTextColor = "text-white";
+    // const wallusColor = "bg-gradient-to-r from-wallus-primary-light to-wallus-primary";
+    const wallusColor = "bg-gradient-to-r from-blue-200 to-blue-400";
+    // const wallusBorder = "border-wallus-primary-light";
+    const wallusBorder = "border-blue-200";
+    const wallusTextColor = "text-black";
 
     return (
         <ProjectCard
-            id="project-1"
+            id="project-wallus"
             title="Wallus: Your Personal Finance App"
             date="Dec 09 2022"
             image={images.project.wallus.preview}
@@ -71,13 +74,11 @@ export default function WallusCard({ children, ...props }) {
                     </p>
 
                     <p>
-                        Note: This project has its own website too that contains way more details! <a
-                            target="_blank" rel="noopener noreferrer"
-                            className="text-blue-400 underline underline-offset-2" 
+                        Note: This project has its own website too that contains way more details! <BlueLink.Underline
                             href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
                         >
                                 Click here
-                        </a> to check it out.
+                        </BlueLink.Underline> to check it out.
                     </p>
                 </>
             }
@@ -87,6 +88,7 @@ export default function WallusCard({ children, ...props }) {
             <div>
 
                 <Section
+                    id="project-wallus-1"
                     title="What is Wallus?"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}
@@ -111,13 +113,11 @@ export default function WallusCard({ children, ...props }) {
                     </p>
 
                     <p className="mb-6">
-                        For indepth details of the effort that went into the creation of this app, please visit the <a
-                            target="_blank" rel="noopener noreferrer"
-                            className="text-blue-400 underline underline-offset-2"
+                        For indepth details of the effort that went into the creation of this app, please visit the <BlueLink.Underline
                             href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
                         >
                             project website
-                        </a>
+                        </BlueLink.Underline>
                         .
                     </p>
 
@@ -165,6 +165,7 @@ export default function WallusCard({ children, ...props }) {
                 </Section>
 
                 <Section
+                    id="project-wallus-2"
                     title="Concept Video"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}
@@ -198,6 +199,7 @@ export default function WallusCard({ children, ...props }) {
 
 
                 <Section
+                    id="project-wallus-3"
                     title="Demo"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}
@@ -243,6 +245,7 @@ export default function WallusCard({ children, ...props }) {
                 </Section>
 
                 <Section
+                    id="project-wallus-4"
                     title="Try the App!"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}
@@ -293,13 +296,11 @@ export default function WallusCard({ children, ...props }) {
                                 </li>
                                 <li>
                                     <p>
-                                        Open this link in your mobile: <a
-                                            target="_blank" rel="noopener noreferrer"
-                                            className="text-blue-400 underline underline-offset-2"
+                                        Open this link in your mobile: <BlueLink.Underline
                                             href="exp://exp.host/@stilakid/Wallus?release-channel=default"
                                         >
                                             exp://exp.host/@stilakid/Wallus?release-channel=default
-                                        </a>.
+                                        </BlueLink.Underline>.
                                     </p>
                                 </li>
                             </ul>
@@ -312,6 +313,7 @@ export default function WallusCard({ children, ...props }) {
                 </Section>
 
                 <Section
+                    id="project-wallus-5"
                     title="Our Team"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}
@@ -323,9 +325,9 @@ export default function WallusCard({ children, ...props }) {
                         contactDetails={
                             <>
                                 <div>
-                                    <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                    <BlueLink href="//sites.google.com/view/avikapatel">
                                             Personal Website
-                                    </a>
+                                    </BlueLink>
                                 </div>
                                 <div className="flex flex-row">
                                     <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/avikapatel" >
@@ -353,9 +355,9 @@ export default function WallusCard({ children, ...props }) {
                         contactDetails={
                             <>
                                 <div>
-                                    <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                    <BlueLink href="//sites.google.com/view/avikapatel">
                                             Personal Website
-                                    </a>
+                                    </BlueLink>
                                 </div>
                                 <div className="flex flex-row">
                                     <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/jubenrana" >
@@ -385,9 +387,9 @@ export default function WallusCard({ children, ...props }) {
                         contactDetails={
                             <>
                                 <div>
-                                    <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="https://www.madisonfan.com/">
+                                    <BlueLink href="https://www.madisonfan.com/">
                                             Personal Website
-                                    </a>
+                                    </BlueLink>
                                 </div>
                                 <div className="flex flex-row">
                                     <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/madison-fan-6696a2173" >
@@ -416,9 +418,9 @@ export default function WallusCard({ children, ...props }) {
                         contactDetails={
                             <>
                                 <div>
-                                    <a className="text-blue-400" target="_blank" rel="noopener noreferrer" href="//sites.google.com/view/avikapatel">
+                                    <BlueLink href="//sites.google.com/view/avikapatel">
                                             Personal Website
-                                    </a>
+                                    </BlueLink>
                                 </div>
                                 <div className="flex flex-row">
                                     <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/xinyi-wangxy" >
@@ -441,6 +443,7 @@ export default function WallusCard({ children, ...props }) {
                 </Section>
 
                 <Section
+                    id="project-wallus-6"
                     title="Outcome & Reflection"
                     bgColor={wallusColor}
                     borderColor={wallusBorder}

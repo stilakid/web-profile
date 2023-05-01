@@ -16,9 +16,9 @@ import About from './Pages/About';
 function App() {
 
   return (
-    <>
+    <div className='flex flex-col h-screen'>
       <NavBar/>
-      <div className=''>
+      <div className='flex flex-col flex-grow'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
@@ -27,7 +27,7 @@ function App() {
           <Route path='/about' element={<About />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
