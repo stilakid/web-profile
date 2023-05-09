@@ -63,15 +63,15 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
             <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className="m-5 w-[inherit]">
 
                 <animated.div onClick={() => setIsOpen(true)} id={id} style={{ overflow: "hidden", ...stylesSummary }}>
-                    <div className={`flex flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
-                        <div className="flex flex-col w-1/2 pr-5">
-                            <h1>{ title }</h1>
-                            <h4 className='text-gray-700 mb-5'>{ date }</h4>
+                    <div className={`flex flex-col-reverse sm:flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`} ref={measureRefSummary}>
+                        <div className="flex flex-col sm:w-1/2 md:w-7/12 lg:w-1/2 xl:w-7/12 pr-5">
+                            <h1 className="xl:text-4xl font-bold tracking-wide">{ title }</h1>
+                            <h4 className='text-gray-200 mb-5'>{ date }</h4>
                             { summary }
                         </div>
 
-                        <div className="w-1/2 overflow-auto">
-                            <img src={ image } alt={ imageAlt } className="rounded-2xl" />
+                        <div className="sm:w-1/2 md:w-5/12 lg:w-1/2 xl:w-5/12 overflow-auto">
+                            <img src={ image } alt={ imageAlt } className={`rounded-2xl border ${borderColor}`} />
                         </div>
                     </div>
                     
@@ -97,7 +97,7 @@ export default function ProjectCard({ children, id, title, date, image, imageAlt
                             </animated.div>
                             
                             <h1>{ title} </h1>
-                            <h4 className='text-gray-700'>{ date }</h4>
+                            <h4 className='text-gray-200'>{ date }</h4>
                             {titleCardDetails}
                         </div>
                         

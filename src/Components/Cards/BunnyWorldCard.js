@@ -19,9 +19,9 @@ import { logoLinkedin, mail } from 'ionicons/icons';
 
 export default function BunnyWorldCard({ children, ...props }) {
 
-    const bunnyWorldColor = "bg-gradient-to-r from-purple-200 to-purple-400";
-    const bunnyWorldBorder = "border-purple-200";
-    const bunnyWorldTextColor = "text-black";
+    const bunnyWorldColor = "bg-gradient-to-r from-purple-500 to-purple-700";
+    const bunnyWorldBorder = "border-purple-500";
+    const bunnyWorldTextColor = "text-white";
 
 
 
@@ -84,7 +84,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                 </p>
 
 
-                <p className="mb-6">
+                <p className="mb-6 pb-6 border-b sm:border-b-0 border-black">
                     The goal of the project was to implement an editor for a simple graphical adventure game. The game
                     is called "Bunny World" after its most famous puzzle, but in reality, there's not much bunny in it. The
                     project has two aspects: playing the game, which is relatively easy, and the game editor, which is a
@@ -113,7 +113,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     Unfortunately we did not have time to implement this for Game Mode.
                 </p>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     In Game Mode, shapes are neatly snapped into the Inventory bar. Bar only holds 5 maximum shapes at a time. 
                     Additional shapes will be kicked onto the page.
                 </p>
@@ -123,7 +123,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     Shape Inspector
                 </h2>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     Rather than storing the shape inspector in another unintuitive menu, we implemented functionality to detect if a given shape/object on a page is 
                     double clicked by tracking when the shape is clicked down and the mouse/finger is lifted up. When the shape is double clicked, it brings up 
                     the shape inspector.
@@ -134,7 +134,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     Dynamic Page Tab
                 </h2>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     We created an intuitive dynamically created view of all the pages within a game as buttons in a scroll bar. The buttons feature the page name, 
                     as well as coloring indicating the current page and initial page. These buttons can be long clicked to bring up their settings page instead 
                     of having to go through another separate clunky view.
@@ -145,7 +145,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     Dynamic Page Tab
                 </h2>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     We have created a way so that you can load your image. By copying an image url and pasting it into the Shape Creator in the top right 
                     menu of the editor, you can load an image into the game. It will the appear as a custom shape in the inventory which can be placed 
                     into the scene and seen in both the player and editor.
@@ -217,14 +217,14 @@ export default function BunnyWorldCard({ children, ...props }) {
                     </p>
                 </div>
 
-
-                <h2 className="mt-9">
+                <h2 className="mt-9 border-t sm:border-t-0 border-black pt-6">
                     Script Manager UI
                 </h2>
 
                 <div className='flex flex-col my-12 space-y-24'>
 
                     <TwoPartSection
+                        className="flex-col-reverse"
                         part1={
                             <>
                                 <p className='mb-3'>
@@ -271,6 +271,7 @@ export default function BunnyWorldCard({ children, ...props }) {
 
 
                     <TwoPartSection
+                        className="flex-col-reverse"
                         part1={
                             <>
                                 <p className='mb-3'>
@@ -313,12 +314,13 @@ export default function BunnyWorldCard({ children, ...props }) {
                     />
                 </div>
 
-                <h2 className='mt-9'>
+                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     UI Updates Live Programmatically
                 </h2>
 
                 <div className='flex flex-col my-12 space-y-24'>
                     <TwoPartSection
+                        className="flex-col-reverse"
                         part1={
                             <>
                                 <p>
@@ -355,6 +357,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     />
 
                     <TwoPartSection
+                        className="flex-col-reverse"
                         part1={
                             <>
                                 <p>
@@ -375,7 +378,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                 
                 
 
-                <h2 className='mt-9'>
+                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     Eliminates Redundancy
                 </h2>
 
@@ -402,12 +405,13 @@ export default function BunnyWorldCard({ children, ...props }) {
                 </div>
 
 
-                <h2 className='mt-9'>
+                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     Keeps All Scripts Updated
                 </h2>
 
                 <div className='flex flex-col my-12 space-y-24'>
                     <TwoPartSection
+                        className="flex-col-reverse"
                         part1={
                             <>
                                 <p>
@@ -446,6 +450,7 @@ export default function BunnyWorldCard({ children, ...props }) {
                     />
 
                     <TwoPartSection
+                        flexColDir="flex-col-reverse"
                         part1={
                             <>
                                 <p>
@@ -464,7 +469,8 @@ export default function BunnyWorldCard({ children, ...props }) {
                     />
                 </div>
             </Section>
-
+            
+            <div className='relative'>
             <Section
                 id="project-bunny-3"
                 title="Our Team"
@@ -632,6 +638,8 @@ export default function BunnyWorldCard({ children, ...props }) {
                     </ul>
                 </TeamMemberCard>
             </Section>
+            </div>
+            
 
 
             <Section

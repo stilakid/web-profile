@@ -15,9 +15,9 @@ import { logoGithub } from 'ionicons/icons';
 
 export default function BlenderCard({ children, ...props }) {
 
-    const blenderColor = "bg-gradient-to-r from-gray-200 to-gray-400";
-    const blenderBorder = "border-gray-200";
-    const blenderTextColor = "text-black";
+    const blenderColor = "bg-gradient-to-r from-gray-500 to-gray-700";
+    const blenderBorder = "border-gray-500";
+    const blenderTextColor = "text-white";
 
     return (
         <ProjectCard
@@ -111,7 +111,7 @@ export default function BlenderCard({ children, ...props }) {
                 </div>
                 
 
-                <div className='flex flex-row border-2 p-2 shadow-md rounded-2xl mb-3'>
+                <div className='flex flex-col sm:flex-row border-2 p-2 shadow-md rounded-2xl mb-3'>
                     <div className='mr-2'>
                         <h2 className='mb-3'>
                             Variant B (No Texture)
@@ -123,7 +123,7 @@ export default function BlenderCard({ children, ...props }) {
                         </figure>
                     </div>
                     
-                    <div>
+                    <div className='border-t sm:border-t-0 pt-2 sm:pt-0'>
                         <h2 className='mb-3'>
                             Variant C (No Texture and Volumetric Domain)
                         </h2>
@@ -189,7 +189,7 @@ export default function BlenderCard({ children, ...props }) {
                     </h2>
 
                     <div className='flex flex-col items-center'>
-                        <img className='max-w-3xl' src={images.project.blender.bridge1} alt='My bridge model.' />
+                        <img className='xl:max-w-3xl' src={images.project.blender.bridge1} alt='My bridge model.' />
                     </div>
 
                     <div className='flex flex-col items-center'>
@@ -202,12 +202,12 @@ export default function BlenderCard({ children, ...props }) {
                     </div>
                     
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-2 flex flex-col justify-center'>
+                    <div className='flex flex-col space-y-3 sm:space-y-0 sm:flex-row mb-3'>
+                        <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
                             <img src={images.project.blender.bridge2} alt='Closer view of my bridge model focusing on the side of the bridge.' />
                         </div>
 
-                        <div className='w-1/2 flex flex-col justify-center'>
+                        <div className='sm:w-1/2 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 Diverging from the tutorial, I extended the structure connecting the two main cylinders of the bridge so as to make the bridge wider.
                             </p>
@@ -234,12 +234,12 @@ export default function BlenderCard({ children, ...props }) {
                         </p>
                     </div>
 
-                    <div className='flex flex-row mb-6'>
-                        <div className='w-1/2 mr-2 flex flex-col justify-center'>
+                    <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-6'>
+                        <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
                             <img src={images.project.blender.asphalt2} alt='Super close view of the road I made in blender seen from an angle, i.e., not from directly above the road.' />
                         </div>
 
-                        <div className='w-1/2 flex flex-col justify-center'>
+                        <div className='sm:w-1/2 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 For the texture of the asphalt and the wet look, I referenced <BlueLink.Underline 
                                     href="https://youtu.be/5L74YpLyiFI"
@@ -261,15 +261,15 @@ export default function BlenderCard({ children, ...props }) {
                         </div>
                     </div>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-2 flex flex-col justify-center'>
+                    <div className='flex flex-col-reverse sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
                             <p className='my-6'>
                                 I paid particular attention to make the road markings look realistic from a distance. 
                                 Therefore, their edges are not super straight, and they have cracks on them that looks good as long as you don’t zoom in too close. 
                             </p>
                         </div>
 
-                        <div className='w-1/2 flex flex-col justify-center'>
+                        <div className='sm:w-1/2 flex flex-col justify-center'>
                             <img src={images.project.blender.asphalt3} alt='View of the road I made in blender from a closer distance taken from directly above the road.' />
                         </div>
 
@@ -290,8 +290,8 @@ export default function BlenderCard({ children, ...props }) {
                         Road Barrier
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-2 flex flex-col justify-center'>
+                    <div className='flex flex-col-reverse sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
                             <p className='my-6'>
                                 This is a fairly simple geometry made from a cube with extended surfaces. 
                                 Like with other objects in the scene, I used an array and a mirror modifier to duplicate it and extend it along the length of the road.
@@ -306,14 +306,10 @@ export default function BlenderCard({ children, ...props }) {
                             </p>
                         </div>
 
-                        <div className='w-1/2'>
+                        <div className='sm:w-1/2'>
                             <img src={images.project.blender.barrier} alt='The road barrier I made in blender.' />
                         </div>
                     </div>
-
-
-
-
                 </div>
 
 
@@ -322,8 +318,8 @@ export default function BlenderCard({ children, ...props }) {
                         Streetlights
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-7/12 mr-2 flex flex-col justify-center'>
+                    <div className='flex flex-col-reverse sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-7/12 mr-2 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 I imported the streetlight models from TurboSquid, gave it a <BlueLink.Underline 
                                     href="https://3dtextures.me/2022/05/13/metal-006/"
@@ -337,7 +333,7 @@ export default function BlenderCard({ children, ...props }) {
                             </p>
                         </div>
 
-                        <div className='w-5/12 flex flex-row items-center'>
+                        <div className='sm:w-5/12 flex flex-row items-center'>
                             <img className='max-h-80' src={images.project.blender.streetlight1} alt='The double streetlight model I used in blender.' />
                             <img className='max-h-80' src={images.project.blender.streetlight2} alt='The single streetlight model I used in blender.' />
                         </div>
@@ -350,12 +346,12 @@ export default function BlenderCard({ children, ...props }) {
                         Street Railing
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-3 flex flex-col justify-center'>
+                    <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 mr-3 flex flex-col justify-center'>
                             <img src={images.project.blender.streetRailing} alt='The model of the street railing I made.' />
                         </div>
 
-                        <div className='w-1/2 flex flex-col justify-center'>
+                        <div className='sm:w-1/2 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 I made this object following this <BlueLink.Underline 
                                     href="https://www.youtube.com/watch?v=uymK9hV7IJw&t=475s"
@@ -433,12 +429,12 @@ export default function BlenderCard({ children, ...props }) {
                         </p>
                     </div>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-3'>
+                    <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 sm:mr-3'>
                             <img src={images.project.blender.pavement2} alt='Further view of the texture of the pavement on the bridge in my model.' />
                         </div>
 
-                        <div className='w-1/2'>
+                        <div className='sm:w-1/2'>
                             <img src={images.project.blender.pavement1} alt='The texture of the pavement on the bridge in my model.' />
                         </div>
                     </div>
@@ -451,14 +447,14 @@ export default function BlenderCard({ children, ...props }) {
                         In-road warning lights
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-3 flex flex-col justify-center'>
+                    <div className='flex flex-col-reverse sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 mr-3 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 I made these lights myself. For textures, I used the inbuilt Principled BSDF and Emission texture. 
                             </p>
                         </div>
 
-                        <div className='w-1/2'>
+                        <div className='sm:w-1/2'>
                             <img src={images.project.blender.embeddedRoadLight} alt='The model of the simple embedded road light I made.' />
                         </div>
                     </div>
@@ -469,8 +465,8 @@ export default function BlenderCard({ children, ...props }) {
                         Cars
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-2/3 mr-3 flex flex-col justify-center'>
+                    <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-2/3 mr-3 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 I imported the vehicle models from TurboSquid. I used the textures readily available with the model, except for the green Audi for which I made
 
@@ -488,7 +484,7 @@ export default function BlenderCard({ children, ...props }) {
                             </p>
                         </div>
 
-                        <div className='w-1/3'>
+                        <div className='sm:w-1/3'>
                             <img src={images.project.blender.car1} alt='The model of the green Audi I used in this project.' />
                         </div>
                     </div>
@@ -531,7 +527,7 @@ export default function BlenderCard({ children, ...props }) {
                     </h2>
 
                     <div className='flex justify-center items-center'>
-                        <img className='max-w-3xl' src={images.project.blender.smoke1} alt='Smoke from the tyres of a drifting Nissan being simulated.' />
+                        <img className='xl:max-w-3xl' src={images.project.blender.smoke1} alt='Smoke from the tyres of a drifting Nissan being simulated.' />
                     </div>
 
                     <div className='my-6 flex flex-col items-center'>
@@ -549,7 +545,7 @@ export default function BlenderCard({ children, ...props }) {
                     </div>
  
                     <div className='flex justify-center items-center'>
-                        <img className='max-w-2xl' src={images.project.blender.smoke2} alt='Comparison of smoke simulation made with different settings.' />
+                        <img className='xl:max-w-2xl' src={images.project.blender.smoke2} alt='Comparison of smoke simulation made with different settings.' />
                     </div>
 
                     <div className='my-6 flex flex-col items-center'>
@@ -597,7 +593,7 @@ export default function BlenderCard({ children, ...props }) {
                     </h2>
 
                     
-                    <div className='flex flex-row mb-3'>
+                    <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
                         <div className='flex-grow flex flex-col justify-center'>
                             <p className='mb-3'>
                                 To make the rain, I combined the two tutorials below.
@@ -647,8 +643,8 @@ export default function BlenderCard({ children, ...props }) {
                         Sky Dome
                     </h2>
 
-                    <div className='flex flex-row mb-3'>
-                        <div className='w-1/2 mr-3 flex flex-col justify-center'>
+                    <div className='flex flex-col-reverse sm:flex-row space-y-3 sm:space-y-0 mb-3'>
+                        <div className='sm:w-1/2 mr-3 flex flex-col justify-center'>
                             <p className='mb-3'>
                                 For the sky, I decided to make a sky dome instead of using Nishita sky or an HDRI.
                             </p>
@@ -662,7 +658,7 @@ export default function BlenderCard({ children, ...props }) {
                                 </ul>
                             </p>
                         </div>
-                        <div className='w-1/2 flex flex-col justify-center'>
+                        <div className='sm:w-1/2 flex flex-col justify-center'>
                             <img src={images.project.blender.skyDome1} alt='Sky dome made in this project as seen from outside the dome.' />
                         </div>
                     </div>

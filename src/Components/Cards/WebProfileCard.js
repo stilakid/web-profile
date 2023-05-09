@@ -14,9 +14,9 @@ import { logoGithub } from 'ionicons/icons';
 
 export default function WebProfileCard({ children, ...props }) {
 
-    const webprofileColor = "bg-gradient-to-r from-orange-200 to-orange-400";
-    const webprofileBorder = "border-orange-200";
-    const webprofileTextColor = "text-black";
+    const webprofileColor = "bg-gradient-to-r from-orange-500 to-orange-700";
+    const webprofileBorder = "border-orange-500";
+    const webprofileTextColor = "text-white";
 
     return (
         <ProjectCard
@@ -88,7 +88,7 @@ export default function WebProfileCard({ children, ...props }) {
 
                 <p className="mb-3">
                     Since this project is what actually powers the website you are seeing right now, I’ll let you explore it rather than taking you through 
-                    the mundane details. If you have any sort of feedback, let me know through this form. I’ll continue to make the site better!
+                    the mundane details. I’ll continue to make the site better!
                 </p>
             </Section>
 

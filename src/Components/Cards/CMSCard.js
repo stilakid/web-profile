@@ -2,10 +2,12 @@ import React from 'react';
 
 // Assets
 import images from "../../Assets/Images/images"
+import videos from '../../Assets/Videos/videos';
 
 // Components
 import Section from '../Section';
 import ProjectCard from '../ProjectCard';
+import VideoAutoPlay from '../VideoAutoPlay';
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
@@ -14,9 +16,9 @@ import { logoGithub } from 'ionicons/icons';
 
 export default function CMSCard({ children, ...props }) {
 
-    const CMSColor = "bg-gradient-to-r from-cyan-200 to-cyan-400";
-    const CMSBorder = "border-cyan-200";
-    const CMSTextColor = "text-black";
+    const CMSColor = "bg-gradient-to-r from-cyan-500 to-cyan-700";
+    const CMSBorder = "border-cyan-500";
+    const CMSTextColor = "text-white";
 
     return (
         <ProjectCard
@@ -68,6 +70,10 @@ export default function CMSCard({ children, ...props }) {
                     overwhelming them with the technical stuff.
                 </p>
 
+                <VideoAutoPlay className='rounded-2xl'>
+                    <source src={videos.project.sura.cms_1} type="video/mp4"/>
+                </VideoAutoPlay>
+
                 <p className="mb-3">
                     I initially made a scaled down version of it for a class project using functional programming paradigm. We were asked to make any kind of website imaginable 
                     and I thought making a CMS would be cool and challenging. To get a really good handle on programming with JavaScript, we were challenged to 
@@ -96,8 +102,13 @@ export default function CMSCard({ children, ...props }) {
 
                     <p className="mb-3">
                         When an admin logs into the website, they get an admin overlay button signified by a circular button near the bottom-right corner of the screen.
-                        Clicking the button expands/collapses the actions that the admin can take. This transition is accompanied by a transition animation.
+                        Clicking the button expands/collapses the actions that the admin can take. This transition is accompanied by a transition animation. Since the 
+                        admin menu can be expanded/collapsed, it allows the admin to easily see the current state of the webpage with minimal obstruction from the UI.
                     </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_2} type="video/mp4"/>
+                    </VideoAutoPlay>
 
                     <p className="mb-3">
                         The button is marked with a 'plus (+)' symbol when the menu is collapsed and is marked with a 'minus (-)' symbol when the menu is expanded.
@@ -109,18 +120,90 @@ export default function CMSCard({ children, ...props }) {
                     </p>
                 </div>
 
+
+                <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
+                    <h2 className="mb-3">
+                        Make New Webpage
+                    </h2>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_3} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <p className="mb-3">
+                        The admin menu allows the admin to add a new page to the website.
+                    </p>
+                </div>
+
+
+                <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
+                    <h2 className="mb-3">
+                        Edit Webpage
+                    </h2>
+
+                    <p className="mb-3">
+                        With the 'Edit Webpage' option available in the admin menu, you can enable the interface that allows you to make edits directly to the webpage.
+                    </p>
+
+                    <p className='mb-3'>
+                        For instance, you can make changes to the webpage title.
+                    </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_4} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <p className='mb-3'>
+                        You can add links to the webpage.
+                    </p>
+
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_20} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+
+                    <p className='mb-3'>
+                        You can edit bodies of text. The editor remembers the spacing you include as well. You can also upload images.
+                    </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_11} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <p className="mb-3">
+                        The website provides a robust way of uploading images. If you try to add an image, 
+                        it crosschecks to see if its name is identical to those of the current images 
+                        stored in the server for this particular website. If there is a match, it appends characters 
+                        to make it unique.
+                    </p>
+
+                    <p className='mb-3'>
+                        If you want the changes to persist, simply click the 'Save' button after making edits. 
+                        Otherwise, you can click the 'Cancel' button and it undoes all the edits.
+                    </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_19} type="video/mp4"/>
+                    </VideoAutoPlay>
+                </div>
+
                 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
                     <h2 className="mb-3">
                         Navbar Editor
                     </h2>
-
+                    
                     <p className="mb-3">
                         If you click on the "Edit Navbar" button in the admin controls menu, 
                         you are presented with a dialog box that allows you to select pages in 
                         the website that you want to feature in the navbar.
                     </p>
+                    
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_17} type="video/mp4"/>
+                    </VideoAutoPlay>
 
                     <p className="mb-3">
                         The lower section of the dialog box allows you to customize the navbar. 
@@ -147,14 +230,23 @@ export default function CMSCard({ children, ...props }) {
                     </p>
 
                     <p className="mb-3">
+                        If you don't want the side pane, you can simply click on "Delete Sidebar" 
+                        button in the admin controls menu.
+                    </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_18} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+
+                    <p className="mb-3">
                         It is best suited for adding links to different parts of the current page so that 
                         visitors to this site can better navigate the page.
                     </p>
 
-                    <p className="mb-3">
-                        If you don't want the side pane, you can simply click on "Delete Sidebar" 
-                        button in the admin controls menu.
-                    </p>
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_16} type="video/mp4"/>
+                    </VideoAutoPlay>
                 </div>
 
 
@@ -173,22 +265,28 @@ export default function CMSCard({ children, ...props }) {
                         To access these templates, you simply need to click on "New Section" button on the 
                         webpage. This conjures a dialogbox with all the different templates that you can use.
                     </p>
-                </div>
 
-                <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
-                        Image Uploads
-                    </h2>
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_8} type="video/mp4"/>
+                    </VideoAutoPlay>
 
-                    <p className="mb-3">
-                        The website provides a robust way of uploading images. If you try to add an image, 
-                        it crosschecks to see if its name is identical to those of the current images 
-                        stored in the server for this particular website. If there is a match, it appends characters 
-                        to make it unique.
+                    <p className='mb-3'>
+                        To add a template to the webpage, click on one of the templates in the template menu.
                     </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_9} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <p className='mb-3'>
+                        To delete an instance of a template from the webpage, click on the 'x' button in the upper-right 
+                        corner of the section.
+                    </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_10} type="video/mp4"/>
+                    </VideoAutoPlay>
                 </div>
-
-
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
@@ -198,7 +296,7 @@ export default function CMSCard({ children, ...props }) {
 
                     <p className="mb-3">
                         The website alows you to edit the main background for the webpage as well as 
-                        the individual background of each seaction.
+                        the individual background of each section.
                     </p>
 
                     <p className="mb-3">
@@ -209,11 +307,34 @@ export default function CMSCard({ children, ...props }) {
                         images.
                     </p>
 
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_12} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_13} type="video/mp4"/>
+                    </VideoAutoPlay>
+
                     <p className="mb-3">
-                        For the main background of the webpage, you can click the edit background button 
-                        inside the page background and that summons a similar background editor. However, 
-                        for the page background, you can also add videos!
+                        For the main background of the webpage, when you click the 'Edit Page' button, 
+                        a background editor similar to the one for individual section pops up in the 
+                        page background area.
                     </p>
+
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_5} type="video/mp4"/>
+                    </VideoAutoPlay>
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_7} type="video/mp4"/>
+                    </VideoAutoPlay>
+
+                    <p className='mb-3'>
+                        However, for the page background, you can also add videos!
+                    </p>
+                    <VideoAutoPlay className='rounded-2xl'>
+                        <source src={videos.project.sura.cms_6} type="video/mp4"/>
+                    </VideoAutoPlay>
+
 
                     <p className='mb-3'>
                         The video name conflicts when adding videos to the website are handled 
@@ -232,7 +353,7 @@ export default function CMSCard({ children, ...props }) {
 
                     <p className="mb-3">
                         I wrote all the backend APIs for this project from scratch. It is supported by 
-                        node.js and MongoDB.
+                        node.js, the popular back end web application framework Express.js, and MongoDB.
                     </p>
 
                     <p className="mb-3">

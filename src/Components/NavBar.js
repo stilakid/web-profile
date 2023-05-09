@@ -28,11 +28,11 @@ export default function NavBar() {
 
 
     return (
-        <div className="sticky top-0 left-0 right-0 z-50 bg-blue-400 bg-opacity-90 bg-orange-400 backdrop-blur flex flex-row items-center justify-center">
+        <div className="sticky top-0 left-0 right-0 z-50 bg-orange-400 bg-opacity-90 backdrop-blur flex flex-row items-center justify-center">
             <nav className='flex flex-row h-14 items-center w-full max-w-screen-2xl px-8'>
                 <Link to='/' className='flex-grow p-2 text-xl'>Home</Link>
 
-                <div className='flex sm:hidden flex-col bg-red-900 p-2'>
+                <div className='flex sm:hidden flex-col bg-orange-700 rounded-md hover:cursor-pointer p-2'>
                     <FontAwesomeIcon
                         icon={faBars}
                         onClick={() => setShowMenu(!showMenu)}
@@ -43,7 +43,7 @@ export default function NavBar() {
                             item &&
                             <animated.div
                                 style={style}
-                                className="bg-black-t-50 fixed top-0 left-0 w-full h-full z-50"
+                                className="bg-black-t-50 fixed top-0 left-0 w-full h-screen z-40"
                                 onClick={() => {
                                     setShowMenu(false);
                                     console.log("Show Menu Toggled: " + showMenu);
@@ -58,15 +58,14 @@ export default function NavBar() {
                             item &&
                             <animated.div
                                 style={style}
-                                className="fixed bg-white top-0 left-0 w-4/5 h-full z-100 shadow"
+                                className="fixed bg-gray-200 top-0 left-0 w-3/5 h-screen z-50 shadow"
                             >
                                 <ul className='flex flex-col justify-center items-center'>
                         
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/' className='py-2 border-solid border-t border-b' > Home </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='py-2 border-t border-b' > Projects </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='py-2 border-t border-b' > Skills </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='py-2 border-t border-b'> Hobbies </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/about' className='py-2 border-t border-b'> About </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/' className='w-full border-b border-black py-2 hover:bg-black/10' > <span className='text-xl'>Home</span> </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='w-full border-b border-black py-2 hover:bg-black/20' > <span className='text-xl'>Projects</span> </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='w-full border-b border-black py-2 hover:bg-black/30' > <span className='text-xl'>Skills</span> </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='w-full border-b border-black py-2 hover:bg-black/40'> <span className='text-xl'>Hobbies</span> </CustomLink>
                                 </ul>
                             </animated.div>
                         ))
@@ -78,7 +77,6 @@ export default function NavBar() {
                         <CustomLink to='/projects' className='p-2' > Projects </CustomLink>
                         <CustomLink to='/skills' className='p-2' > Skills </CustomLink>
                         <CustomLink to='/hobbies' className='p-2'> Hobbies </CustomLink>
-                        <CustomLink to='/about' className='p-2'> About </CustomLink>
                     </ul>
                 </div>
             </nav>
@@ -88,10 +86,10 @@ export default function NavBar() {
 }
 
 
-const CustomLink = ({ to, children, ...props }) => {
+const CustomLink = ({ to, children, className, ...props }) => {
     return(
-        <li className='' >
-            <Link  to={to} {...props}>
+        <li className={className} >
+            <Link className='w-full flex justify-center items-center' to={to} {...props}>
                 {children}
             </Link>
         </li>

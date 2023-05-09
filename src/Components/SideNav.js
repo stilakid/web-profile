@@ -5,18 +5,18 @@ import SideNavList from "./SideNavList"
 export default function SideNav() {
     return(
         <div className="absolute w-full top-0 bottom-0 overflow-y-auto border">
-            <div className="p-2 sticky top-0 bg-orange-300 w-full flex flex-row justify-center">
+            <div className="p-2 sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b w-full flex flex-row justify-center">
                 <h1>
                     Project Navigation
                 </h1>
             </div>
             
 
-            <nav className="flex flex-col px-8 w-full bg-white min-h-screen">
+            <nav className="flex flex-col px-8 w-full min-h-screen">
                 <ul className="pb-10">
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-blue-200 rounded-t-2xl">
-                            <h3><a href="#project-wallus"> Project Wallus</a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-blue-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-wallus"> Project Wallus</a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-wallus-1">
@@ -43,9 +43,9 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-cyan-200 rounded-t-2xl">
-                            <h3><a href="#project-cms"> Content Management System </a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-cyan-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-cms"> Content Management System </a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-cms-1">
@@ -62,9 +62,9 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-purple-200 rounded-t-2xl">
-                            <h3><a href="#project-bunny"> Bunny World </a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-purple-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-bunny"> Bunny World </a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-bunny-1">
@@ -85,9 +85,9 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-orange-200 rounded-t-2xl">
-                            <h3><a href="#project-profile"> Web Profile </a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-orange-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-profile"> Web Profile </a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-profile-1">
@@ -96,9 +96,9 @@ export default function SideNav() {
                         </ul>
                     </li>
 
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-rose-200 rounded-t-2xl">
-                            <h3><a href="#project-carta"> Scrapping Carta </a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-rose-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-carta"> Scrapping Carta </a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-carta-1">
@@ -115,9 +115,9 @@ export default function SideNav() {
                         </ul>
                     </li>
 
-                    <li className="mt-10 rounded-2xl shadow-md">
-                        <div className="p-3 bg-gray-200 rounded-t-2xl">
-                            <h3><a href="#project-blender"> Fun with Blender </a></h3>
+                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                        <div className="p-3 bg-gray-500 rounded-t-2xl">
+                            <h3 className="text-white"><a href="#project-blender"> Fun with Blender </a></h3>
                         </div>
                         <ul className="px-3 pb-3">
                             <SideNavList href="#project-blender-1">

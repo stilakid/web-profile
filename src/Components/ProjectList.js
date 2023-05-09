@@ -19,13 +19,13 @@ import BlenderCard from './Cards/BlenderCard';
 export default function ProjectList({ children, ...props }) {
     return (
         <div className="absolute w-full top-0 bottom-0 overflow-y-auto border">
-            <div className="sticky p-2 top-0 bg-orange-300 w-full flex flex-row justify-center z-50">
+            <div className="sticky p-2 top-0 bg-white bg-opacity-50 border-b backdrop-blur w-full flex flex-row justify-center z-30">
                 <h1>
                     Completed Projects
                 </h1>
             </div>
 
-            <div className="flex flex-col items-center w-full p-5 bg-white">
+            <div className="flex flex-col items-center w-full p-5 ">
                 <WallusCard />
 
                 <CMSCard />

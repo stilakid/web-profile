@@ -10,7 +10,6 @@ import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import Hobbies from './Pages/Hobbies';
-import About from './Pages/About';
 
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/hobbies' element={<Hobbies />} />
-          <Route path='/about' element={<About />} />
         </Routes>
       </div>
     </div>

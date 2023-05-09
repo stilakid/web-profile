@@ -17,10 +17,12 @@ import { logoGithub, logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore 
 export default function WallusCard({ children, ...props }) {
 
     // const wallusColor = "bg-gradient-to-r from-wallus-primary-light to-wallus-primary";
-    const wallusColor = "bg-gradient-to-r from-blue-200 to-blue-400";
+    const wallusColor = "bg-gradient-to-r from-blue-500 to-blue-700";
     // const wallusBorder = "border-wallus-primary-light";
-    const wallusBorder = "border-blue-200";
-    const wallusTextColor = "text-black";
+    const wallusBorder = "border-blue-500";
+    const wallusTextColor = "text-white";
+
+    // wallusColor = "bg-gradient-to-r from-gray-400 to-gray-600";
 
     return (
         <ProjectCard
@@ -33,16 +35,16 @@ export default function WallusCard({ children, ...props }) {
             textColor={wallusTextColor}
             summary={
                 <>
-                    <p className="mb-3">
+                    <p className="mb-3 xl:text-lg">
                         Chances are, at one point in your life, you found investing intimidating and filled with jargon.
                     </p>
 
-                    <p className="mb-3">
+                    <p className="mb-3 xl:text-lg">
                         Wallus, combining "Wallet" + "Us", is an app that makes investing more welcoming by being part of a community. 
                         You and your friends can start investing in the same stock and share profits.
                     </p>
                 
-                    <p>
+                    <p className='xl:text-lg'>
                         Wallus reinvents investing to be fun and social for the first time.
                     </p>
                 </>
@@ -112,7 +114,7 @@ export default function WallusCard({ children, ...props }) {
                         Then, we took the final step and build Wallus from ground up.
                     </p>
 
-                    <p className="mb-6">
+                    <p className="mb-6 pb-6 border-b sm:border-b-0 border-black">
                         For indepth details of the effort that went into the creation of this app, please visit the <BlueLink.Underline
                             href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
                         >
@@ -133,7 +135,7 @@ export default function WallusCard({ children, ...props }) {
                         status, and see the progress of their investment together.
                     </p>
 
-                    <p className="mb-6">
+                    <p className="mb-6 pb-6 border-b sm:border-b-0 border-black">
                         The second aspect of the app is education. As new investors are onboarded, the Walrus mascot is there to help explain concepts and 
                         simplify information. The app itself redesigns investing without trend graphs and numbers focused on less day-trading or gut decisions. 
                         For decisions along the way, Wallus is also embedded in the final solution with warnings and suggestions to new users that are just 
@@ -452,7 +454,7 @@ export default function WallusCard({ children, ...props }) {
 
                     <h2 className="mb-3"> Project Expo </h2>
 
-                    <p className="mb-3">
+                    <p className="mb-6 pb-6 border-b border-black">
                         The developed prototype of Wallus was presented at Stanford's Introduction to Human Computer Interaction Project Expo in December 2022. 
                         The expo was judged by dozens of industry experts, and our team received "Best Pitch" and "Best Project Poster" awards. Our concept video 
                         was also nominated for several award categories.
@@ -517,7 +519,7 @@ export default function WallusCard({ children, ...props }) {
 
                     
 
-                    <h2 className="mb-3"> Future Investments </h2>
+                    <h2 className="mb-3 mt-6 pt-6 border-t border-black"> Future Investments </h2>
 
                     <p className="mb-3">
                         There are many possible future investments that we learned through our Heuristic Evaluations or due to time constraints 

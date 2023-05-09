@@ -14,9 +14,9 @@ import { logoGithub } from 'ionicons/icons';
 
 export default function CartaCard({ children, ...props }) {
 
-    const PWRColor = "bg-gradient-to-r from-rose-200 to-rose-400";
-    const PWRBorder = "border-rose-200";
-    const PWRTextColor = "text-black";
+    const PWRColor = "bg-gradient-to-r from-rose-500 to-rose-700";
+    const PWRBorder = "border-rose-500";
+    const PWRTextColor = "text-white";
 
     return (
         <ProjectCard
@@ -73,7 +73,7 @@ export default function CartaCard({ children, ...props }) {
                     Overview
                 </h2>
 
-                <p className="mb-6">
+                <p className="mb-6 pb-6 border-b sm:border-b-0 border-black">
                     Long story short, I scrapped the Carta website, which contains statistics and reviews for all the courses offered at Stanford. 
                     This was for a research article I was writing. The article primarily talked about the effects of a university instructors vocal 
                     features and speech patterns on the students’ ability to process and comprehend what is being taught, and explored the possible 
@@ -144,7 +144,7 @@ export default function CartaCard({ children, ...props }) {
                     I used Python to filter the reviews for relevant keywords, which revealed interesting insights into the matter at hand.
                 </p>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     Using approximately 50 different words related to voice, I identified five vocal features that were prominent in the student reviews. 
                     They were intonation, pronunciation, clarity, rate of speech, loudness, and the habit related to mumbling.
                 </p>
@@ -335,7 +335,7 @@ export default function CartaCard({ children, ...props }) {
                     features.
                 </p>
 
-                <p className='mb-6'>
+                <p className='mb-6 pb-6 border-b sm:border-b-0 border-black'>
                     Having identified the vocal features to pay attention to as a 
                     teacher is super exciting, but the best thing about this 
                     revelation is that all of the six vocal features are unbound 
