@@ -541,6 +541,9 @@ video {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
 }
+.-mt-10 {
+  margin-top: -2.5rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -941,6 +944,10 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-2 {
   padding-top: 0.5rem;
