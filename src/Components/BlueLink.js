@@ -1,10 +1,7 @@
-import React from 'react';
-
-
 // Base Custom Button Class
 
 export default function BlueLink({ children, href, className, ...props }) {
-    return (
+    return(
         <a {...props} href={href} className={`text-blue-400 ${className} `} target="_blank" rel="noopener noreferrer" >
             {children}
         </a>

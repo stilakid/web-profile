@@ -1,7 +1,3 @@
-import React from 'react';
-
-
-
 // Base Custom Button Class
 
 export default function OngoingProjects({ children, ...props }) {

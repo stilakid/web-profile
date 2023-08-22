@@ -1,72 +1,48 @@
-import React from 'react';
-
 // Assets
-import images from "../../Assets/Images/images";
-import videos from '../../Assets/Videos/videos';
+import videos from '../../../Assets/Videos/videos';
+import data from '../../../Assets/Data/data';
 
 // Components
-import Section from '../Section';
-import TeamMemberCard from '../TeamMemberCard';
-import ProjectCard from '../ProjectCard';
-import BlueLink from '../BlueLink';
-import TwoPartSection from '../TwoPartSection';
-import VideoAutoPlay from '../VideoAutoPlay';
+import Section from '../../../Components/Section';
+import TeamMemberCard from '../../../Components/TeamMemberCard';
+import BlueLink from '../../../Components/BlueLink';
+import TwoPartSection from '../../../Components/TwoPartSection'
+import VideoAutoPlay from '../../../Components/VideoAutoPlay';
+
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
 import { logoLinkedin, mail } from 'ionicons/icons';
 
 
-export default function BunnyWorldCard({ children, ...props }) {
-
-    const bunnyWorldColor = "bg-gradient-to-r from-purple-500 to-purple-700";
-    const bunnyWorldBorder = "border-purple-500";
-    const bunnyWorldTextColor = "text-white";
+export {BunnyWorldCaption, BunnyWorldContent};
 
 
+function BunnyWorldCaption({}) {
+    return(
+        <>
+            <p className='mb-3'>
+                Note: The project is made private on GitHub to respect course policies. 
+                If you are not a Stanford student and want to look through the code, please contact me directly.
+            </p>
 
-    return (
-        <ProjectCard
-            id="project-bunny"
-            title="Bunny World"
-            date="Mar 17 2023"
-            image={images.project.bunnyWorld.preview}
-            imageAlt="This is an image"
-            backgroundColor={bunnyWorldColor}
-            textColor={bunnyWorldTextColor}
-            summary={
-                <>
-                    <p className="mb-3">You are trapped in a world of bunnies. Choose your path forward wisely or you may incur the wrath of the bunny of death!</p>
-
-                    <p>Was the game too easy? Come build your own 2D game with our Bunny World Game Editor! You can do all of that from the comfort of your android device!</p>
-                </>
-            }
-            titleCardDetails={
-                <>
-                    <p className='mb-3'>
-                        Note: The project is made private on GitHub to respect course policies. 
-                        If you are not a Stanford student and want to look through the code, please contact me directly.
-                    </p>
-
-                    <div className='mb-3'>
-                        <p>Tools Used: </p>
-                        <div className="flex flex-col justify-center items-center">
-                            <p>
-                                <em> Java </em> || 
-                                <em> Android Studio </em> ||
-                                <em> SQLite </em>
-                            </p>
-                        </div>
-                    </div>
+            <p>
+                This app was developed as the final group project for Stanford's <em>CS108: Object-Oriented Systems Design</em>.
+            </p>
+        </>
+    )
+}
 
 
-                    <p>
-                        This app was developed as the final group project for Stanford's <em>CS108: Object-Oriented Systems Design</em>.
-                    </p>
-                </>
-            }
-        >
+function BunnyWorldContent({}) {
 
+    const bunnyWorldColor = data.projects.bunnyWorld.color.background;
+    const bunnyWorldBorder = data.projects.bunnyWorld.color.border;
+    const bunnyWorldTextColor = data.projects.bunnyWorld.color.text
+
+
+    return(
+        <>
             <Section
                 id="project-bunny-1"
                 title="What is Bunny World?"
@@ -665,6 +641,6 @@ export default function BunnyWorldCard({ children, ...props }) {
                     UI design can be on android.
                 </p>
             </Section>
-        </ProjectCard>
-    );
+        </>
+    )
 }

@@ -1,22 +1,23 @@
-import React from 'react';
-
-
-// Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-
-
-
-
-
-
 // Base Custom Button Class
 
 export default function Button({ children, ...props }) {
-    return (
+    return(
         <button {...props} >
             {children}
         </button>
     );
 }
+
+
+const ToolsButton = ({ children, className, ...props }) => {
+    return(
+        <Button
+            {...props}
+            className = {`px-3 py-1 rounded-xl bg-black text-xs ${className}`}
+        >
+            {children}
+        </Button>
+    )
+}
+
+export {ToolsButton};

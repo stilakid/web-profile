@@ -1,55 +1,30 @@
-import React from 'react';
-
 // Assets
-import images from "../../Assets/Images/images"
+import data from '../../../Assets/Data/data';
 
 // Components
-import Section from '../Section';
-import ProjectCard from '../ProjectCard';
-
-// Ionicon
-import { IonIcon} from '@ionic/react';
-import { logoGithub } from 'ionicons/icons';
+import Section from '../../../Components/Section';
 
 
-export default function WebProfileCard({ children, ...props }) {
+export {WebProfileCaption, WebProfileContent};
 
-    const webprofileColor = "bg-gradient-to-r from-orange-500 to-orange-700";
-    const webprofileBorder = "border-orange-500";
-    const webprofileTextColor = "text-white";
 
-    return (
-        <ProjectCard
-            id="project-profile"
-            title="Web Profile"
-            date="Mar 17 2023"
-            image={images.project.webProfile.preview}
-            imageAlt="This is an image"
-            backgroundColor={webprofileColor}
-            textColor={webprofileTextColor}
-            summary={
-                <>
-                    <p>Oh look! It's my webprofile, but you're already on it... Wanna see how I made it? Click me!</p>
-                </>
-            }
-            titleCardDetails={
-                <>
-                    <div className="flex flex-row">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/web-profile"><IonIcon icon={logoGithub} className="text-2xl" /></a>
-                    </div>
-                    <div>
-                        <p>Tools Used: </p>
-                        <div className="flex flex-col justify-center items-center">
-                            <p>
-                                <em> React </em> || 
-                                <em> Tailwind CSS </em> || 
-                                <em> React Spring </em>
-                            </p>
-                        </div>
-                    </div>
-                </>
-            }
-        >
+function WebProfileCaption({}) {
+    return(
+        <>
+        </>
+    )
+}
+
+
+function WebProfileContent({}) {
+
+    const webprofileColor = data.projects.webProfile.color.background;
+    const webprofileBorder = data.projects.webProfile.color.border;
+    const webprofileTextColor = data.projects.webProfile.color.text
+
+
+    return(
+        <>
             <Section
                 id="project-profile-1"
                 title="About this Project"
@@ -91,9 +66,6 @@ export default function WebProfileCard({ children, ...props }) {
                     the mundane details. I’ll continue to make the site better!
                 </p>
             </Section>
-
-
-
-        </ProjectCard>
-    );
+        </>
+    )
 }

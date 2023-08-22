@@ -1,58 +1,34 @@
-import React from 'react';
-
 // Assets
-import images from "../../Assets/Images/images"
+import images from '../../../Assets/Images/images';
+import data from '../../../Assets/Data/data';
 
 // Components
-import Section from '../Section';
-import ProjectCard from '../ProjectCard';
-import BlueLink from '../BlueLink';
-
-// Ionicon
-import { IonIcon} from '@ionic/react';
-import { logoGithub } from 'ionicons/icons';
+import Section from '../../../Components/Section';
+import BlueLink from '../../../Components/BlueLink';
 
 
-export default function BlenderCard({ children, ...props }) {
+export {BlenderCaption, BlenderContent};
 
-    const blenderColor = "bg-gradient-to-r from-gray-500 to-gray-700";
-    const blenderBorder = "border-gray-500";
-    const blenderTextColor = "text-white";
 
-    return (
-        <ProjectCard
-            id="project-blender"
-            title="Fun with Blender"
-            date="Dec 09 2022"
-            image={images.project.blender.preview}
-            imageAlt="This is an image"
-            backgroundColor={blenderColor}
-            textColor={blenderTextColor}
-            summary={
-                <>
-                    <p className="mb-3"> A blender noob recreates a scene you'd expect to see in Need for Speed or Fast and Furious. </p>
+function BlenderCaption({}) {
+    return(
+        <>
+            <p>
+                This render was developed as part of the final project for Stanford's <em>CS148: Introduction to Computer Graphics and Imaging</em>.
+            </p>
+        </>
+    )
+}
 
-                    <p> It would be easy, they said. There are tonnes of blender tutorials online, they said. Well at least, they were right about the latter. </p>
-                </>
-            }
-            titleCardDetails={
-                <>
-                    <div className="mb-3">
-                        <p>Tools Used: </p>
-                        <div className="flex flex-col justify-center items-center">
-                            <p>
-                                <em> Blender </em> || 
-                                <em> TurboSquid </em>
-                            </p>
-                        </div>
-                    </div>
 
-                    <p>
-                        This render was developed as part of the final project for Stanford's <em>CS148: Introduction to Computer Graphics and Imaging</em>.
-                    </p>
-                </>
-            }
-        >
+function BlenderContent({}) {
+
+    const blenderColor = data.projects.blender.color.background;
+    const blenderBorder = data.projects.blender.color.border;
+    const blenderTextColor = data.projects.blender.color.text
+
+    return(
+        <>
             <Section
                 id="project-blender-1"
                 title="About this Project"
@@ -714,6 +690,6 @@ export default function BlenderCard({ children, ...props }) {
                 </p>
 
             </Section>
-        </ProjectCard>
-    );
+        </>
+    )
 }

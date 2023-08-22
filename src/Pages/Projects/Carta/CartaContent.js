@@ -1,67 +1,34 @@
-import React from 'react';
-
 // Assets
-import images from "../../Assets/Images/images"
+import images from '../../../Assets/Images/images';
+import data from '../../../Assets/Data/data';
 
 // Components
-import Section from '../Section';
-import ProjectCard from '../ProjectCard';
-
-// Ionicon
-import { IonIcon} from '@ionic/react';
-import { logoGithub } from 'ionicons/icons';
+import Section from '../../../Components/Section';
 
 
-export default function CartaCard({ children, ...props }) {
+export {CartaCaption, CartaContent};
 
-    const PWRColor = "bg-gradient-to-r from-rose-500 to-rose-700";
-    const PWRBorder = "border-rose-500";
-    const PWRTextColor = "text-white";
 
-    return (
-        <ProjectCard
-            id="project-carta"
-            title="Scrapping Carta!"
-            date="Mar 10 2022"
-            image={images.project.carta.preview}
-            imageAlt="This is an image"
-            backgroundColor={PWRColor}
-            textColor={PWRTextColor}
-            summary={
-                <>
-                    <p className="mb-3 bg-">
-                        I was investigating how the voice of an instructor can affect the experience of their students, but I needed data. 
-                        Massive amounts of data that I coldn't get my hands on normally.
-                    </p>
+function CartaCaption({}) {
+    return(
+        <>
+            <p>
+                This endeavour was part of my research paper for Stanford's <em>PWR 2CKA: The Rhetoric of Distraction</em>.
+            </p>
+        </>
+    )
+}
 
-                    <p>
-                        Oh what better way is there to infer that than scrapping Carta's entire repository of student feedbacks from Stanford University!
-                    </p>
-                </>
-            }
-            titleCardDetails={
-                <>
-                    <div className="flex flex-row">
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/stilakid/PWR2_Carta_Webscrapping.git"><IonIcon icon={logoGithub} className="text-2xl" /></a>
-                    </div>
-                    <div className="mb-3">
-                        <p>Tools Used: </p>
-                        <div className="flex flex-col justify-center items-center">
-                            <p>
-                                <em> JavaScript </em> || 
-                                <em> Python </em> || 
-                                <em> Tampermonkey </em>
-                            </p>
-                        </div>
-                    </div>
 
-                    <p>
-                        This endeavour was part of my research paper for Stanford's <em>PWR 2CKA: The Rhetoric of Distraction</em>.
-                    </p>
-                </>
-            }
-        >
+function CartaContent({}) {
 
+    const PWRColor = data.projects.carta.color.background;
+    const PWRBorder = data.projects.carta.color.border;
+    const PWRTextColor = data.projects.carta.color.text
+
+
+    return(
+        <>
             <Section
                 id="project-carta-1"
                 title="About this Project"
@@ -360,7 +327,6 @@ export default function CartaCard({ children, ...props }) {
                 </p>
 
             </Section>
-
-        </ProjectCard>
-    );
+        </>
+    )
 }

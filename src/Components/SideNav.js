@@ -1,22 +1,19 @@
-import React from "react"
-
-
 import { HashLink } from "react-router-hash-link"
 import SideNavList from "./SideNavList"
 
 export default function SideNav() {
     return(
         <div className="absolute w-full top-0 bottom-0 overflow-y-auto border">
-            <div className="p-2 sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b w-full flex flex-row justify-center">
+            <div className="p-2 sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b border-neutral-regular w-full flex flex-row justify-center">
                 <h1>
-                    Project Navigation
+                    Navigation
                 </h1>
             </div>
             
 
             <nav className="flex flex-col px-8 w-full min-h-screen">
                 <ul className="pb-10">
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-blue-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-wallus" smooth> Project Wallus</HashLink></h3>
                         </div>
@@ -45,7 +42,7 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-cyan-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-cms" smooth> Content Management System </HashLink></h3>
                         </div>
@@ -64,7 +61,7 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-purple-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-bunny" smooth> Bunny World </HashLink></h3>
                         </div>
@@ -87,7 +84,7 @@ export default function SideNav() {
                         </ul>
                     </li>
                     
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-orange-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-profile" smooth> Web Profile </HashLink></h3>
                         </div>
@@ -98,7 +95,7 @@ export default function SideNav() {
                         </ul>
                     </li>
 
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-rose-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-carta" smooth> Scrapping Carta </HashLink></h3>
                         </div>
@@ -117,7 +114,7 @@ export default function SideNav() {
                         </ul>
                     </li>
 
-                    <li className="mt-10 rounded-2xl bg-white shadow-md">
+                    <li className="mt-8 rounded-2xl bg-white shadow-md">
                         <div className="p-3 bg-gray-500 rounded-t-2xl">
                             <h3 className="text-white"><HashLink to="/projects#project-blender" smooth> Fun with Blender </HashLink></h3>
                         </div>

@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 // Base Custom Button Class
 
 export default function TeamMemberCard({ children, name, designation, contactDetails, ...props }) {

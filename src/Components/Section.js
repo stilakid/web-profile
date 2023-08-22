@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 // Base Custom Button Class
 
 export default function Section({ children, title, bgColor, borderColor, textColor, ...props }) {

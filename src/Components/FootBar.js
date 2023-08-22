@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 // Ionicon
 import { IonIcon} from '@ionic/react';
 import { logoGithub, logoInstagram, logoFacebook, logoLinkedin, mail } from 'ionicons/icons';
@@ -11,7 +8,7 @@ import { logoGithub, logoInstagram, logoFacebook, logoLinkedin, mail } from 'ion
 
 export default function FootBar({ children, className, ...props }) {
     return (
-        <footer className={`flex flex-col justify-center items-center bg-orange-400 p-10 w-full ${className}}`}>
+        <footer className={`flex flex-col justify-center items-center bg-primary-darker text-neutral-pale p-10 w-full ${className}}`}>
             <div className='mb-2 flex flex-row justify-center items-center'>
                 <a className='mx-2' target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/juben.rana"><IonIcon icon={logoFacebook} className="text-3xl" /></a>
                 <a className='mx-2' target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/juben_rana/"><IonIcon icon={logoInstagram} className="text-3xl" /></a>
