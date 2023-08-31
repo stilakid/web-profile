@@ -26,11 +26,31 @@ module.exports = {
         // Miscellaneous
         'neutral-disabled': '#7B7B7B', // opacity: 40%
         'neutral-hover': '#000000', // opacity: 7%
-        'old-primary': 'orange-400'
+        'old-primary': 'orange-400',
+        // Backgrounds
+        'light-background': 'rgb(238 238 238)',
+        // wallus
+        'wallus-left': '#0c1d3c',
+        'wallus-right': '#1D4590',
+        // cms
+        'cms-left': '#002830',
+        'cms-right': '#036078',
+        // bunny world
+        'bunny-left': '#22004a',
+        'bunny-right': '#4a00a1',
+        // web profile
+        'webprofile-left': '#192024',
+        'webprofile-right': '#3b4e58',
+        // carta
+        'carta-left': '#390512',
+        'carta-right': '#860d2a',
+        // blender
+        'blender-left': '#3c1e00',
+        'blender-right': '#b95d00',
       }
     },
     fontFamily: {
-      // 'sans': ['Helvetica Neue'],
+      'sans': ['Segoe UI'],
     },
   },
   plugins: [

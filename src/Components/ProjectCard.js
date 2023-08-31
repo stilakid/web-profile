@@ -8,7 +8,7 @@ import { useSpring, animated } from "@react-spring/web";
 
 
 // the children is the extra stuff you want to show when someone clicks on the card.
-export default function ProjectCard({ id, title, date, image, imageAlt, summary, backgroundColor, textColor, borderColor, className, to}) {
+export default function ProjectCard({ title, date, image, imageAlt, summary, colorInfo, className, to}) {
 
     // For Card    
     const [mouseIsHovering, setMouseIsHovering] = useState(false);
@@ -16,15 +16,20 @@ export default function ProjectCard({ id, title, date, image, imageAlt, summary,
         scale: mouseIsHovering ? 1.01 : 1
     });
 
+    const backgroundColor = colorInfo.background;
+    const borderColor = colorInfo.border;
+    const textColor = colorInfo.text;
+    const cardColor = colorInfo.card;
+
 
     return (
             <Link className={`${className}`} to={to} >
                 <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className='flex' >
 
-                    <div id={id} className={`flex flex-col-reverse sm:flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`}>
+                    <div className={`flex flex-col-reverse sm:flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`}>
                         <div className="flex flex-col sm:w-1/2 md:w-7/12 lg:w-1/2 xl:w-7/12 pr-5">
                             <h1 className="xl:text-4xl font-bold tracking-wide">{ title }</h1>
-                            <h4 className='text-gray-200 mb-5'>{ date }</h4>
+                            <h5 className='text-gray-200 mb-5'>{ date }</h5>
                             { summary }
                         </div>
 
@@ -35,6 +40,5 @@ export default function ProjectCard({ id, title, date, image, imageAlt, summary,
 
                 </animated.div>  
             </Link>
-                              
     );
 }

@@ -8,21 +8,15 @@ import ProjectCard from '../../../Components/ProjectCard';
 
 export default function WallusCard({ className,}) {
 
-    const wallusColor = data.projects.wallus.color.background;
-    const wallusBorder = data.projects.wallus.color.border;
-    const wallusTextColor = data.projects.wallus.color.text;
-
     return (
         <ProjectCard
-            id="project-wallus"
             className={className}
-            to='/projects/wallus'
-            title="Wallus: Your Personal Finance App"
-            date="Dec 09 2022"
+            to={data.projects.wallus.url}
+            title={data.projects.wallus.title}
+            date={data.projects.wallus.date}
             image={images.project.wallus.preview}
             imageAlt="This is an image"
-            backgroundColor={wallusColor}
-            textColor={wallusTextColor}
+            colorInfo={data.projects.wallus.color}
             summary={
                 <>
                     <p className="mb-3 xl:text-lg">

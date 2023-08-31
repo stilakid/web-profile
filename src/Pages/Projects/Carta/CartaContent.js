@@ -9,7 +9,7 @@ import Section from '../../../Components/Section';
 export {CartaCaption, CartaContent};
 
 
-function CartaCaption({}) {
+function CartaCaption() {
     return(
         <>
             <p>
@@ -20,7 +20,7 @@ function CartaCaption({}) {
 }
 
 
-function CartaContent({}) {
+function CartaContent() {
 
     const PWRColor = data.projects.carta.color.background;
     const PWRBorder = data.projects.carta.color.border;
@@ -36,7 +36,7 @@ function CartaContent({}) {
                 borderColor={PWRBorder}
                 textColor={PWRTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-carta-1a" className="mb-3">
                     Overview
                 </h2>
 
@@ -47,7 +47,7 @@ function CartaContent({}) {
                     best practices and pedagogy useful for improving the effectiveness of information delivery based on the instructor’s vocal profile.
                 </p>
 
-                <h2 className="mb-3">
+                <h2 id="project-carta-1b" className="mb-3">
                     Rationale
                 </h2>
 
@@ -93,7 +93,7 @@ function CartaContent({}) {
                 borderColor={PWRBorder}
                 textColor={PWRTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-carta-2a" className="mb-3">
                     Data Collection
                 </h2>
 
@@ -117,7 +117,7 @@ function CartaContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-carta-2b" className="mb-3">
                     Data Analysis
                 </h2>
 
@@ -289,7 +289,7 @@ function CartaContent({}) {
                 borderColor={PWRBorder}
                 textColor={PWRTextColor}
             >
-                <h2 className="mb-3"> Results </h2>
+                <h2 id="project-carta-3a" className="mb-3"> Results </h2>
 
                 <p className="mb-3">
                     To summarize all the findings so far, students have identified six 
@@ -314,7 +314,7 @@ function CartaContent({}) {
                 </p>
 
 
-                <h2 className="mb-3"> Reflection </h2>
+                <h2 id="project-carta-3b" className="mb-3"> Reflection </h2>
 
                 <p className="mb-3">
                     This was my first time scrapping a website. The amazing thing about this endeavour is that I was in no way required to do this. After shifting through 

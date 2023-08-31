@@ -1,5 +1,3 @@
-import React from "react"
-
 // Components
 import FootBar from "../../Components/FootBar"
 
@@ -14,8 +12,7 @@ import BlenderCard from './Blender/BlenderCard';
 export default function Projects() {    
 
     return(
-        <>
-                    
+        <>   
             <div className="flex flex-col p-5 bg-neutral-pale ">
                 <div className='flex flex-col lg:flex-row w-full '>
                     <WallusCard className="flex flex-1 m-5" />
@@ -35,7 +32,7 @@ export default function Projects() {
             </div>
 
             
-            <FootBar className='rounded-b-2xl' />
+            <FootBar />
         </>
     )
 }

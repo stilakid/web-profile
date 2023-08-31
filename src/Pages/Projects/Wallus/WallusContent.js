@@ -15,7 +15,7 @@ import { logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore } from 'ioni
 export {WallusCaption, WallusContent};
 
 
-function WallusCaption({}) {
+function WallusCaption() {
     return(
         <>
             <p className="mb-3">
@@ -35,7 +35,7 @@ function WallusCaption({}) {
 }
 
 
-function WallusContent({}) {
+function WallusContent() {
 
     const wallusColor = data.projects.wallus.color.background;
     const wallusBorder = data.projects.wallus.color.border;
@@ -51,7 +51,7 @@ function WallusContent({}) {
                 borderColor={wallusBorder}
                 textColor={wallusTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-wallus-1a" className="mb-3">
                     Overview
                 </h2>
 
@@ -78,7 +78,7 @@ function WallusContent({}) {
                     .
                 </p>
 
-                <h2 className="mb-3">
+                <h2 id="project-wallus-1b" className="mb-3">
                     Vision
                 </h2>
 
@@ -97,7 +97,7 @@ function WallusContent({}) {
                     learning.
                 </p>
 
-                <h2 className="mb-3">
+                <h2 id="project-wallus-1c" className="mb-3">
                     Rationale
                 </h2>
 
@@ -407,7 +407,7 @@ function WallusContent({}) {
                 textColor={wallusTextColor}
             >
 
-                <h2 className="mb-3"> Project Expo </h2>
+                <h2 id="project-wallus-6a" className="mb-3"> Project Expo </h2>
 
                 <p className="mb-6 pb-6 border-b border-black">
                     The developed prototype of Wallus was presented at Stanford's Introduction to Human Computer Interaction Project Expo in December 2022. 
@@ -415,7 +415,7 @@ function WallusContent({}) {
                     was also nominated for several award categories.
                 </p>
 
-                <h2 className="mb-3"> Key Takeaways </h2>
+                <h2 id="project-wallus-6b" className="mb-3"> Key Takeaways </h2>
 
                 <p className="mb-3">
                     In general, being exposed to such a rigorous design process was honestly refreshing and, although arduous at times, very rewarding. 
@@ -474,7 +474,7 @@ function WallusContent({}) {
 
                 
 
-                <h2 className="mb-3 mt-6 pt-6 border-t border-black"> Future Investments </h2>
+                <h2 id="project-wallus-6c" className="mb-3 mt-6 pt-6 border-t border-black"> Future Investments </h2>
 
                 <p className="mb-3">
                     There are many possible future investments that we learned through our Heuristic Evaluations or due to time constraints 

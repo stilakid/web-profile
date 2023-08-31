@@ -1,5 +1,3 @@
-import React from "react"
-
 import images from "../../Assets/Images/images"
 
 // Components

@@ -10,7 +10,7 @@ import VideoAutoPlay from '../../../Components/VideoAutoPlay';
 export {CMSCaption, CMSContent};
 
 
-function CMSCaption({}) {
+function CMSCaption() {
     return(
         <>
             <p>
@@ -21,7 +21,7 @@ function CMSCaption({}) {
 }
 
 
-function CMSContent({}) {
+function CMSContent() {
 
     const CMSColor = data.projects.sura.color.background;
     const CMSBorder = data.projects.sura.color.border;
@@ -68,7 +68,7 @@ function CMSContent({}) {
                 textColor={CMSTextColor}
             >
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2a" className="mb-3">
                         Admin Controls
                     </h2>
 
@@ -94,7 +94,7 @@ function CMSContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2b" className="mb-3">
                         Make New Webpage
                     </h2>
 
@@ -109,7 +109,7 @@ function CMSContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2c" className="mb-3">
                         Edit Webpage
                     </h2>
 
@@ -163,7 +163,7 @@ function CMSContent({}) {
                 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2d" className="mb-3">
                         Navbar Editor
                     </h2>
                     
@@ -191,7 +191,7 @@ function CMSContent({}) {
                 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2e" className="mb-3">
                         Sidebar
                     </h2>
 
@@ -224,7 +224,7 @@ function CMSContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2f" className="mb-3">
                         Section Templates
                     </h2>
 
@@ -262,7 +262,7 @@ function CMSContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2g" className="mb-3">
                         Background Editor
                     </h2>
 
@@ -319,7 +319,7 @@ function CMSContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-cms-2h" className="mb-3">
                         Backend
                     </h2>
 
@@ -341,7 +341,7 @@ function CMSContent({}) {
                 borderColor={CMSBorder}
                 textColor={CMSTextColor}
             >
-                <h2 className="mb-3"> Key Takeaways </h2>
+                <h2 id="project-cms-3a" className="mb-3"> Key Takeaways </h2>
 
                 <p className="mb-3">
                     Since we could not use frameworks like React, implementing basic features were much more challenging and time consuming but I really felt that 

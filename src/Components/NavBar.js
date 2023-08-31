@@ -30,7 +30,9 @@ export default function NavBar() {
     return (
         <div className="sticky top-0 left-0 right-0 z-50 bg-primary-darker bg-opacity-90 backdrop-blur text-neutral-pale flex flex-row items-center justify-center">
             <nav className='flex flex-row h-14 items-center w-full max-w-screen-2xl px-8'>
-                <Link to='/' className='flex-grow p-2 text-xl'>Home</Link>
+                <div className='flex-grow'>
+                    <Link to='/' className='p-2 text-xl'>Home</Link>
+                </div>
 
                 <div className='flex sm:hidden flex-col bg-orange-700 rounded-md hover:cursor-pointer p-2'>
                     <FontAwesomeIcon

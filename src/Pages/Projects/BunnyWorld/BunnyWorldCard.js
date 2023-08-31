@@ -8,23 +8,15 @@ import ProjectCard from '../../../Components/ProjectCard';
 
 export default function BunnyWorldCard({ className }) {
 
-    const bunnyWorldColor = data.projects.bunnyWorld.color.background;
-    const bunnyWorldBorder = data.projects.bunnyWorld.color.border;
-    const bunnyWorldTextColor = data.projects.bunnyWorld.color.text;
-
-
-
     return (
         <ProjectCard
-            id="project-bunny"
             className={className}
-            to='/projects/bunnyworld'
-            title="Bunny World"
-            date="Mar 17 2023"
+            to={data.projects.bunnyWorld.url}
+            title={data.projects.bunnyWorld.title}
+            date={data.projects.bunnyWorld.date}
             image={images.project.bunnyWorld.preview}
             imageAlt="This is an image"
-            backgroundColor={bunnyWorldColor}
-            textColor={bunnyWorldTextColor}
+            colorInfo={data.projects.bunnyWorld.color}
             summary={
                 <>
                     <p className="mb-3">You are trapped in a world of bunnies. Choose your path forward wisely or you may incur the wrath of the bunny of death!</p>

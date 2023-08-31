@@ -1,5 +1,6 @@
 // Components
 import { ToolsButton } from './Button';
+import FootBar from './FootBar';
 
 
 // Ionicon
@@ -13,17 +14,12 @@ export default function ProjectContentTemplate({colorInfo, title, date, caption,
     const textColor = colorInfo.text;
 
     return(
-        <div className='absolute w-full top-0 bottom-0 overflow-y-auto border'>
-            <div className="p-2 sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b border-neutral-regular w-full flex flex-row justify-center">
-                <h1>
-                    Project Details
-                </h1>
-            </div>
+        <div>
+            <div className={`flex items-center flex-grow justify-center ${backgroundColor}`}>
 
-            <div className='p-8'>
-                <div className={`p-5 rounded-t-2xl ${backgroundColor} ${textColor}`}>                
-                    <h1>{ title } </h1>
-                    <h4 className='text-gray-200'>{ date }</h4>
+                <div className={`py-5 px-20 ${textColor} w-full max-w-screen-xl`}>                
+                    <h1 className='text-4xl font-medium pt-4 pb-2'>{ title } </h1>
+                    <h5 className='text-gray-200'>{ date }</h5>
 
                     {githubUrl &&
                         <div className="flex flex-row">
@@ -32,7 +28,7 @@ export default function ProjectContentTemplate({colorInfo, title, date, caption,
                     }
 
                     {Array.isArray(toolsUsed) && toolsUsed.length > 0 &&
-                        <div className="mb-3">
+                        <div className="my-3">
                             <p>Tools Used: </p>
                             <div className="flex flex-row justify-center items-center flex-wrap">
                                 {toolsUsed.map(tool => (<ToolsButton className="m-2" > {tool} </ToolsButton>))}
@@ -45,12 +41,16 @@ export default function ProjectContentTemplate({colorInfo, title, date, caption,
                     {caption}
 
                 </div>
+            </div>
 
 
-                <div className='rounded-b-2xl border border-t-0 p-5 bg-white text-black'>
+            <div className='flex items-center flex-grow justify-center '>
+                <div className='py-5 px-20 bg-white text-black w-full max-w-screen-xl'>
                     {projectDetails}
                 </div>
             </div>
+
+            <FootBar />
         </div>
     )
 }

@@ -8,7 +8,7 @@ import Section from '../../../Components/Section';
 export {WebProfileCaption, WebProfileContent};
 
 
-function WebProfileCaption({}) {
+function WebProfileCaption() {
     return(
         <>
         </>
@@ -16,7 +16,7 @@ function WebProfileCaption({}) {
 }
 
 
-function WebProfileContent({}) {
+function WebProfileContent() {
 
     const webprofileColor = data.projects.webProfile.color.background;
     const webprofileBorder = data.projects.webProfile.color.border;
@@ -32,9 +32,6 @@ function WebProfileContent({}) {
                 borderColor={webprofileBorder}
                 textColor={webprofileTextColor}
             >
-                {/* <h2 className="mb-3">
-                    Overview
-                </h2> */}
 
                 <p className="mb-3">
                     As a person who borrows quite a chunk of his skills from Front-End development, I wanted to create a web profile from scratch by myself instead of 

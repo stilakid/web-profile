@@ -13,7 +13,7 @@ const ToolsButton = ({ children, className, ...props }) => {
     return(
         <Button
             {...props}
-            className = {`px-3 py-1 rounded-xl bg-black text-xs ${className}`}
+            className = {`px-3 py-1 rounded-xl border border-white text-white text-xs ${className}`}
         >
             {children}
         </Button>

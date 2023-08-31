@@ -18,7 +18,7 @@ import { logoLinkedin, mail } from 'ionicons/icons';
 export {BunnyWorldCaption, BunnyWorldContent};
 
 
-function BunnyWorldCaption({}) {
+function BunnyWorldCaption() {
     return(
         <>
             <p className='mb-3'>
@@ -34,7 +34,7 @@ function BunnyWorldCaption({}) {
 }
 
 
-function BunnyWorldContent({}) {
+function BunnyWorldContent() {
 
     const bunnyWorldColor = data.projects.bunnyWorld.color.background;
     const bunnyWorldBorder = data.projects.bunnyWorld.color.border;
@@ -50,7 +50,7 @@ function BunnyWorldContent({}) {
                 borderColor={bunnyWorldBorder}
                 textColor={bunnyWorldTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1a" className="mb-3">
                     Overview
                 </h2>
 
@@ -68,7 +68,7 @@ function BunnyWorldContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1b" className="mb-3">
                     Page, Objects, and Inventory
                 </h2>
 
@@ -95,7 +95,7 @@ function BunnyWorldContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1c" className="mb-3">
                     Shape Inspector
                 </h2>
 
@@ -106,7 +106,7 @@ function BunnyWorldContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1d" className="mb-3">
                     Dynamic Page Tab
                 </h2>
 
@@ -117,7 +117,7 @@ function BunnyWorldContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1e" className="mb-3">
                     Dynamic Page Tab
                 </h2>
 
@@ -128,7 +128,7 @@ function BunnyWorldContent({}) {
                 </p>
 
 
-                <h2 className="mb-3">
+                <h2 id="project-bunny-1f" className="mb-3">
                     Script Manager
                 </h2>
 
@@ -159,7 +159,7 @@ function BunnyWorldContent({}) {
             >
 
                 <div className='my-6'>
-                    <h2 className="mb-3">
+                    <h2 id="project-bunny-2a" className="mb-3">
                         Scripts
                     </h2>
 
@@ -193,7 +193,7 @@ function BunnyWorldContent({}) {
                     </p>
                 </div>
 
-                <h2 className="mt-9 border-t sm:border-t-0 border-black pt-6">
+                <h2 id="project-bunny-2b" className="mt-9 border-t sm:border-t-0 border-black pt-6">
                     Script Manager UI
                 </h2>
 
@@ -290,7 +290,7 @@ function BunnyWorldContent({}) {
                     />
                 </div>
 
-                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
+                <h2 id="project-bunny-2c" className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     UI Updates Live Programmatically
                 </h2>
 
@@ -354,7 +354,7 @@ function BunnyWorldContent({}) {
                 
                 
 
-                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
+                <h2 id="project-bunny-2d" className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     Eliminates Redundancy
                 </h2>
 
@@ -381,7 +381,7 @@ function BunnyWorldContent({}) {
                 </div>
 
 
-                <h2 className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
+                <h2 id="project-bunny-2e" className='mt-9 border-t sm:border-t-0 border-t border-black pt-6'>
                     Keeps All Scripts Updated
                 </h2>
 
@@ -625,7 +625,7 @@ function BunnyWorldContent({}) {
                 borderColor={bunnyWorldBorder}
                 textColor={bunnyWorldTextColor}
             >
-                <h2 className="mb-3"> Key Takeaways </h2>
+                <h2 id="project-bunny-4a" className="mb-3"> Key Takeaways </h2>
 
                 <p className="mb-3">
                     This was the second project where I got to work with a team of four or more. This project helped us improve our communication skills within a 

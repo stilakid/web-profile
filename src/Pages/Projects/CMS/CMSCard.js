@@ -8,21 +8,15 @@ import ProjectCard from '../../../Components/ProjectCard';
 
 export default function CMSCard({ className }) {
 
-    const CMSColor = data.projects.sura.color.background;
-    const CMSBorder = data.projects.sura.color.border;
-    const CMSTextColor = data.projects.sura.color.text;
-
     return (
         <ProjectCard
-            id="project-cms"
             className={className}
-            to='/projects/cms'
-            title="Content Management System"
-            date="Mar 23 2022"
+            to={data.projects.sura.url}
+            title={data.projects.sura.title}
+            date={data.projects.sura.date}
             image={images.project.sura.preview}
             imageAlt="This is an image"
-            backgroundColor={CMSColor}
-            textColor={CMSTextColor}
+            colorInfo={data.projects.sura.color}
             summary={
                 <>
                     <p>Want to build a website for your organization but don't want to code it yourself? Use my content managemnt system instead!</p>

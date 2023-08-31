@@ -10,7 +10,7 @@ import BlueLink from '../../../Components/BlueLink';
 export {BlenderCaption, BlenderContent};
 
 
-function BlenderCaption({}) {
+function BlenderCaption() {
     return(
         <>
             <p>
@@ -21,7 +21,7 @@ function BlenderCaption({}) {
 }
 
 
-function BlenderContent({}) {
+function BlenderContent() {
 
     const blenderColor = data.projects.blender.color.background;
     const blenderBorder = data.projects.blender.color.border;
@@ -36,7 +36,7 @@ function BlenderContent({}) {
                 borderColor={blenderBorder}
                 textColor={blenderTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-blender-1a" className="mb-3">
                     Overview
                 </h2>
 
@@ -64,7 +64,7 @@ function BlenderContent({}) {
                 textColor={blenderTextColor}
             >
                 <div className='border-2 p-2 shadow-md rounded-2xl mb-3'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-2a" className='mb-3'>
                         Final Image
                     </h2>
 
@@ -76,7 +76,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-2 shadow-md rounded-2xl mb-3'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-2b" className='mb-3'>
                         Variant A (Different Angle)
                     </h2>
 
@@ -89,7 +89,7 @@ function BlenderContent({}) {
 
                 <div className='flex flex-col sm:flex-row border-2 p-2 shadow-md rounded-2xl mb-3'>
                     <div className='mr-2'>
-                        <h2 className='mb-3'>
+                        <h2 id="project-blender-2c" className='mb-3'>
                             Variant B (No Texture)
                         </h2>
                         
@@ -100,7 +100,7 @@ function BlenderContent({}) {
                     </div>
                     
                     <div className='border-t sm:border-t-0 pt-2 sm:pt-0'>
-                        <h2 className='mb-3'>
+                        <h2 id="project-blender-2d" className='mb-3'>
                             Variant C (No Texture and Volumetric Domain)
                         </h2>
 
@@ -121,7 +121,7 @@ function BlenderContent({}) {
                 borderColor={blenderBorder}
                 textColor={blenderTextColor}
             >
-                <h2 className="mb-3">
+                <h2 id="project-blender-3a" className="mb-3">
                     Inspiration
                 </h2>
 
@@ -133,7 +133,7 @@ function BlenderContent({}) {
 
 
 
-                <h2 className="mb-3">
+                <h2 id="project-blender-3b" className="mb-3">
                     Motivational Images
                 </h2>
                 
@@ -160,7 +160,7 @@ function BlenderContent({}) {
                 textColor={blenderTextColor}
             >
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4a" className='mb-3'>
                         Bridge
                     </h2>
 
@@ -198,7 +198,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4b" className='mb-3'>
                         Asphalt
                     </h2>
 
@@ -262,7 +262,7 @@ function BlenderContent({}) {
                 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4c" className='mb-3'>
                         Road Barrier
                     </h2>
 
@@ -290,7 +290,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4d" className='mb-3'>
                         Streetlights
                     </h2>
 
@@ -318,7 +318,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4e" className='mb-3'>
                         Street Railing
                     </h2>
 
@@ -387,7 +387,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4f" className='mb-3'>
                         Pavement
                     </h2>
 
@@ -419,7 +419,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4g" className='mb-3'>
                         In-road warning lights
                     </h2>
 
@@ -437,7 +437,7 @@ function BlenderContent({}) {
                 </div>
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4h" className='mb-3'>
                         Cars
                     </h2>
 
@@ -498,7 +498,7 @@ function BlenderContent({}) {
                 </div>
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4i" className='mb-3'>
                         Smoke
                     </h2>
 
@@ -541,7 +541,7 @@ function BlenderContent({}) {
 
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4j" className='mb-3'>
                         Fog/Mist
                     </h2>
 
@@ -564,7 +564,7 @@ function BlenderContent({}) {
                 </div>
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4k" className='mb-3'>
                         Rain
                     </h2>
 
@@ -615,7 +615,7 @@ function BlenderContent({}) {
                 </div>
 
                 <div className='border-2 p-5 shadow-md rounded-2xl mb-6'>
-                    <h2 className='mb-3'>
+                    <h2 id="project-blender-4l" className='mb-3'>
                         Sky Dome
                     </h2>
 

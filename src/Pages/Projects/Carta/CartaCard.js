@@ -8,21 +8,15 @@ import ProjectCard from '../../../Components/ProjectCard';
 
 export default function CartaCard({ className }) {
 
-    const PWRColor = data.projects.carta.color.background;
-    const PWRBorder = data.projects.carta.color.border;
-    const PWRTextColor = data.projects.carta.color.text;
-
     return (
         <ProjectCard
-            id="project-carta"
             className={className}
-            to='/projects/carta'
-            title="Scrapping Carta!"
-            date="Mar 10 2022"
+            to={data.projects.carta.url}
+            title={data.projects.carta.title}
+            date={data.projects.carta.date}
             image={images.project.carta.preview}
             imageAlt="This is an image"
-            backgroundColor={PWRColor}
-            textColor={PWRTextColor}
+            colorInfo={data.projects.carta.color}
             summary={
                 <>
                     <p className="mb-3 bg-">

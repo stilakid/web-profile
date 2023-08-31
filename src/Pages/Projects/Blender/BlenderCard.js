@@ -8,21 +8,15 @@ import ProjectCard from '../../../Components/ProjectCard';
 
 export default function BlenderCard({ className }) {
 
-    const blenderColor = data.projects.blender.color.background;
-    const blenderBorder = data.projects.blender.color.border;
-    const blenderTextColor = data.projects.blender.color.text;
-
     return (
         <ProjectCard
-            id="project-blender"
             className={className}
-            to='/projects/blender'
-            title="Fun with Blender"
-            date="Dec 09 2022"
+            to={data.projects.blender.url}
+            title={data.projects.blender.title}
+            date={data.projects.blender.date}
             image={images.project.blender.preview}
             imageAlt="This is an image"
-            backgroundColor={blenderColor}
-            textColor={blenderTextColor}
+            colorInfo={data.projects.blender.color}
             summary={
                 <>
                     <p className="mb-3"> A blender noob recreates a scene you'd expect to see in Need for Speed or Fast and Furious. </p>
