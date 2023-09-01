@@ -8,7 +8,7 @@ import { BlenderCaption, BlenderContent } from "../../Pages/Projects/Blender/Ble
 import Dance from "../../Pages/Hobbies/Dance/Dance";
 import Music from "../../Pages/Hobbies/Music/Music";
 import Rockets from "../../Pages/Hobbies/Rockets/Rockets";
-import VideoEditing from "../../Pages/Hobbies/Video Editing/VideoEditing";
+import VideoEditing from "../../Pages/Hobbies/VideoEditing/VideoEditing";
 
 const data = {
     projects: {
@@ -139,7 +139,7 @@ const data = {
             toolsUsed: ["Blender", "Python", "TurboSquid"],
             navLinks: [
                 [["About this Project", "project-blender-1"], ["Overview", "project-blender-1a"]],
-                [["Rendered Image", "project-blender-2"], ["Final Image", "project-blender-2a"], ["Variant A (Different Angle)", "project-blender-2b"], ["Variant B (No Texture)", "project-blender-2c"] ["Variant C (No Texture and Volumetric Domain)", "project-blender-2d"]],
+                [["Rendered Image", "project-blender-2"], ["Final Image", "project-blender-2a"], ["Variant A (Different Angle)", "project-blender-2b"], ["Variant B (No Texture)", "project-blender-2c"], ["Variant C (No Texture and Volumetric Domain)", "project-blender-2d"]],
                 [["Report", "project-blender-3"], ["Inspiration", "project-blender-3a"], ["Motivational Images", "project-blender-3b"]],
                 [["Assets", "project-blender-4"], ["Bridge", "project-blender-4a"], ["Asphalt", "project-blender-4b"], ["Road Barrier", "project-blender-4c"], ["Streetlights", "project-blender-4d"], ["Street Railing", "project-blender-4e"], ["Pavement", "project-blender-4f"], ["In-road warning lights", "project-blender-4g"], ["Cars", "project-blender-4h"], ["Smoke", "project-blender-4i"], ["Fog/Mist", "project-blender-4j"], ["Rain", "project-blender-4k"], ["Sky Dome", "project-blender-4l"]],
                 [["Outcome & Reflection", "project-blender-5"]]

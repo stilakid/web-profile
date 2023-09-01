@@ -34,7 +34,7 @@ export default function NavBar() {
                     <Link to='/' className='p-2 text-xl'>Home</Link>
                 </div>
 
-                <div className='flex sm:hidden flex-col bg-orange-700 rounded-md hover:cursor-pointer p-2'>
+                <div className='flex sm:hidden flex-col rounded-md hover:cursor-pointer p-2'>
                     <FontAwesomeIcon
                         icon={faBars}
                         onClick={() => setShowMenu(!showMenu)}
@@ -60,14 +60,14 @@ export default function NavBar() {
                             item &&
                             <animated.div
                                 style={style}
-                                className="fixed bg-gray-200 top-0 left-0 w-3/5 h-screen z-50 shadow"
+                                className="fixed bg-primary-darker top-0 left-0 w-3/5 h-screen z-50 shadow"
                             >
                                 <ul className='flex flex-col justify-center items-center'>
                         
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/' className='w-full border-b border-black py-2 hover:bg-black/10' > <span className='text-xl'>Home</span> </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='w-full border-b border-black py-2 hover:bg-black/20' > <span className='text-xl'>Projects</span> </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/skills' className='w-full border-b border-black py-2 hover:bg-black/30' > <span className='text-xl'>Skills</span> </CustomLink>
-                                    <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='w-full border-b border-black py-2 hover:bg-black/40'> <span className='text-xl'>Hobbies</span> </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/' className='w-full border-b border-black py-2 hover:bg-black/30' > <span className='text-xl'>Home</span> </CustomLink>
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/projects' className='w-full border-b border-black py-2 hover:bg-black/30' > <span className='text-xl'>Projects</span> </CustomLink>
+                                    {/* <CustomLink onClick={() => setShowMenu(false)} to='/experiences' className='w-full border-b border-black py-2 hover:bg-black/30' > <span className='text-xl'>Experiences</span> </CustomLink> */}
+                                    <CustomLink onClick={() => setShowMenu(false)} to='/hobbies' className='w-full border-b border-black py-2 hover:bg-black/30'> <span className='text-xl'>Hobbies</span> </CustomLink>
                                 </ul>
                             </animated.div>
                         ))
@@ -77,7 +77,7 @@ export default function NavBar() {
                 <div className='hidden sm:flex flex-row'>
                     <ul className='flex flex-row justify-center items-center'>
                         <CustomLink to='/projects' className='p-2' > Projects </CustomLink>
-                        <CustomLink to='/skills' className='p-2' > Skills </CustomLink>
+                        {/* <CustomLink to='/experiences' className='p-2' > Experiences </CustomLink> */}
                         <CustomLink to='/hobbies' className='p-2'> Hobbies </CustomLink>
                     </ul>
                 </div>

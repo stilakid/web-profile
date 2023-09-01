@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Home from './Pages/Home/Home';
 import Projects from './Pages/Projects/Projects';
-import Skills from './Pages/Skills/Skills';
+import Experiences from './Pages/Experiences/Experiences';
 import Hobbies from './Pages/Hobbies/Hobbies';
 
 // import WallusPage from './Pages/Projects/Wallus/WallusPage';
@@ -23,13 +23,13 @@ import HobbyTemplate from './Pages/Hobbies/HobbyTemplate';
 function App() {
 
   return (
-    <div className='flex flex-col h-screen bg-neutral-pale'>
+    <div className='flex flex-col h-screen overflow-auto bg-neutral-pale'>
       <NavBar/>
       <div className='flex flex-col flex-grow'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/skills' element={<Skills />} />
+          <Route path='/experiences' element={<Experiences />} />
           <Route path='/hobbies' element={<Hobbies />} />
 
           {/* <Route path={data.projects.wallus.url} element={<WallusPage />} />

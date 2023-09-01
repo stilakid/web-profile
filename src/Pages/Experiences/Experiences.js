@@ -1,4 +1,4 @@
-export default function Skills() {
+export default function Experiences() {
     return(
         <div className="flex justify-center items-center h-screen w-screen">
             <h1>

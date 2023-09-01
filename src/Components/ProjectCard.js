@@ -26,9 +26,9 @@ export default function ProjectCard({ title, date, image, imageAlt, summary, col
             <Link className={`${className}`} to={to} >
                 <animated.div onMouseEnter={() => setMouseIsHovering(true)} onMouseLeave={() => setMouseIsHovering(false)} style={{...hoverScaleStyle}} className='flex' >
 
-                    <div className={`flex flex-col-reverse sm:flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-5 ${backgroundColor}`}>
+                    <div className={`flex flex-col-reverse sm:flex-row hover:cursor-pointer border ${borderColor} rounded-2xl shadow-md ${textColor} p-8 ${backgroundColor}`}>
                         <div className="flex flex-col sm:w-1/2 md:w-7/12 lg:w-1/2 xl:w-7/12 pr-5">
-                            <h1 className="xl:text-4xl font-bold tracking-wide">{ title }</h1>
+                            <h1 className="xl:text-4xl font-semibold tracking-wide pb-2">{ title }</h1>
                             <h5 className='text-gray-200 mb-5'>{ date }</h5>
                             { summary }
                         </div>

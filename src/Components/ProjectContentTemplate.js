@@ -45,7 +45,7 @@ export default function ProjectContentTemplate({colorInfo, title, date, caption,
 
 
             <div className='flex items-center flex-grow justify-center '>
-                <div className='py-5 px-20 bg-white text-black w-full max-w-screen-xl'>
+                <div className='pt-5 pb-20 px-20 bg-white text-black w-full max-w-screen-xl'>
                     {projectDetails}
                 </div>
             </div>
