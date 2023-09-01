@@ -4,9 +4,7 @@ import data from "../../Assets/Data/data"
 
 // Components
 import FootBar from "../../Components/FootBar"
-import { Link } from "react-router-dom"
 import HobbyCard from "../../Components/HobbyCard"
-import { to } from "@react-spring/web"
 
 export default function Hobbies() {
     return(

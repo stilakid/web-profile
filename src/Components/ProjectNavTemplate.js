@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import SideNavList from "./SideNavList";
 
 
-export default function ProjectNavTemplate({ colorInfo, sectionLinks=[] }) {
+export default function ProjectNavTemplate({ sectionLinks=[] }) {
     return(
         <nav className="flex flex-col w-full min-h-screen border-r">
             <ul className="pb-10 bg-white h-full flex-grow text-gray-600">
@@ -21,7 +21,7 @@ export default function ProjectNavTemplate({ colorInfo, sectionLinks=[] }) {
                             }
                             <ul className="pl-10">
                                 {section.length > 1 &&
-                                    section.slice(1).map(link => (Array.isArray(link) && link.length >= 2 && <SideNavList colorInfo={colorInfo} href={`#${link[1]}`}> {link[0]} </SideNavList>))
+                                    section.slice(1).map(link => (Array.isArray(link) && link.length >= 2 && <SideNavList href={`#${link[1]}`}> {link[0]} </SideNavList>))
                                 }
                             </ul>
                         </li>

@@ -19,8 +19,6 @@ export default function ProjectCard({ title, date, image, imageAlt, summary, col
     const backgroundColor = colorInfo.background;
     const borderColor = colorInfo.border;
     const textColor = colorInfo.text;
-    const cardColor = colorInfo.card;
-
 
     return (
             <Link className={`${className}`} to={to} >

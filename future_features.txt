@@ -1,4 +1,8 @@
 1/ Link the side nav with the main content for projects so that as you scroll down the content page, 
     the sidebar gets highlighted wherever you are at that moment.
 
-2/ 
+2/ Overcome React Router's drawback of not being able to directly load sub directories.
+
+3/ Redesign hobbies webpages.
+
+4/ Develop Exp webpages.

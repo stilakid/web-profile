@@ -1,13 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 
-export default function SideNavList({children, href, colorInfo}) {
-
-    console.log("color: ", colorInfo);
-
-    const background = colorInfo.background;
-    const border = colorInfo.border;
-    const text = colorInfo.text;
-    const hover = colorInfo.hover;
+export default function SideNavList({children, href}) {
 
     return(
         <li className="flex">

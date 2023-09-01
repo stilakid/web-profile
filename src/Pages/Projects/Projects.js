@@ -8,6 +8,7 @@ import BunnyWorldCard from './BunnyWorld/BunnyWorldCard';
 import WebProfileCard from './WebProfile/WebProfileCard';
 import CartaCard from './Carta/CartaCard';
 import BlenderCard from './Blender/BlenderCard';
+import ModerationCard from "./Moderation/ModerationCard";
 
 export default function Projects() {    
 
@@ -21,7 +22,7 @@ export default function Projects() {
                 
                 <div className='flex flex-col lg:flex-row w-full '>
                     <BunnyWorldCard className="flex flex-1 m-5" />
-                    <WebProfileCard className="flex flex-1 m-5" />
+                    <ModerationCard className="flex flex-1 m-5" />
                 </div>
 
 
@@ -29,6 +30,12 @@ export default function Projects() {
                     <CartaCard className="flex flex-1 m-5" />
                     <BlenderCard className="flex flex-1 m-5" />
                 </div>
+
+                <div className='flex flex-col lg:flex-row w-full '>
+                    <WebProfileCard className="flex flex-1 m-5" />
+                    <div className="flex flex-1 m-5" />
+                </div>
+
             </div>
 
             

@@ -22,7 +22,6 @@ export default function ProjectTemplate() {
         projectDetails = <div className='flex justify-center items-center h-full'> Invalid project ID! Please review the URL! </div>
     } else {
         projectNav = <ProjectNavTemplate
-                        colorInfo={project.color}
                         sectionLinks={project.navLinks}
                     />;
 

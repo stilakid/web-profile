@@ -5,6 +5,7 @@ import { CMSCaption, CMSContent } from "../../Pages/Projects/CMS/CMSContent";
 import { WebProfileCaption, WebProfileContent } from "../../Pages/Projects/WebProfile/WebProfileContent";
 import { CartaCaption, CartaContent } from "../../Pages/Projects/Carta/CartaContent";
 import { BlenderCaption, BlenderContent } from "../../Pages/Projects/Blender/BlenderContent";
+import { ModerationCaption, ModerationContent } from "../../Pages/Projects/Moderation/ModerationContent";
 import Dance from "../../Pages/Hobbies/Dance/Dance";
 import Music from "../../Pages/Hobbies/Music/Music";
 import Rockets from "../../Pages/Hobbies/Rockets/Rockets";
@@ -21,7 +22,6 @@ const data = {
                 background: "bg-gradient-to-r from-wallus-left to-wallus-right",
                 border: "border-blue-900",
                 text: "text-white",
-                card: "bg-gradient-to-r from-wallus-left to-wallus-right"
             },
             githubUrl: "https://github.com/stilakid/CS147-Wallus",
             toolsUsed: ["React Native", "Supabase", "Expo", "Figma", "Adobe Premiere Pro", "Adobe After Effects"],
@@ -46,7 +46,6 @@ const data = {
                 background: "bg-gradient-to-r from-bunny-left to-bunny-right",
                 border: "border-purple-900",
                 text: "text-white",
-                card: "bg-wallus-right"
             },
             githubUrl: null,
             toolsUsed: ["Java", "Android Studio", "SQLite"],
@@ -69,7 +68,6 @@ const data = {
                 background: "bg-gradient-to-r from-cms-left to-cms-right",
                 border: "border-cyan-900",
                 text: "text-white",
-                card: "bg-gradient-to-r from-blue-900 to-blue-700"
             },
             githubUrl: "https://github.com/stilakid/SURA-Content-Management-System",
             toolsUsed: ["Vanilla JS", "MongoDB", "Node.js"],
@@ -91,7 +89,6 @@ const data = {
                 background: "bg-gradient-to-r from-webprofile-left to-webprofile-right",
                 border: "border-gray-700",
                 text: "text-white",
-                card: "bg-gradient-to-r from-blue-900 to-blue-700"
             },
             githubUrl: "https://github.com/stilakid/web-profile",
             toolsUsed: ["React", "Tailwind CSS", "React Spring"],
@@ -111,7 +108,6 @@ const data = {
                 background: "bg-gradient-to-r from-carta-left to-carta-right",
                 border: "border-red-900",
                 text: "text-white",
-                card: "bg-gradient-to-r from-blue-900 to-blue-700"
             },
             githubUrl: "https://github.com/stilakid/PWR2_Carta_Webscrapping.git",
             toolsUsed: ["JavaScript", "Python", "Tampermonkey"],
@@ -133,7 +129,6 @@ const data = {
                 background: "bg-gradient-to-r from-blender-left to-blender-right",
                 border: "border-orange-900",
                 text: "text-white",
-                card: "bg-gradient-to-r from-blue-900 to-blue-700"
             },
             githubUrl: null,
             toolsUsed: ["Blender", "Python", "TurboSquid"],
@@ -146,6 +141,25 @@ const data = {
             ],
             caption: <BlenderCaption />,
             details: <BlenderContent />
+        },
+
+        moderation: {
+            id: "project-moderation",
+            url: "/projects/moderation",
+            title: "CSAM Moderation",
+            date: "Jun 08 2023",
+            color: {
+                background: "bg-gradient-to-r from-moderation-left to-moderation-right",
+                border: "border-moderation-right",
+                text: "text-white",
+            },
+            githubUrl: "https://github.com/stilakid/cs152bots.git",
+            toolsUsed: ["Python", "Pytorch", "PyCharm", "Discord", "Canva"],
+            navLinks: [
+                
+            ],
+            caption: <ModerationCaption />,
+            details: <ModerationContent />
         }
     },
     hobbies: {

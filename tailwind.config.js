@@ -47,6 +47,9 @@ module.exports = {
         // blender
         'blender-left': '#3c1e00',
         'blender-right': '#b95d00',
+        // moderation
+        'moderation-left': '#111b40',
+        'moderation-right': '#243b8a'
       }
     },
     fontFamily: {

@@ -71,6 +71,9 @@ const images = {
             skyDome3: require('./Projects/Blender/sky_dome_3.png'),
             skyDome4: require('./Projects/Blender/sky_dome_4.png'),
         },
+        moderation: {
+            preview: require('./Projects/Blender/preview.png'),
+        }
     },
 
     hobbies: {
