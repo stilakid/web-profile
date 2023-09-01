@@ -14,7 +14,7 @@ export default function BlenderCard({ className }) {
             to={data.projects.blender.url}
             title={data.projects.blender.title}
             date={data.projects.blender.date}
-            image={images.project.blender.preview}
+            image={images.projects.blender.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.blender.color}
             summary={

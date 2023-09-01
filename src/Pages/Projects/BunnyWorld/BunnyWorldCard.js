@@ -14,7 +14,7 @@ export default function BunnyWorldCard({ className }) {
             to={data.projects.bunnyWorld.url}
             title={data.projects.bunnyWorld.title}
             date={data.projects.bunnyWorld.date}
-            image={images.project.bunnyWorld.preview}
+            image={images.projects.bunnyWorld.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.bunnyWorld.color}
             summary={

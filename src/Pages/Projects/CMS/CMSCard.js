@@ -14,7 +14,7 @@ export default function CMSCard({ className }) {
             to={data.projects.sura.url}
             title={data.projects.sura.title}
             date={data.projects.sura.date}
-            image={images.project.sura.preview}
+            image={images.projects.sura.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.sura.color}
             summary={

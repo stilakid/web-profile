@@ -62,7 +62,7 @@ function CartaContent() {
                 </p>
 
                 <figure className='flex flex-col items-center my-6'>
-                    <img className='max-w-3xl' src={images.project.carta.class2021} alt='Students move from class A to class B in 2021' />
+                    <img className='max-w-3xl' src={images.projects.carta.class2021} alt='Students move from class A to class B in 2021' />
                     <figcaption> Think of me as Kevin in the picture above. </figcaption>
                 </figure>
 
@@ -76,7 +76,7 @@ function CartaContent() {
                 </p>
 
                 <figure className='flex flex-col items-center my-6'>
-                    <img className='max-w-3xl' src={images.project.carta.class2022} alt='Students move from class B to class A in 2022' />
+                    <img className='max-w-3xl' src={images.projects.carta.class2022} alt='Students move from class B to class A in 2022' />
                     <figcaption> Stuart is the placeholder for my friend who really loves playing music. </figcaption>
                 </figure>
 
@@ -131,7 +131,7 @@ function CartaContent() {
 
 
                 <div className='flex flex-row justify-center'>
-                    <img src={images.project.carta.graph1} alt='bar graph of vocal features and its occurence in Carta Reviews' />
+                    <img src={images.projects.carta.graph1} alt='bar graph of vocal features and its occurence in Carta Reviews' />
                 </div>
 
 
@@ -158,7 +158,7 @@ function CartaContent() {
 
 
                 <div className='flex flex-row justify-center'>
-                    <img src={images.project.carta.graph2} alt='zoomed in version of bar graph of vocal features and its occurence in Carta Reviews' />
+                    <img src={images.projects.carta.graph2} alt='zoomed in version of bar graph of vocal features and its occurence in Carta Reviews' />
                 </div>
 
 
@@ -205,7 +205,7 @@ function CartaContent() {
 
 
                 <div className='flex flex-row justify-center'>
-                    <img src={images.project.carta.graph3} alt='pie chart of the poll by Stanford students ranking the features of voice they find useful in a teacher with regard to learning.' />
+                    <img src={images.projects.carta.graph3} alt='pie chart of the poll by Stanford students ranking the features of voice they find useful in a teacher with regard to learning.' />
                 </div>
 
 

@@ -14,7 +14,7 @@ export default function CartaCard({ className }) {
             to={data.projects.carta.url}
             title={data.projects.carta.title}
             date={data.projects.carta.date}
-            image={images.project.carta.preview}
+            image={images.projects.carta.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.carta.color}
             summary={

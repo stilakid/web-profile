@@ -1,9 +1,6 @@
 import React from 'react';
 import './tailwind.css';
 
-// Assets
-import data from './Assets/Data/data';
-
 // Router
 import { Route, Routes } from 'react-router-dom';
 
@@ -20,12 +17,13 @@ import Hobbies from './Pages/Hobbies/Hobbies';
 // import BunnyWorldPage from './Pages/Projects/BunnyWorld/BunnyWorldPage';
 // import CartaPage from './Pages/Projects/Carta/CartaPage';
 // import WebProfilePage from './Pages/Projects/WebProfile/WebProfilePage';
-import ProjectTemplate from './Pages/Projects/ProjectsTemplate';
+import ProjectTemplate from './Pages/Projects/ProjectTemplate';
+import HobbyTemplate from './Pages/Hobbies/HobbyTemplate';
 
 function App() {
 
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col h-screen bg-neutral-pale'>
       <NavBar/>
       <div className='flex flex-col flex-grow'>
         <Routes>
@@ -42,6 +40,7 @@ function App() {
           <Route path={data.projects.blender.url} element={<BlenderPage />} /> */}
 
           <Route path='/projects/:id' element={<ProjectTemplate />} />
+          <Route path='/hobbies/:id' element={<HobbyTemplate />} />
 
         </Routes>
       </div>

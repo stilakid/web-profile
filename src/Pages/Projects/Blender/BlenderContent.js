@@ -69,7 +69,7 @@ function BlenderContent() {
                     </h2>
 
                     <figure className='mb-3'>
-                        <img src={images.project.blender.finalImage} alt='Colored cars racing on a bridge at night under the moon.' />
+                        <img src={images.projects.blender.finalImage} alt='Colored cars racing on a bridge at night under the moon.' />
                         <figcaption> Resolution: 1920 by 1080 | Samples: 4096 </figcaption>
                     </figure>
                 </div>
@@ -81,7 +81,7 @@ function BlenderContent() {
                     </h2>
 
                     <figure className='mb-6'>
-                        <img src={images.project.blender.variantA} alt='Colored cars racing on a bridge at night under the moon but from a different angle than before.' />
+                        <img src={images.projects.blender.variantA} alt='Colored cars racing on a bridge at night under the moon but from a different angle than before.' />
                         <figcaption> Resolution: 1920 x 1080 | Samples: 256 </figcaption>
                     </figure>
                 </div>
@@ -94,7 +94,7 @@ function BlenderContent() {
                         </h2>
                         
                         <figure className='mb-6'>
-                            <img src={images.project.blender.variantB} alt='Shaded cars racing on a bridge at night under the moon.' />
+                            <img src={images.projects.blender.variantB} alt='Shaded cars racing on a bridge at night under the moon.' />
                             <figcaption> Resolution: 1920 x 1080 | Samples: 256 </figcaption>
                         </figure>
                     </div>
@@ -105,7 +105,7 @@ function BlenderContent() {
                         </h2>
 
                         <figure className='mb-6'>
-                            <img src={images.project.blender.variantC} alt='Shaded cars racing on a bridge at night under the moon but this one has transparent volumetric domain.' />
+                            <img src={images.projects.blender.variantC} alt='Shaded cars racing on a bridge at night under the moon but this one has transparent volumetric domain.' />
                             <figcaption> Resolution: 1920 x 1080 | Samples: 256 </figcaption>
                         </figure>
                     </div>
@@ -139,14 +139,14 @@ function BlenderContent() {
                 
                 <div className='mb-6 flex flex-row'>
                     <div className='flex flex-col mr-2'>
-                        <img className='mb-2' src={images.project.blender.motivationalImage1} alt='Wet night street with street lamps.' />
-                        <img src={images.project.blender.motivationalImage4} alt='An audi in a city parking lot at night with futuristic stret lamps.' />
+                        <img className='mb-2' src={images.projects.blender.motivationalImage1} alt='Wet night street with street lamps.' />
+                        <img src={images.projects.blender.motivationalImage4} alt='An audi in a city parking lot at night with futuristic stret lamps.' />
                     </div>
 
                     <div className='flex flex-col'>
-                        <img className='mb-2' src={images.project.blender.motivationalImage2} alt='A red cadillac zooming through a bridge in a city with skyscrappers.' />
-                        <img className='mb-2' src={images.project.blender.motivationalImage3} alt='A car facing you with its headlights on under the dazling night sky painted by the milky way galaxy.' />
-                        <img src={images.project.blender.motivationalImage5} alt='A wavy bridge illuminated almost entirely with bluish light.' />
+                        <img className='mb-2' src={images.projects.blender.motivationalImage2} alt='A red cadillac zooming through a bridge in a city with skyscrappers.' />
+                        <img className='mb-2' src={images.projects.blender.motivationalImage3} alt='A car facing you with its headlights on under the dazling night sky painted by the milky way galaxy.' />
+                        <img src={images.projects.blender.motivationalImage5} alt='A wavy bridge illuminated almost entirely with bluish light.' />
                     </div>
                 </div>
                 
@@ -165,7 +165,7 @@ function BlenderContent() {
                     </h2>
 
                     <div className='flex flex-col items-center'>
-                        <img className='xl:max-w-3xl' src={images.project.blender.bridge1} alt='My bridge model.' />
+                        <img className='xl:max-w-3xl' src={images.projects.blender.bridge1} alt='My bridge model.' />
                     </div>
 
                     <div className='flex flex-col items-center'>
@@ -180,7 +180,7 @@ function BlenderContent() {
 
                     <div className='flex flex-col space-y-3 sm:space-y-0 sm:flex-row mb-3'>
                         <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
-                            <img src={images.project.blender.bridge2} alt='Closer view of my bridge model focusing on the side of the bridge.' />
+                            <img src={images.projects.blender.bridge2} alt='Closer view of my bridge model focusing on the side of the bridge.' />
                         </div>
 
                         <div className='sm:w-1/2 flex flex-col justify-center'>
@@ -202,7 +202,7 @@ function BlenderContent() {
                         Asphalt
                     </h2>
 
-                    <img src={images.project.blender.asphalt1} alt='The road I made in blender as seen from high above.' />
+                    <img src={images.projects.blender.asphalt1} alt='The road I made in blender as seen from high above.' />
 
                     <div className='flex flex-col items-center'>
                         <p className='my-6'>
@@ -212,7 +212,7 @@ function BlenderContent() {
 
                     <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-6'>
                         <div className='sm:w-1/2 mr-2 flex flex-col justify-center'>
-                            <img src={images.project.blender.asphalt2} alt='Super close view of the road I made in blender seen from an angle, i.e., not from directly above the road.' />
+                            <img src={images.projects.blender.asphalt2} alt='Super close view of the road I made in blender seen from an angle, i.e., not from directly above the road.' />
                         </div>
 
                         <div className='sm:w-1/2 flex flex-col justify-center'>
@@ -246,7 +246,7 @@ function BlenderContent() {
                         </div>
 
                         <div className='sm:w-1/2 flex flex-col justify-center'>
-                            <img src={images.project.blender.asphalt3} alt='View of the road I made in blender from a closer distance taken from directly above the road.' />
+                            <img src={images.projects.blender.asphalt3} alt='View of the road I made in blender from a closer distance taken from directly above the road.' />
                         </div>
 
                     </div>
@@ -257,7 +257,7 @@ function BlenderContent() {
                         </p>
                     </div>
 
-                    <img src={images.project.blender.asphalt4} alt='The shader editor for the road texture in Blender.' />
+                    <img src={images.projects.blender.asphalt4} alt='The shader editor for the road texture in Blender.' />
                 </div>
                 
 
@@ -283,7 +283,7 @@ function BlenderContent() {
                         </div>
 
                         <div className='sm:w-1/2'>
-                            <img src={images.project.blender.barrier} alt='The road barrier I made in blender.' />
+                            <img src={images.projects.blender.barrier} alt='The road barrier I made in blender.' />
                         </div>
                     </div>
                 </div>
@@ -310,8 +310,8 @@ function BlenderContent() {
                         </div>
 
                         <div className='sm:w-5/12 flex flex-row items-center'>
-                            <img className='max-h-80' src={images.project.blender.streetlight1} alt='The double streetlight model I used in blender.' />
-                            <img className='max-h-80' src={images.project.blender.streetlight2} alt='The single streetlight model I used in blender.' />
+                            <img className='max-h-80' src={images.projects.blender.streetlight1} alt='The double streetlight model I used in blender.' />
+                            <img className='max-h-80' src={images.projects.blender.streetlight2} alt='The single streetlight model I used in blender.' />
                         </div>
                     </div>
                 </div>
@@ -324,7 +324,7 @@ function BlenderContent() {
 
                     <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
                         <div className='sm:w-1/2 mr-3 flex flex-col justify-center'>
-                            <img src={images.project.blender.streetRailing} alt='The model of the street railing I made.' />
+                            <img src={images.projects.blender.streetRailing} alt='The model of the street railing I made.' />
                         </div>
 
                         <div className='sm:w-1/2 flex flex-col justify-center'>
@@ -407,11 +407,11 @@ function BlenderContent() {
 
                     <div className='flex flex-col sm:flex-row space-y-3 sm:space-y-0 mb-3'>
                         <div className='sm:w-1/2 sm:mr-3'>
-                            <img src={images.project.blender.pavement2} alt='Further view of the texture of the pavement on the bridge in my model.' />
+                            <img src={images.projects.blender.pavement2} alt='Further view of the texture of the pavement on the bridge in my model.' />
                         </div>
 
                         <div className='sm:w-1/2'>
-                            <img src={images.project.blender.pavement1} alt='The texture of the pavement on the bridge in my model.' />
+                            <img src={images.projects.blender.pavement1} alt='The texture of the pavement on the bridge in my model.' />
                         </div>
                     </div>
 
@@ -431,7 +431,7 @@ function BlenderContent() {
                         </div>
 
                         <div className='sm:w-1/2'>
-                            <img src={images.project.blender.embeddedRoadLight} alt='The model of the simple embedded road light I made.' />
+                            <img src={images.projects.blender.embeddedRoadLight} alt='The model of the simple embedded road light I made.' />
                         </div>
                     </div>
                 </div>
@@ -461,7 +461,7 @@ function BlenderContent() {
                         </div>
 
                         <div className='sm:w-1/3'>
-                            <img src={images.project.blender.car1} alt='The model of the green Audi I used in this project.' />
+                            <img src={images.projects.blender.car1} alt='The model of the green Audi I used in this project.' />
                         </div>
                     </div>
 
@@ -480,7 +480,7 @@ function BlenderContent() {
                         </p>
                     </div>                    
 
-                    <img src={images.project.blender.car2} alt='The model of the black Audi, red Bugatti, and the blue Nissan I used in this project.' />
+                    <img src={images.projects.blender.car2} alt='The model of the black Audi, red Bugatti, and the blue Nissan I used in this project.' />
                     
                     <div className='flex flex-col items-center'>
                         <p className='mb-3'>
@@ -503,7 +503,7 @@ function BlenderContent() {
                     </h2>
 
                     <div className='flex justify-center items-center'>
-                        <img className='xl:max-w-3xl' src={images.project.blender.smoke1} alt='Smoke from the tyres of a drifting Nissan being simulated.' />
+                        <img className='xl:max-w-3xl' src={images.projects.blender.smoke1} alt='Smoke from the tyres of a drifting Nissan being simulated.' />
                     </div>
 
                     <div className='my-6 flex flex-col items-center'>
@@ -521,7 +521,7 @@ function BlenderContent() {
                     </div>
  
                     <div className='flex justify-center items-center'>
-                        <img className='xl:max-w-2xl' src={images.project.blender.smoke2} alt='Comparison of smoke simulation made with different settings.' />
+                        <img className='xl:max-w-2xl' src={images.projects.blender.smoke2} alt='Comparison of smoke simulation made with different settings.' />
                     </div>
 
                     <div className='my-6 flex flex-col items-center'>
@@ -551,10 +551,10 @@ function BlenderContent() {
 
                     <div className='flex flex-row mb-3'>
                         <div className='w-1/2 mr-3 flex justify-center items-center'>
-                            <img className='max-h-60' src={images.project.blender.mist1} alt='The mist simulation near a streetlight.' />
+                            <img className='max-h-60' src={images.projects.blender.mist1} alt='The mist simulation near a streetlight.' />
                         </div>
                         <div className='w-1/2 flex justify-center items-center'>
-                            <img className='max-h-60' src={images.project.blender.mist2} alt='Another shot of the mist simulation near another streetlight.' />
+                            <img className='max-h-60' src={images.projects.blender.mist2} alt='Another shot of the mist simulation near another streetlight.' />
                         </div>
                     </div>
 
@@ -601,10 +601,10 @@ function BlenderContent() {
                         </div>
                         <div className='flex flex-row mb-3 items-center'>
                             <div className='mr-3 flex justify-center items-center'>
-                                <img className='max-h-96' src={images.project.blender.rain1} alt='Rain simulation with textures.' />
+                                <img className='max-h-96' src={images.projects.blender.rain1} alt='Rain simulation with textures.' />
                             </div>
                             <div className='flex justify-center items-center'>
-                                <img className='max-h-96' src={images.project.blender.rain2} alt='Rain simulation without textures.' />
+                                <img className='max-h-96' src={images.projects.blender.rain2} alt='Rain simulation without textures.' />
                             </div>
                         </div>
                     </div>
@@ -635,7 +635,7 @@ function BlenderContent() {
                             </p>
                         </div>
                         <div className='sm:w-1/2 flex flex-col justify-center'>
-                            <img src={images.project.blender.skyDome1} alt='Sky dome made in this project as seen from outside the dome.' />
+                            <img src={images.projects.blender.skyDome1} alt='Sky dome made in this project as seen from outside the dome.' />
                         </div>
                     </div>
 
@@ -650,11 +650,11 @@ function BlenderContent() {
                     </div>
                     
                     <div className='flex flex-row mb-6 flex-wrap justify-center items-center space-x-2 space-y-2'>
-                        <img className=' max-h-72' src={images.project.blender.skyDome2} alt='Sky dome made in this project as seen from inside the dome, featuring the moon.' />
+                        <img className=' max-h-72' src={images.projects.blender.skyDome2} alt='Sky dome made in this project as seen from inside the dome, featuring the moon.' />
 
-                        <img className=' max-h-72' src={images.project.blender.skyDome3} alt='Another perspective of the sky dome made in this project as seen from inside the dome, featuring a closer shot of the moon.' />
+                        <img className=' max-h-72' src={images.projects.blender.skyDome3} alt='Another perspective of the sky dome made in this project as seen from inside the dome, featuring a closer shot of the moon.' />
 
-                        <img className=' max-h-72' src={images.project.blender.skyDome4} alt='Yet another perspective of the sky dome made in this project as seen from inside the dome, featuring the stars.' />
+                        <img className=' max-h-72' src={images.projects.blender.skyDome4} alt='Yet another perspective of the sky dome made in this project as seen from inside the dome, featuring the stars.' />
 
                     </div>
                 </div>

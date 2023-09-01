@@ -14,7 +14,7 @@ export default function WallusCard({ className,}) {
             to={data.projects.wallus.url}
             title={data.projects.wallus.title}
             date={data.projects.wallus.date}
-            image={images.project.wallus.preview}
+            image={images.projects.wallus.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.wallus.color}
             summary={

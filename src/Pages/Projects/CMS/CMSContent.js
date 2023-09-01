@@ -43,7 +43,7 @@ function CMSContent() {
                 </p>
 
                 <VideoAutoPlay className='rounded-2xl'>
-                    <source src={videos.project.sura.cms_1} type="video/mp4"/>
+                    <source src={videos.projects.sura.cms_1} type="video/mp4"/>
                 </VideoAutoPlay>
 
                 <p className="mb-3">
@@ -79,7 +79,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_2} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_2} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className="mb-3">
@@ -99,7 +99,7 @@ function CMSContent() {
                     </h2>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_3} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_3} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className="mb-3">
@@ -122,7 +122,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_4} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_4} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className='mb-3'>
@@ -131,7 +131,7 @@ function CMSContent() {
 
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_20} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_20} type="video/mp4"/>
                     </VideoAutoPlay>
 
 
@@ -140,7 +140,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_11} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_11} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className="mb-3">
@@ -156,7 +156,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_19} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_19} type="video/mp4"/>
                     </VideoAutoPlay>
                 </div>
 
@@ -174,7 +174,7 @@ function CMSContent() {
                     </p>
                     
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_17} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_17} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className="mb-3">
@@ -207,7 +207,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_18} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_18} type="video/mp4"/>
                     </VideoAutoPlay>
 
 
@@ -217,7 +217,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_16} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_16} type="video/mp4"/>
                     </VideoAutoPlay>
                 </div>
 
@@ -239,7 +239,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_8} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_8} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className='mb-3'>
@@ -247,7 +247,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_9} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_9} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className='mb-3'>
@@ -256,7 +256,7 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_10} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_10} type="video/mp4"/>
                     </VideoAutoPlay>
                 </div>
 
@@ -280,11 +280,11 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_12} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_12} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_13} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_13} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className="mb-3">
@@ -294,17 +294,17 @@ function CMSContent() {
                     </p>
 
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_5} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_5} type="video/mp4"/>
                     </VideoAutoPlay>
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_7} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_7} type="video/mp4"/>
                     </VideoAutoPlay>
 
                     <p className='mb-3'>
                         However, for the page background, you can also add videos!
                     </p>
                     <VideoAutoPlay className='rounded-2xl'>
-                        <source src={videos.project.sura.cms_6} type="video/mp4"/>
+                        <source src={videos.projects.sura.cms_6} type="video/mp4"/>
                     </VideoAutoPlay>
 
 

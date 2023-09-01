@@ -216,7 +216,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_1} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_1} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -226,7 +226,7 @@ function BunnyWorldContent() {
                         part1={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_2} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_2} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -264,7 +264,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_3} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_3} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -274,7 +274,7 @@ function BunnyWorldContent() {
                         part1={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_4} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_4} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -308,7 +308,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_5} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_5} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -318,7 +318,7 @@ function BunnyWorldContent() {
                         part1={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_6} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_6} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -345,7 +345,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_7} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_7} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -363,7 +363,7 @@ function BunnyWorldContent() {
                         part1={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_8} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_8} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -401,7 +401,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_9} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_9} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -411,7 +411,7 @@ function BunnyWorldContent() {
                         part1={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_10} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_10} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }
@@ -438,7 +438,7 @@ function BunnyWorldContent() {
                         part2={
                             <>
                                 <VideoAutoPlay className='rounded-2xl'>
-                                    <source src={videos.project.bunnyWorld.scriptManager_11} type="video/mp4"/>
+                                    <source src={videos.projects.bunnyWorld.scriptManager_11} type="video/mp4"/>
                                 </VideoAutoPlay>
                             </>
                         }

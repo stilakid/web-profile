@@ -14,7 +14,7 @@ export default function WebProfileCard({ className }) {
             to={data.projects.webProfile.url}
             title={data.projects.webProfile.title}
             date={data.projects.webProfile.date}
-            image={images.project.webProfile.preview}
+            image={images.projects.webProfile.preview}
             imageAlt="This is an image"
             colorInfo={data.projects.webProfile.color}
             summary={

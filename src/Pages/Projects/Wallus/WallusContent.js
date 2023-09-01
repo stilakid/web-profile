@@ -249,7 +249,7 @@ function WallusContent() {
                                 <p>
                                     Scan the QR code to the below with your mobile device.
                                 </p>
-                                <img className="w-48" src={images.project.wallus.qrCode} alt="QR Code for Expo Go App: Wallus" />
+                                <img className="w-48" src={images.projects.wallus.qrCode} alt="QR Code for Expo Go App: Wallus" />
                             </li>
                             <li>
                                 <p>
