@@ -19,9 +19,9 @@ export default function BunnyWorldCard({ className }) {
             colorInfo={data.projects.bunnyWorld.color}
             summary={
                 <>
-                    <p className="mb-3">You are trapped in a world of bunnies. Choose your path forward wisely or you may incur the wrath of the bunny of death!</p>
+                    <p className="mb-3 xl:text-lg">You are trapped in a world of bunnies. Choose your path forward wisely or you may incur the wrath of the bunny of death!</p>
 
-                    <p>Was the game too easy? Come build your own 2D game with our Bunny World Game Editor! You can do all of that from the comfort of your android device!</p>
+                    <p className="xl:text-lg">Was the game too easy? Come build your own 2D game with our Bunny World Game Editor! You can do all of that from the comfort of your android device!</p>
                 </>
             }
         />

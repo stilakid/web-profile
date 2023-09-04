@@ -18,6 +18,10 @@ export {ModerationCaption, ModerationContent};
 function ModerationCaption() {
     return(
         <>
+            <p>
+                This app was developed as part the final group project for 
+                Stanford's <em>CS152: Trust and Safety Engineering</em>.
+            </p>
         </>
     )
 }

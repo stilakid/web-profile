@@ -19,12 +19,12 @@ export default function CartaCard({ className }) {
             colorInfo={data.projects.carta.color}
             summary={
                 <>
-                    <p className="mb-3 bg-">
+                    <p className="mb-3 xl:text-lg">
                         I was investigating how the voice of an instructor can affect the experience of their students, but I needed data. 
                         Massive amounts of data that I coldn't get my hands on normally.
                     </p>
 
-                    <p>
+                    <p className="xl:text-lg">
                         Oh what better way is there to infer that than scrapping Carta's entire repository of student feedbacks from Stanford University!
                     </p>
                 </>

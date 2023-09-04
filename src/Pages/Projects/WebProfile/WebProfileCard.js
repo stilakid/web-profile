@@ -19,7 +19,7 @@ export default function WebProfileCard({ className }) {
             colorInfo={data.projects.webProfile.color}
             summary={
                 <>
-                    <p>Oh look! It's my webprofile, but you're already on it... Wanna see how I made it? Click me!</p>
+                    <p className="xl:text-lg">Oh look! It's my webprofile, but you're already on it... Wanna see how I made it? Click me!</p>
                 </>
             }
         />

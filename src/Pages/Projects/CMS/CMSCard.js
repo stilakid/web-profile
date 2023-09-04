@@ -19,7 +19,7 @@ export default function CMSCard({ className }) {
             colorInfo={data.projects.sura.color}
             summary={
                 <>
-                    <p>Want to build a website for your organization but don't want to code it yourself? Use my content managemnt system instead!</p>
+                    <p className="xl:text-lg">Want to build a website for your organization but don't want to code it yourself? Use my content managemnt system instead!</p>
                 </>
             }
         />
