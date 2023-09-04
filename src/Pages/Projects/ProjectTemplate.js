@@ -66,7 +66,7 @@ const RightPane = ({ content }) => (
 
 const ScrollableAreaWithHeader = ({ header, children }) => (
     <div className='absolute w-full top-0 bottom-0 overflow-y-auto'>
-        <div className="p-2 shadow-2xl sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b border-neutral-regular w-full flex flex-row justify-center">
+        <div className="p-2 shadow-2xl sticky top-0 bg-white bg-opacity-50 backdrop-blur border-b border-neutral-regular w-full flex flex-row justify-center z-40">
             <h3>
                 {header}
             </h3>

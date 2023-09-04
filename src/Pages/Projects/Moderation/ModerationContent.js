@@ -4,6 +4,12 @@ import images from '../../../Assets/Images/images';
 
 // Components
 import Section from '../../../Components/Section';
+import TeamMemberCard from '../../../Components/TeamMemberCard';
+import BlueLink from '../../../Components/BlueLink';
+
+// Ionicon
+import { IonIcon} from '@ionic/react';
+import { logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore } from 'ionicons/icons';
 
 
 export {ModerationCaption, ModerationContent};
@@ -266,7 +272,7 @@ function ModerationContent() {
                 </h2>
 
                 <div className="flex justify-center mb-6 pb-6 border-b sm:border-b-0 border-black">
-                    <img className="w-full max-w-5xl" src={images.projects.moderation.moderation3} alt="User reporting flow" />
+                    <img className="w-full max-w-3xl" src={images.projects.moderation.moderation4} alt="Moderator flow" />
                 </div>
 
                 <h2 id="project-moderation-3c" className="mb-3">
@@ -274,7 +280,7 @@ function ModerationContent() {
                 </h2>
 
                 <div className="flex justify-center mb-6 pb-6 border-b sm:border-b-0 border-black">
-                    <img className="w-full max-w-3xl" src={images.projects.moderation.moderation4} alt="Moderator flow" />
+                    <img className="w-full max-w-5xl" src={images.projects.moderation.moderation3} alt="User reporting flow" />
                 </div>
 
 
@@ -375,12 +381,166 @@ function ModerationContent() {
 
             <Section
                 id="project-moderation-5"
+                title="Our Team"
+                bgColor={moderationColor}
+                borderColor={moderationBorder}
+                textColor={moderationTextColor}
+            >
+                <TeamMemberCard
+                    name="Adam Joseph Lambert"
+                    designation="Stanford Class of 2025"
+                    contactDetails={
+                        <>
+                            <div className="flex flex-row">
+                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/adam-lambert-3b2b0619a" >
+                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                </a>
+                                <a href = "mailto: sfadam@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>Backend Architect: Designed the logic for storing and processing reports</em></p></li>
+                        <li><p><em>Built an efficient data structure using hash map for storing large volumes of user-reports</em></p></li>
+                        <li><p><em>Co-Designed Moderator Flow</em></p></li>
+                        <li><p><em>Wrote scripts for automatic project deployment on Google Compute Engine</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+
+                <TeamMemberCard
+                    name="Chris Davalos"
+                    designation=""
+                    contactDetails={
+                        <>
+                            <div className="flex flex-row">
+                                <a href = "mailto: cdavalos@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>Co-Designed User Reporting Flow</em></p></li>
+                        <li><p><em>Did porject write-ups</em></p></li>
+                        <li><p><em>Designed poster for expo</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+
+                <TeamMemberCard
+                    name="Edward Ciaoyang Huang"
+                    designation="Stanford Class of 2024"
+                    contactDetails={
+                        <>
+                            <div className="flex flex-row">
+                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/edward-huang-93bb751a5" >
+                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                </a>
+                                <a href = "mailto: ehuangc@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>AI Engineer: Trained the Image Classifier</em></p></li>
+                        <li><p><em>Co-Designed Moderator Flow</em></p></li>
+                        <li><p><em>Implemented initial moderator flow</em></p></li>
+                        <li><p><em>Recorded half of final demo</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+
+                <TeamMemberCard
+                    name="Emily Y Chen"
+                    designation="Stanford Class of 2024"
+                    contactDetails={
+                        <>
+                            <div className="flex flex-row">
+                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/emilyychen02" >
+                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                </a>
+                                <a href = "mailto: emilyc02@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>Backend Engineer: Wrote helper functions for backend data structures</em></p></li>
+                        <li><p><em>Co-Designed User Reporting Flow</em></p></li>
+                        <li><p><em>Recorded first demo</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+
+                <TeamMemberCard
+                    name="Juan Daniel Martinez"
+                    designation="Stanford Class of 2024"
+                    contactDetails={
+                        <>
+                            <div className="flex flex-row">
+                                <a href = "mailto: juan2258@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>Did porject write-ups</em></p></li>
+                        <li><p><em>Recorded half of final demo</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+
+                <TeamMemberCard
+                    name="Juben Rana"
+                    designation="Stanford Class of 2024"
+                    contactDetails={
+                        <>
+                            <div>
+                                <BlueLink href="//sites.google.com/view/avikapatel">
+                                        Personal Website
+                                </BlueLink>
+                            </div>
+                            <div className="flex flex-row">
+                                <a target="_blank" rel="noopener noreferrer" href="//linkedin.com/in/jubenrana" >
+                                    <IonIcon icon={logoLinkedin} className="text-2xl" />
+                                </a>
+                                <a href = "mailto: zubenrana@stanford.edu">
+                                    <IonIcon icon={mail} className="text-2xl" />
+                                </a>
+                            </div>
+                        </>
+                    }
+                >
+                    <p>Core Responsibilities</p>
+                    <ul className="list-disc ml-4">
+                        <li><p><em>Backend Engineer: Developed data structures and the logic dictating the flow of data in them.</em></p></li>
+                        <li><p><em>Implemented the final version of Moderator Flow</em></p></li>
+                        <li><p><em>Set-up and deployed project (discord bot, Google Compute Engine, and github repo)</em></p></li>
+                        <li><p><em>Implemented User Flow</em></p></li>
+                        <li><p><em>Edited demo video</em></p></li>
+                    </ul>
+                </TeamMemberCard>
+            </Section>
+
+            <Section
+                id="project-moderation-6"
                 title="Outcome & Reflection"
                 bgColor={moderationColor}
                 borderColor={moderationBorder}
                 textColor={moderationTextColor}
             >
-                <h2 id="project-moderation-5a" className="mb-3">
+                <h2 id="project-moderation-6a" className="mb-3">
                     Project Expo
                 </h2>
 
@@ -447,7 +607,7 @@ function ModerationContent() {
                     </li>
                 </ul>
 
-                <h2 id="project-moderation-5b" className="mb-3">
+                <h2 id="project-moderation-6b" className="mb-3">
                     Looking Forward
                 </h2>
 

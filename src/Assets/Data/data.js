@@ -160,7 +160,8 @@ const data = {
                 [["Policy", "project-moderation-2"], ["Main Policy", "project-moderation-2a"], ["Exceptions", "project-moderation-2b"], ["Policy Violation", "project-moderation-2c"], ["False Reporting Policy", "project-moderation-2d"]],
                 [["Technical Backend", "project-moderation-3"], ["Features", "project-moderation-3a"], ["User Reporting Flow", "project-moderation-3b"], ["Moderator Flow", "project-moderation-3c"], ["Classifier Evaluation", "project-moderation-3d"]],
                 [["Demo", "project-moderation-4"]],
-                [["Outcome & Reflection", "project-moderation-5"], ["Project Expo", "project-moderation-5a"], ["Looking Forward", "project-moderation-5b"]]
+                [["Our Team", "project-moderation-5"]],
+                [["Outcome & Reflection", "project-moderation-6"], ["Project Expo", "project-moderation-6a"], ["Looking Forward", "project-moderation-6b"]]
             ],
             caption: <ModerationCaption />,
             details: <ModerationContent />
