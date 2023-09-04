@@ -9,7 +9,7 @@ import BlueLink from '../../../Components/BlueLink';
 
 // Ionicon
 import { IonIcon} from '@ionic/react';
-import { logoLinkedin, mail, logoAppleAppstore, logoGooglePlaystore } from 'ionicons/icons';
+import { logoLinkedin, mail } from 'ionicons/icons';
 
 
 export {ModerationCaption, ModerationContent};
