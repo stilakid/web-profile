@@ -6,3 +6,5 @@
 3/ Redesign hobbies webpages.
 
 4/ Develop Exp webpages.
+
+5/ Remove black borders for small screen sizes. (it is only there for small screen rn anyway.) The borders are of different length.

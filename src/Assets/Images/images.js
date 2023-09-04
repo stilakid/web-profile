@@ -72,7 +72,9 @@ const images = {
             skyDome4: require('./Projects/Blender/sky_dome_4.png'),
         },
         moderation: {
-            preview: require('./Projects/Blender/preview.png'),
+            preview: require('./Projects/Moderation/preview.png'),
+            moderation1: require('./Projects/Moderation/moderation1.png'),
+            moderation2: require('./Projects/Moderation/moderation2.png'),
         }
     },
 
