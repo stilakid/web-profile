@@ -551,6 +551,11 @@ function ModerationContent() {
                     Trust and Safety team of highly reputed companies based in the Silicon valley.
                 </p>
 
+                <figure className='flex flex-col items-center my-6'>
+                    <img className='max-w-5xl w-full' src={images.projects.moderation.moderation5} alt='??' />
+                    <figcaption> Our poster for the expo </figcaption>
+                </figure>
+
                 <p className="mb-3">
                     
                     The judges were very impressed by our project that strove to do above and 

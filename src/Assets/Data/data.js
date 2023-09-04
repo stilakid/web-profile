@@ -154,7 +154,7 @@ const data = {
                 text: "text-white",
             },
             githubUrl: "https://github.com/stilakid/cs152bots.git",
-            toolsUsed: ["Python", "Pytorch", "PyCharm", "Discord", "Canva"],
+            toolsUsed: ["Python", "Pytorch", "Google Cloud Platform", "PyCharm", "Discord", "Canva"],
             navLinks: [
                 [["About this Project" , "project-moderation-1"], ["Problem Description", "project-moderation-1a"], ["Our Goal", "project-moderation-1b"]],
                 [["Policy", "project-moderation-2"], ["Main Policy", "project-moderation-2a"], ["Exceptions", "project-moderation-2b"], ["Policy Violation", "project-moderation-2c"], ["False Reporting Policy", "project-moderation-2d"]],

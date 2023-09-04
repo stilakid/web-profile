@@ -62,7 +62,7 @@ function CartaContent() {
                 </p>
 
                 <figure className='flex flex-col items-center my-6'>
-                    <img className='max-w-3xl' src={images.projects.carta.class2021} alt='Students move from class A to class B in 2021' />
+                    <img className='max-w-3xl w-full' src={images.projects.carta.class2021} alt='Students move from class A to class B in 2021' />
                     <figcaption> Think of me as Kevin in the picture above. </figcaption>
                 </figure>
 
@@ -76,7 +76,7 @@ function CartaContent() {
                 </p>
 
                 <figure className='flex flex-col items-center my-6'>
-                    <img className='max-w-3xl' src={images.projects.carta.class2022} alt='Students move from class B to class A in 2022' />
+                    <img className='max-w-3xl w-full' src={images.projects.carta.class2022} alt='Students move from class B to class A in 2022' />
                     <figcaption> Stuart is the placeholder for my friend who really loves playing music. </figcaption>
                 </figure>
 
