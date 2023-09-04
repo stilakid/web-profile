@@ -75,6 +75,8 @@ const images = {
             preview: require('./Projects/Moderation/preview.png'),
             moderation1: require('./Projects/Moderation/moderation1.png'),
             moderation2: require('./Projects/Moderation/moderation2.png'),
+            moderation3: require('./Projects/Moderation/moderation3.png'),
+            moderation4: require('./Projects/Moderation/moderation4.png'),
         }
     },
 
