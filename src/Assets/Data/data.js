@@ -6,6 +6,8 @@ import { WebProfileCaption, WebProfileContent } from "../../Pages/Projects/WebPr
 import { CartaCaption, CartaContent } from "../../Pages/Projects/Carta/CartaContent";
 import { BlenderCaption, BlenderContent } from "../../Pages/Projects/Blender/BlenderContent";
 import { ModerationCaption, ModerationContent } from "../../Pages/Projects/Moderation/ModerationContent";
+import { CapsuleCaption, CapsuleContent } from "../../Pages/Projects/Capsule/CapsuleContent";
+import { CS224NCaption, CS224NContent } from "../../Pages/Projects/CS224N/CS224NContent";
 import Dance from "../../Pages/Hobbies/Dance/Dance";
 import Music from "../../Pages/Hobbies/Music/Music";
 import Rockets from "../../Pages/Hobbies/Rockets/Rockets";
@@ -13,6 +15,54 @@ import VideoEditing from "../../Pages/Hobbies/VideoEditing/VideoEditing";
 
 const data = {
     projects: {
+        capsule: {
+            id: "project-capsule",
+            url: "/projects/capsule",
+            title: "Capsule",
+            date: "Mar 11 2024",
+            color: {
+                background: "bg-gradient-to-r from-capsule-left to-capsule-right",
+                border: "border-green-900",
+                text: "text-white",
+            },
+            githubUrl: null,
+            toolsUsed: ["Flutter", "Firebase", "Figma", "Google Cloud Platform"],
+            navLinks: [
+                [["What is Wallus?", "project-wallus-1"], ["Overview", "project-wallus-1a"], ["Vision", "project-wallus-1b"], ["Rationale", "project-wallus-1c"]],
+                [["Concept Video", "project-wallus-2"]],
+                [["Demo", "project-wallus-3"]],
+                [["Try the App!", "project-wallus-4"]],
+                [["Our Team", "project-wallus-5"]],
+                [["Outcome & Reflection", "project-wallus-6"], ["Project Expo", "project-wallus-6a"], ["Key Takeaways", "project-wallus-6b"], ["Future Investments", "project-wallus-6c"]],
+            ],
+            caption: <CapsuleCaption />,
+            details: <CapsuleContent />
+        },
+
+        cs224n: {
+            id: "project-cs224n",
+            url: "/projects/cs224n",
+            title: "Stanford Course & Quarter Classification",
+            date: "Mar 18 2024",
+            color: {
+                background: "bg-gradient-to-r from-cs224n-left to-cs224n-right",
+                border: "border-yellow-900",
+                text: "text-white",
+            },
+            githubUrl: "https://github.com/stilakid/cs224n-project",
+            toolsUsed: ["PyTorch", "BERT", "FLAN-T5", "DistilBERT", "Google Cloud Platform", "Google Colab", "Hugging Face"],
+            navLinks: [
+                [["What is Wallus?", "project-wallus-1"], ["Overview", "project-wallus-1a"], ["Vision", "project-wallus-1b"], ["Rationale", "project-wallus-1c"]],
+                [["Concept Video", "project-wallus-2"]],
+                [["Demo", "project-wallus-3"]],
+                [["Try the App!", "project-wallus-4"]],
+                [["Our Team", "project-wallus-5"]],
+                [["Outcome & Reflection", "project-wallus-6"], ["Project Expo", "project-wallus-6a"], ["Key Takeaways", "project-wallus-6b"], ["Future Investments", "project-wallus-6c"]],
+            ],
+            caption: <CS224NCaption />,
+            details: <CS224NContent />
+        },        
+
         wallus: {
             id: "project-wallus",
             url: "/projects/wallus",

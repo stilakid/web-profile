@@ -25,7 +25,7 @@ function WallusCaption() {
 
             <p>
                 Note: This project has its own website too that contains way more details! <BlueLink.Underline
-                    href="https://web.stanford.edu/class/cs147/projects/SteppingThroughTime/Wallus/index.html"
+                    href="https://hci.stanford.edu/courses/cs147/2022/au/projects/SteppingThroughTime/Wallus/"
                 >
                         Click here
                 </BlueLink.Underline> to check it out.

@@ -7,8 +7,6 @@ module.exports = {
         'black-t-50': 'rgba(0,0,0,0.5)',
       },
       colors: {
-        'wallus-primary-light': '#3F6DE4',
-        'wallus-primary': '#1D4590',
         // Blue Gray
         'primary-darker': '#263238',
         'primary-dark': '#37474F',
@@ -29,6 +27,12 @@ module.exports = {
         'old-primary': 'orange-400',
         // Backgrounds
         'light-background': 'rgb(238 238 238)',
+        // capsule
+        'capsule-left': '#112a0f',
+        'capsule-right': '#3f9a38',
+        // cs224n
+        'cs224n-left': '#474d14',
+        'cs224n-right': '#bccb34',
         // wallus
         'wallus-left': '#0c1d3c',
         'wallus-right': '#1D4590',

@@ -13,6 +13,27 @@ const images = {
     projects: {
         general: {
         },
+        capsule: {
+            preview: require('./Projects/Capsule/preview.jpeg'),
+            prototype1: require('./Projects/Capsule/prototype_1.jpeg'),
+            prototype2: require('./Projects/Capsule/prototype_2.jpeg'),
+            prototype3: require('./Projects/Capsule/prototype_3.jpeg'),
+            prototype4: require('./Projects/Capsule/prototype_4.jpeg'),
+            prototype5: require('./Projects/Capsule/prototype_5.jpeg'),
+            figma1: require('./Projects/Capsule/figma_1.png'),
+            figma2: require('./Projects/Capsule/figma_2.png'),
+        },
+        cs224n: {
+            preview: require('./Projects/CS224N/preview.png'),
+            bert: require('./Projects/CS224N/bert.png'),
+            flan: require('./Projects/CS224N/flan.png'),
+            lstm: require('./Projects/CS224N/lstm.png'),
+            bertLr: require('./Projects/CS224N/lr_bert_bar.png'),
+            distilBertLr: require('./Projects/CS224N/lr_distil_bar.png'),
+            flanLr: require('./Projects/CS224N/lr_flan_bar.png'),
+            bertBatch: require('./Projects/CS224N/batch_bert.png'),
+            flanBatch: require('./Projects/CS224N/batch_flan.png'),
+        },
         wallus: {
             preview: require('./Projects/Wallus/preview.png'),
             qrCode: require('./Projects/Wallus/expo_go_qr_code.svg').default,

@@ -1,3 +1,14 @@
+Note for self
+
+Use 'yarn start' to begin dev server and begin developing.
+- This basically builds the CSS using tailwindCSS and runs 'react-scripts start'
+
+Use 'yarn build' to get production build for use after development.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
