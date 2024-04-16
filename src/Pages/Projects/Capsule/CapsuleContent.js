@@ -36,13 +36,13 @@ function CapsuleContent() {
     return(
         <>
             <Section
-                id="project-wallus-1"
+                id="project-capsule-1"
                 title="What is Capsule?"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-1a" className="mb-3">
                     Introduction
                 </h2>
 
@@ -54,7 +54,7 @@ function CapsuleContent() {
                     they visit the same location in the future.
                 </p>
 
-                <h2 id="project-wallus-1b" className="mb-3">
+                <h2 id="project-capsule-1b" className="mb-3">
                     Background/Context
                 </h2>
 
@@ -66,8 +66,27 @@ function CapsuleContent() {
                     open to FindMy, so we see the feasibility of adoption!
                 </p>
 
-                <h2 id="project-wallus-1c" className="mb-3">
-                    Objective
+                <h2 id="project-capsule-1c" className="mb-3">
+                    Team Goals
+                </h2>
+
+                <p className="mb-3">
+                    As a team, we of course 
+                    wanted to end the quarter with a complete product, but also really 
+                    wanted to learn more about app development (4/5 of us did not have 
+                    substantial app-building experience).
+                </p>
+
+                <p className="mb-6 pb-6 border-b sm:border-b-0 border-black">
+                    As for our app goals other than our aforementioned vision, we wanted 
+                    to build a Pokemon Go-style app that forced users to go out into the 
+                    real world in order to use it. We also realized the potential for 
+                    locations to be a core component of memory creation, and wanted this 
+                    to become the main focus of our app. 
+                </p>
+
+                <h2 id="project-capsule-1d" className="mb-3">
+                    App Objective
                 </h2>
 
                 <ul className="list-disc ml-6 border-b sm:border-b-0 border-black">
@@ -79,42 +98,21 @@ function CapsuleContent() {
                         Building strength of friendships asynchronously
                     </li>
                     
-                    <li className="mb-6 pb-6">
+                    <li className="mb-3">
                         Spontaneous prompting to spark a conversation between friends
                     </li>
                 </ul>
 
-                <h2 id="project-wallus-1c" className="mb-3">
-                    Potential Expansion
-                </h2>
-
-                <ul className="list-disc ml-6 border-b sm:border-b-0 border-black">
-                    <li className="mb-3">
-                        Displaying heat map of where time capsules are around you
-                    </li>
-
-                    <li className="mb-3">
-                        Choosing which friends can see the capsule you are leaving
-                    </li>
-                    
-                    <li className="mb-3">
-                        Using the location data that a user shares, have a heat map of (1) where they travel and (2) where they are leaving capsules on their profile
-                    </li>
-
-                    <li className="mb-6 pb-6">
-                        When a user is near a capsule, they get a notification they are within a distance. From there, they can “scavenger hunt” for the capsule a friend gave with indications they are getting “warmer” or “colder”
-                    </li>
-                </ul>
             </Section>
 
             <Section
-                id="project-wallus-1"
+                id="project-capsule-2"
                 title="Prototype Development"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
-                <h2 id="project-wallus-1b" className="mb-3">
+                <h2 id="project-capsule-2a" className="mb-3">
                     Initial Prototype
                 </h2>
 
@@ -155,7 +153,7 @@ function CapsuleContent() {
                 </div>
 
 
-                <h2 id="project-wallus-1b" className="mb-3">
+                <h2 id="project-capsule-2b" className="mb-3">
                     Figma Prototype
                 </h2>
 
@@ -180,7 +178,7 @@ function CapsuleContent() {
                     </figure>
                 </div>
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-2c" className="mb-3">
                     User Reviews
                 </h2>
 
@@ -200,7 +198,7 @@ function CapsuleContent() {
                     campuses. He also green-lit our prototype.
                 </p>
 
-                <h2 id="project-wallus-1b" className="mb-3">
+                <h2 id="project-capsule-2d" className="mb-3">
                     Reflection
                 </h2>
 
@@ -230,13 +228,13 @@ function CapsuleContent() {
             </Section>
 
             <Section
-                id="project-wallus-1"
+                id="project-capsule-3"
                 title="App Development"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-3a" className="mb-3">
                     Firebase
                 </h2>
 
@@ -258,7 +256,7 @@ function CapsuleContent() {
                     </ul>
                 </p>
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-3b" className="mb-3">
                     Google Cloud Platform
                 </h2>
 
@@ -294,13 +292,13 @@ function CapsuleContent() {
             </Section>
 
             <Section
-                id="project-wallus-1"
+                id="project-capsule-4"
                 title="User Testing"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-4a" className="mb-3">
                     Testing Plan
                 </h2>
 
@@ -440,17 +438,13 @@ function CapsuleContent() {
                 </div>
                 
 
-                <h2 id="project-wallus-1b" className="mb-3">
+                <h2 id="project-capsule-4b" className="mb-3">
                     Actionable Results
                 </h2>
 
                 <p className="mb-3">
                     The following was the feedback we received and our plan for how we would use the feedback we received before user testing.
                 </p>
-
-
-
-
 
                 <div className="p-6 bg-gray-300 rounded-3xl mb-6">
                     <h3 className="mb-3">
@@ -574,21 +568,16 @@ function CapsuleContent() {
                         </li>
                     </ol>
                 </div>
-
-                
-                
-
-
             </Section>
 
             <Section
-                id="project-wallus-1"
+                id="project-capsule-5"
                 title="Measures for Success"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-5a" className="mb-3">
                     KPIs
                 </h2>
 
@@ -641,7 +630,7 @@ function CapsuleContent() {
                 </p>
 
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-capsule-5b" className="mb-3">
                     OKRs
                 </h2>
 
@@ -701,7 +690,7 @@ function CapsuleContent() {
             </Section>            
 
             <Section
-                id="project-wallus-5"
+                id="project-capsule-6"
                 title="Our Team"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
@@ -730,9 +719,10 @@ function CapsuleContent() {
                 >
                     <p>Core Responsibilities</p>
                     <ul className="list-disc ml-4">
-                        <li><p><em>Presentation Lead</em></p></li>
-                        <li><p><em>Front-End App Developer</em></p></li>
-                        <li><p><em>Secured the best project pitch award for our team</em></p></li>
+                        <li><p><em>UI Designer</em></p></li>
+                        <li><p><em>Project Manager</em></p></li>
+                        <li><p><em>Co-developed Gallery and Profile Pages</em></p></li>
+                        <li><p><em>Backend Developer</em></p></li>
                     </ul>
                 </TeamMemberCard>
 
@@ -755,9 +745,9 @@ function CapsuleContent() {
                 >
                     <p>Core Responsibilities</p>
                     <ul className="list-disc ml-4">
-                        <li><p><em>Front-End App Developer</em></p></li>
-                        <li><p><em>Concept Video Director</em></p></li>
-                        <li><p><em>Interviewee Liaison</em></p></li>
+                        <li><p><em>Wrote Firestore API calls</em></p></li>
+                        <li><p><em>Developed Screens and Mechanisms for Sending Capsules</em></p></li>
+                        <li><p><em>Co-designed Database Schema</em></p></li>
                     </ul>
                 </TeamMemberCard>
 
@@ -780,9 +770,9 @@ function CapsuleContent() {
                 >
                     <p>Core Responsibilities</p>
                     <ul className="list-disc ml-4">
-                        <li><p><em>Lead App Designer</em></p></li>
-                        <li><p><em>Front-End App Developer</em></p></li>
-                        <li><p><em>Secured the best poster design award for our team</em></p></li>
+                        <li><p><em>Wrote Firestore and Firebase Cloud Storage API calls</em></p></li>
+                        <li><p><em>Co-designed Database Schema</em></p></li>
+                        <li><p><em>Co-developed Gallery and Profile Pages</em></p></li>
                     </ul>
                 </TeamMemberCard>
 
@@ -810,10 +800,15 @@ function CapsuleContent() {
                 >
                     <p>Core Responsibilities</p>
                     <ul className="list-disc ml-4">
-                        <li><p><em>Lead Full Stack App Developer</em></p></li>
-                        <li><p><em>Website Developer</em></p></li>
-                        <li><p><em>Videographer</em></p></li>
-                        <li><p><em>Video Editor</em></p></li>
+                        <li><p><em>Wrote Google Places and Geocode API calls</em></p></li>
+                        <li><p><em>Developed Authentication Screens and Mechanisms</em></p></li>
+                        <li><p><em>Worked on making Capsules Editable</em></p></li>
+                        <ul className="list-disc ml-6">
+                            <li><p><em>Developed Location Autocomplete text box</em></p></li>
+                            <li><p><em>Worked on Programmatically Editing Image Metadata</em></p></li>
+                        </ul>
+                        <li><p><em>Established App Navigation Flow</em></p></li>
+                        <li><p><em>Set up Project Asset/Resource Management</em></p></li>
                     </ul>
                 </TeamMemberCard>
 
@@ -840,128 +835,116 @@ function CapsuleContent() {
                 >
                     <p>Core Responsibilities</p>
                     <ul className="list-disc ml-4">
-                        <li><p><em>Front-End App Developer</em></p></li>
-                        <li><p><em>Concept Video Director</em></p></li>
-                        <li><p><em>Interviewee Liaison</em></p></li>
+                        <li><p><em>Wrote Google Maps API calls</em></p></li>
+                        <li><p><em>Rendered Google Maps on Home Page</em></p></li>
+                        <li><p><em>Worked on Programmatically placing Capsules on Google Maps</em></p></li>
                     </ul>
                 </TeamMemberCard>
             </Section>
 
             <Section
-                id="project-wallus-6"
+                id="project-capsule-7"
                 title="Outcome & Reflection"
                 bgColor={capsuleColor}
                 borderColor={capsuleBorder}
                 textColor={capsuleTextColor}
             >
 
-                <h2 id="project-wallus-6a" className="mb-3"> Project Expo </h2>
-
-                <p className="mb-6 pb-6 border-b border-black">
-                    The developed prototype of Wallus was presented at Stanford's Introduction to Human Computer Interaction Project Expo in December 2022. 
-                    The expo was judged by dozens of industry experts, and our team received "Best Pitch" and "Best Project Poster" awards. Our concept video 
-                    was also nominated for several award categories.
-                </p>
-
-                <h2 id="project-wallus-6b" className="mb-3"> Key Takeaways </h2>
+                <h2 id="project-capsule-7a" className="mb-3"> App Presentation </h2>
 
                 <p className="mb-3">
-                    In general, being exposed to such a rigorous design process was honestly refreshing and, although arduous at times, very rewarding. 
-                    All of us came into this project from different backgrounds with different skills and specialties, and it was mesmerizing to see this 
-                    project come to life when we put all our different skills together. In essence, this class truly highlighted the value of teamwork.
+                    The app was presented during the senior project presentation in March 2024 where 
+                    it was evaluated by fellow students taking CS194/CS194W, the TAs, and the Professor 
+                    for the class.
                 </p>
 
-                <p className="mb-6">
-                    There was so much to learn throughout this quarter for the design thinking process, the studio theme of time, and the project. 
-                    Some main ones are listed below:
+                <h2 id="project-capsule-7b" className="mb-3 mt-6 pt-6 border-t border-black"> Team Evolution </h2>
+
+                <p className="mb-3">
+                    We initially started out without predefined roles on the team and all 
+                    contributed to the brainstorming process of our app, but we quickly 
+                    settled into our own roles in the team, and each team member developed 
+                    an expertise in certain aspects of the project which made it 
+                    straightforward to divide up work and consult each other when we ran 
+                    into issues while coding.
                 </p>
 
-                <ul className="ml-4">
-                    <li>
-                        <h3 className="mb-3"> Iterative Designing </h3>
+                <p className="mb-3">
+                    If there is anything we failed to implement, it would be some of 
+                    the cool extensions we wanted to add to our project such as the 
+                    heat map that would be generated based on the user’s location data. 
+                    Deepan had already made the algorithm for it.
+                </p>
 
-                        <p className="mb-6">
-                            After going through this class, we learned a lot about the importance of feedback and numerous iterations of a design 
-                            before it can be built. Not until our last round did we realize that our Home page was not built for new users, something 
-                            that one iteration that we were used to could not suffice.
-                        </p>
+                <p className="mb-3">
+                    Being able to deploy the app on Testflight was incredibly powerful 
+                    as it allowed us to seamlessly install the app without having to 
+                    build it for 5-10 minutes and test out our features in real time 
+                    across multiple devices logged into different accounts.
+                </p>
+
+                <p className="mb-3">
+                    It also gave us the ability to provide a robust demo as we could 
+                    invite other users as external testers and allow them to install 
+                    our app and make an account.
+                </p>
+
+                <p className="mb-3">
+                    It was really easy to collaborate with each other, and we all 
+                    became good friends with each other over the course of the class.
+                </p>
+
+                <p className="mb-3">
+                    There were challenges during our journey together. Finding time 
+                    where people were free was challenging at times, 
+                    and setting up dependencies/getting the app to run on everyone’s 
+                    devices was often difficult.
+                </p>
+
+                <p className="mb-3">
+                    Finally, knowing all that we know about this product space now, 
+                    we would say that the ideal team for building a product in this space 
+                    besides ourselves would be someone who knows about VC and has 
+                    experience in scaling the app.
+                </p>
+
+
+                <h2 id="project-capsule-7c" className="mb-3 mt-6 pt-6 border-t border-black">
+                    Potential Expansion
+                </h2>
+
+                <ul className="list-disc ml-6 border-b sm:border-b-0 border-black">
+                    <li className="mb-3">
+                        Displaying heat map of where time capsules are around you
                     </li>
 
-                    <li>
-                        <h3 className="mb-3"> Needfinding </h3>
-
-                        <p className="mb-6">
-                            This portion of the needfinding process was new to us but one that paid the greatest dividends going forward. 
-                            We learned about the importance of being intentional with who we choose to interview, keeping open-ended questions, 
-                            and taking thorough observations to build insights and leaps that can guide the future of the whole project.
-                        </p>
+                    <li className="mb-3">
+                        Choosing which friends can see the capsule you are leaving
+                    </li>
+                    
+                    <li className="mb-3">
+                        Using the location data that a user shares, have a heat map of (1) where they travel and (2) where they are leaving capsules on their profile
                     </li>
 
-                    <li>
-                        <h3 className="mb-3"> Bringing users to test early </h3>
-
-                        <p className="mb-6">
-                            Initially, we were hesitant to test out the feasibility of our mobile app through a paper form. 
-                            However, after seeing the learnings we had through these interviews, we realized the importance of testing early and 
-                            testing easy with real users. Though our future work might not have paper prototypes, showing drawings to stakeholders 
-                            is something we can always add to our workflows.
-                        </p>
-                    </li>
-
-                    <li>
-                        <h3 className="mb-3"> Communicating work effectively </h3>
-
-                        <p className="mb-6">
-                            At every step of the journey, we had a presentation. The final step even went above and beyond with communication 
-                            through print, app, in-person speech, video, and writing being represented by the poster, expo app, pitch, demo video, 
-                            and this report. Having all of these down was crucial to successfully communicating the project and journeying to an 
-                            unknowing audience. This is something that we all can add to the technical projects we take on in the future.
-                        </p>
+                    <li className="mb-6 pb-6">
+                        When a user is near a capsule, they get a notification they are within a distance. From there, they can “scavenger hunt” for the capsule a friend gave with indications they are getting “warmer” or “colder”
                     </li>
                 </ul>
 
-                
 
-                <h2 id="project-wallus-6c" className="mb-3 mt-6 pt-6 border-t border-black"> Future Investments </h2>
+                <h2 id="project-capsule-7d" className="mb-3 mt-6 pt-6 border-t border-black"> Conclusion </h2>
 
-                <p className="mb-3">
-                    There are many possible future investments that we learned through our Heuristic Evaluations or due to time constraints 
-                    in implementation. On the technical side, we would like to eliminate all the hard-coded elements of the application 
-                    (including users, groups, tips, and history) so that a new user can join with a fresh plate and interact with their 
-                    friends as a real app. Additional new additions include
-                </p>
-
-                <ul className="list-disc ml-6 mb-3">
-                    <li>
-                        Connecting to APIs that pull real market data for stock prices and details
-                    </li>
-                    <li>
-                        Long-term implementation can look into integrating with banks or Stripe for purchasing real stocks
-                    </li>
-                    <li>
-                        Expand chat to more than  2 users
-                    </li>
-                    <li>
-                        Making the dictionary have a full set of terms
-                    </li>
-                    <li>
-                        Community page to allow reactions for each of the updates
-                    </li>
-                    <li>
-                        AI in Wallus’s tips that adjust based on user preferences by the groups they join and the investments they make
-                    </li>
-                    <li>
-                        Bookmarking or flagging interesting stocks or sharing with friends
-                    </li>
-                    <li>
-                        Reporting harmful content flows
-                    </li>
-                </ul>
-
-                <p>
-                    On the design front, we hope to continue iterating on the amount of information that is strictly necessary to show a new investor. 
-                    We hope to continue editing the details in the Home, Invite, Group Details, and Markets page. We also would love to continue designing 
-                    Wallus icons, perhaps ones that are region, stock, or time of year specific!
+                <p className="">
+                    All in all, we were successful in meeting our goals of learning about 
+                    app development and creating a nearly-complete app. We got really 
+                    good reactions and feedback from our final demo, and gained insights 
+                    about what we can change/add in the future. We were pleasantly 
+                    somewhat surprised at our ability to learn on the fly and make a 
+                    complete app; we’re proud of each other’s motivation to work hard 
+                    for the team. No disappointments, except maybe wishing that there 
+                    were less bugs in our demo. As for challenges, our biggest ones were 
+                    with dependencies and finding times to meet; otherwise, we worked 
+                    really well together!
                 </p>
 
             </Section>

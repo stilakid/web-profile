@@ -36,7 +36,7 @@ function CS224NContent() {
     return(
         <>
             <Section
-                id="project-wallus-1"
+                id="project-cs224n-1"
                 title="Abstract"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -57,7 +57,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-5"
+                id="project-cs224n-2"
                 title="Our Team"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -118,7 +118,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-2"
+                id="project-cs224n-3"
                 title="Introduction"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -150,14 +150,14 @@ function CS224NContent() {
 
 
             <Section
-                id="project-wallus-3"
+                id="project-cs224n-4"
                 title="Related Work"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
                 textColor={cs224nTextColor}
             >
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-4a" className="mb-3">
                     Discriminative vs Generative Models
                 </h2>
 
@@ -178,7 +178,7 @@ function CS224NContent() {
                     well. (Ding and Gimpel, 2019)
                 </p>
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-4b" className="mb-3">
                     Baseline for Finetuning BERT
                 </h2>
 
@@ -272,7 +272,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-4"
+                id="project-cs224n-5"
                 title="Approach"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -334,14 +334,14 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-3"
+                id="project-cs224n-6"
                 title="Experiments"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
                 textColor={cs224nTextColor}
             >
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-6a" className="mb-3">
                     Data
                 </h2>
 
@@ -385,7 +385,7 @@ function CS224NContent() {
                 </p>
 
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-6b" className="mb-3">
                     Evaluation method
                 </h2>
 
@@ -397,7 +397,7 @@ function CS224NContent() {
                 </p>
 
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-6c" className="mb-3">
                     Experimental details
                 </h2>
 
@@ -500,7 +500,7 @@ function CS224NContent() {
                     </li>
                 </ul>
 
-                <h2 id="project-wallus-1a" className="mb-3">
+                <h2 id="project-cs224n-6d" className="mb-3">
                     Results
                 </h2>
 
@@ -633,7 +633,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-4"
+                id="project-cs224n-7"
                 title="Analysis"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -680,7 +680,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-6"
+                id="project-cs224n-8"
                 title="Conclusion"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}
@@ -708,7 +708,7 @@ function CS224NContent() {
             </Section>
 
             <Section
-                id="project-wallus-6"
+                id="project-cs224n-9"
                 title="References"
                 bgColor={cs224nColor}
                 borderColor={cs224nBorder}

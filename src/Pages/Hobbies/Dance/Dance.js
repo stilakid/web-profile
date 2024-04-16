@@ -26,7 +26,8 @@ export default function Dance() {
                 </div>
 
                 <p class="text-lg font-bold italic mb-3 text-center">
-                    Active: September 2022 - Present
+                    Active: September 2022 - Present <br/>
+                    Position: Artistic Director
                 </p>
                 <p class="text-lg mb-3 text-center">
                     Legacy Dance team (LGCY) was founded in 2016 at Stanford University 
@@ -43,14 +44,15 @@ export default function Dance() {
                     As Stanford's only competitive hip hop team, Legacy stands out by 
                     introducing its members to a wider community of dancers.
                 </p>
-
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/vxT7QOvykok" title="Legacy | World of Dance Los Angeles 2023 | Team Division" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/jk_bqqtCcGw" title="Legacy | ECC 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/IL47N-Z_GIc" title="Legacy 2022 | Breaking Ground 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/r_k4w8mnFsk" title="Legacy Dance | Team Division  | World of Dance Bay Area 2024 | #WODBAY24" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/vxT7QOvykok" title="Legacy | World of Dance Los Angeles 2023 | Team Division" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/dLcdnxF5nKM" title="Legacy | ECC 2024" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/NG9UAVDmibE" title="Legacy | Breaking Ground 2023" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/cIsaqDLtR6o" title="Legacy | Hipnotized 2023" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/jk_bqqtCcGw" title="Legacy | ECC 2023" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/IL47N-Z_GIc" title="Legacy 2022 | Breaking Ground 2022" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
             </div>
-
-
-
 
             <div class="bg-gradient-to-r from-gray-200 to-gray-400 text-black flex flex-col justify-center items-center px-20 lg:px-32 xl:px-48 py-5">
                 <div class="flex flex-row justify-center items-center my-3">
@@ -71,16 +73,15 @@ export default function Dance() {
                     They welcome members from all backgrounds who are interested in 
                     dance and Korean pop culture.
                 </p>
-                
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/oIaW3xQJinA" title="[KPOP IN PUBLIC | ONE TAKE] ATEEZ (에이티즈) - &quot;Eternal Sunshine&quot; Dance Cover [Stanford XTRM]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/Wf1nmuH3dfw" title="XTRM | 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/l64cOkNPDXQ" title="XTRM 2022 | Breaking Ground 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/ctytDSZIO-M" title="[KPOP IN PUBLIC | SCHOOL PERFORMANCE] Party on the Edge 2022 (BTBT, Up!, Hot) [Stanford XTRM]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/_I5Tz7PxpdY" title="[KPOP IN PUBLIC] SEVENTEEN (세븐틴) - &quot;Super (손오공)&quot; Dance Cover [Stanford XTRM] ft. Legacy" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/46D3WJDiBYY" title="[KPOP IN PUBLIC] SEVENTEEN (세븐틴) - &quot;Left &amp; Right&quot; Dance Cover [Stanford XTRM]" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/oIaW3xQJinA" title="[KPOP IN PUBLIC | ONE TAKE] ATEEZ (에이티즈) - &quot;Eternal Sunshine&quot; Dance Cover [Stanford XTRM]" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/Wf1nmuH3dfw" title="XTRM | 2023" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/l64cOkNPDXQ" title="XTRM 2022 | Breaking Ground 2022" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/ctytDSZIO-M" title="[KPOP IN PUBLIC | SCHOOL PERFORMANCE] Party on the Edge 2022 (BTBT, Up!, Hot) [Stanford XTRM]" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
                         
             </div>
-
-
-
 
 
 
@@ -105,11 +106,8 @@ export default function Dance() {
                     inspire and enrich CO's unique personality.
                 </p>
                 
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/z3mw4ivMr8M" title="Common Origins | Hipnotized 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/z3mw4ivMr8M" title="Common Origins | Hipnotized 2022" frameborder="0" allow="fullscreen accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="w-full h-full max-w-5xl aspect-video my-10"></iframe>
             </div>
-
-
-
         </>
     )
 }

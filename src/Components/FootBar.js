@@ -17,7 +17,7 @@ export default function FootBar({ children, className, ...props }) {
                 <a className='mx-2' href = "mailto: zubenrana@stanford.edu"><IonIcon icon={mail} className="text-2xl" /></a>
             </div>
 
-            © 2023 Juben Rana
+            © 2024 Juben Rana
         </footer>
     );
 }
