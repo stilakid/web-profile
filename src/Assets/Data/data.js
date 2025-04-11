@@ -8,10 +8,13 @@ import { BlenderCaption, BlenderContent } from "../../Pages/Projects/Blender/Ble
 import { ModerationCaption, ModerationContent } from "../../Pages/Projects/Moderation/ModerationContent";
 import { CapsuleCaption, CapsuleContent } from "../../Pages/Projects/Capsule/CapsuleContent";
 import { CS224NCaption, CS224NContent } from "../../Pages/Projects/CS224N/CS224NContent";
+import { CS224SCaption, CS224SContent } from "../../Pages/Projects/CS224S/CS224SContent";
+import { CS137ACaption, CS137AContent } from "../../Pages/Projects/CS137A/CS137AContent";
 import Dance from "../../Pages/Hobbies/Dance/Dance";
 import Music from "../../Pages/Hobbies/Music/Music";
 import Rockets from "../../Pages/Hobbies/Rockets/Rockets";
 import VideoEditing from "../../Pages/Hobbies/VideoEditing/VideoEditing";
+
 
 const data = {
     projects: {
@@ -151,6 +154,44 @@ const data = {
             ],
             caption: <WebProfileCaption />,
             details: <WebProfileContent />
+        },
+
+        cs224s: {
+            id: "project-cs224s",
+            url: "/projects/cs224s",
+            title: "Unstuttered Speech Synthesis from Informally Structured Stuttered Text",
+            date: "Mar 17 2024",
+            color: {
+                background: "bg-gradient-to-r from-webprofile-left to-webprofile-right",
+                border: "border-gray-700",
+                text: "text-white",
+            },
+            githubUrl: null,
+            toolsUsed: ["React", "Tailwind CSS", "React Spring"],
+            navLinks: [
+                [["About this Project", "project-profile-1"]]
+            ],
+            caption: <CS224SCaption />,
+            details: <CS224SContent />
+        },
+
+        cs137a: {
+            id: "project-cs137a",
+            url: "/projects/cs137a",
+            title: "Autonomous Moving Robot",
+            date: "Mar 17 2024",
+            color: {
+                background: "bg-gradient-to-r from-webprofile-left to-webprofile-right",
+                border: "border-gray-700",
+                text: "text-white",
+            },
+            githubUrl: "https://github.com/ElisabethHolm/cs137a",
+            toolsUsed: ["React", "Tailwind CSS", "React Spring"],
+            navLinks: [
+                [["About this Project", "project-profile-1"]]
+            ],
+            caption: <CS137ACaption />,
+            details: <CS137AContent />
         },
 
         carta: {

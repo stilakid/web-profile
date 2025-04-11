@@ -34,6 +34,12 @@ const images = {
             bertBatch: require('./Projects/CS224N/batch_bert.png'),
             flanBatch: require('./Projects/CS224N/batch_flan.png'),
         },
+        cs224s: {
+            preview: require('./Projects/CS224N/preview.png'),
+        },
+        cs137a: {
+            preview: require('./Projects/CS224N/preview.png'),
+        },
         wallus: {
             preview: require('./Projects/Wallus/preview.png'),
             qrCode: require('./Projects/Wallus/expo_go_qr_code.svg').default,

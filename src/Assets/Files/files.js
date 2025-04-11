@@ -1,13 +1,6 @@
 const files = {
 
     home: {
-        juben: {
-            profilePic: require('./Home/profile_pic.jpeg'),
-            danceWod: require('./Home/dance_wod.jpg'),
-            musicLsjumb: require('./Home/music_lsjumb.jpg'),
-            bhutan: require('./Home/bhutan_aaron-santelices.jpg'),
-            ssi: require('./Home/ssi.jpg')
-        }
     },
 
     projects: {
