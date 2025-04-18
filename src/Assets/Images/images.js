@@ -14,7 +14,7 @@ const images = {
         general: {
         },
         capsule: {
-            preview: require('./Projects/Capsule/preview.jpeg'),
+            preview: require('./Projects/Capsule/preview.png'),
             prototype1: require('./Projects/Capsule/prototype_1.jpeg'),
             prototype2: require('./Projects/Capsule/prototype_2.jpeg'),
             prototype3: require('./Projects/Capsule/prototype_3.jpeg'),
@@ -35,7 +35,10 @@ const images = {
             flanBatch: require('./Projects/CS224N/batch_flan.png'),
         },
         cs224s: {
-            preview: require('./Projects/CS224N/preview.png'),
+            preview: require('./Projects/CS224S/preview.jpg'),
+            speacht5_1: require('./Projects/CS224S/speecht5_1.jpg'),
+            speacht5_2: require('./Projects/CS224S/speecht5_2.jpg'),
+            tokenization: require('./Projects/CS224S/tokenization.png'),
         },
         cs137a: {
             preview: require('./Projects/CS224N/preview.png'),
@@ -45,7 +48,7 @@ const images = {
             qrCode: require('./Projects/Wallus/expo_go_qr_code.svg').default,
         },
         bunnyWorld: {
-            preview: require('./Projects/BunnyWorld/preview.png'),
+            preview: require('./Projects/BunnyWorld/preview.jpg'),
         },
         sura: {
             preview: require('./Projects/Sura/preview.png'),

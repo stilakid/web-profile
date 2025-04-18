@@ -3,6 +3,9 @@ const videos = {
     projects: {
         general: {
         },
+        cs137a: {
+            preview: require('./Projects/CS137A/preview.mp4'),
+        },
         bunnyWorld: {
             scriptManager_1: require('./Projects/BunnyWorld/Vid_1.mp4'),
             scriptManager_2: require('./Projects/BunnyWorld/Vid_2.mp4'),

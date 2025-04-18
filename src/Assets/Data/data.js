@@ -160,16 +160,25 @@ const data = {
             id: "project-cs224s",
             url: "/projects/cs224s",
             title: "Unstuttered Speech Synthesis from Informally Structured Stuttered Text",
-            date: "Mar 17 2024",
+            date: "Jun 5 2024",
             color: {
-                background: "bg-gradient-to-r from-webprofile-left to-webprofile-right",
+                background: "bg-gradient-to-r from-cs224s-left to-cs224s-right",
                 border: "border-gray-700",
                 text: "text-white",
             },
             githubUrl: null,
-            toolsUsed: ["React", "Tailwind CSS", "React Spring"],
+            toolsUsed: ["Python", "PyTorch", "Google Colab", "GCP"],
             navLinks: [
-                [["About this Project", "project-profile-1"]]
+                [["Abstract", "project-cs224s-1"]],
+                [["Our Team", "project-cs224s-2"]],
+                [["Introduction", "project-cs224s-3"]],
+                [["Related Work", "project-cs224s-4"], ["Stutter-TTS", "project-cs224s-4a"], ["SpeechT5", "project-cs224s-4b"], ["Evaluation methods of TTS", "project-cs224s-4c"]],
+                [["Approach / Methods", "project-cs224s-5"], ["Dataset", "project-cs224s-5a"], ["Architecture", "project-cs224s-5b"]],
+                [["Experiments", "project-cs224s-6"], ["Finetuning", "project-cs224s-6a"], ["Architectural / Preprocessing Modifications", "project-cs224s-6b"]],
+                [["Evaluation", "project-cs224s-7"]],
+                [["Results", "project-cs224s-8"]],
+                [["Conclusion", "project-cs224s-9"]],
+                [["References", "project-cs224s-10"]],
             ],
             caption: <CS224SCaption />,
             details: <CS224SContent />
@@ -178,15 +187,15 @@ const data = {
         cs137a: {
             id: "project-cs137a",
             url: "/projects/cs137a",
-            title: "Autonomous Moving Robot",
-            date: "Mar 17 2024",
+            title: "Autonomous Robot: Frontier Explorer",
+            date: "Dec 6 2024",
             color: {
-                background: "bg-gradient-to-r from-webprofile-left to-webprofile-right",
+                background: "bg-gradient-to-r from-autonomous-left to-autonomous-right",
                 border: "border-gray-700",
                 text: "text-white",
             },
             githubUrl: "https://github.com/ElisabethHolm/cs137a",
-            toolsUsed: ["React", "Tailwind CSS", "React Spring"],
+            toolsUsed: ["Python", "ROS2", "Gazebo", "TurtleBot"],
             navLinks: [
                 [["About this Project", "project-profile-1"]]
             ],

@@ -21,6 +21,7 @@ module.exports = {
         'neutral-regular': '#7B7B7B',
         'neutral-dark': '#434343',
         'neutral-black': '#000000',
+        'neutral-semiblack': '#0e0e12',
         // Miscellaneous
         'neutral-disabled': '#7B7B7B', // opacity: 40%
         'neutral-hover': '#000000', // opacity: 7%
@@ -53,7 +54,13 @@ module.exports = {
         'blender-right': '#b95d00',
         // moderation
         'moderation-left': '#111b40',
-        'moderation-right': '#243b8a'
+        'moderation-right': '#243b8a',
+        // autonomous robot
+        'autonomous-left': '#132640',
+        'autonomous-right': '#3265AC',
+        // cs224s
+        'cs224s-left': '#0b2f53',
+        'cs224s-right': '#2684e3'
       }
     },
     fontFamily: {
